@@ -1,11 +1,11 @@
 language: node_js
 
 node_js:
-  - "8"
+  - "10"
 
 install:
-  - npm install
-  - npm run build
+  - yarn install
+  - yarn build
 
 deploy:
   local_dir: ./dist
