@@ -40,6 +40,8 @@ export default {
       shuffle: true
     }
 
+    // Test
+
     var typed = new Typed('.property', options)
   }
 }
