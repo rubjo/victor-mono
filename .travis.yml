@@ -7,6 +7,9 @@ install:
   - yarn install
   - yarn build
 
+before_deploy:
+  - cd dist
+
 deploy:
   provider: pages
   skip_cleanup: true
