@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'VictorMono';
+  font-style: normal;
+  src: url('assets/VictorMono-Regular.eot');
+  src: url('assets/VictorMono-Regular.eot?#iefix') format('embedded-opentype'), url('assets/VictorMono-Regular.woff') format('woff'), url('assets/VictorMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'VictorMono';
+  font-style: italic;
+  src: url('assets/VictorMono-Italic.eot');
+  src: url('assets/VictorMono-Italic.eot?#iefix') format('embedded-opentype'), url('assets/VictorMono-Italic.woff') format('woff'), url('assets/VictorMono-Italic.ttf') format('truetype');
+}
+
+:root {
+  --background-color-base: #696969;
+  --color-text-primary: #fff;
+}
+
+html,
+* {
+  font-family: 'VictorMono', monospace;
+}
+
+html {
+  color: var(--color-text-primary);
+  background: var(--background-color-base);
+}
+
+body {
+  margin: 0;
+}
+
+.centre {
+  text-align: center;
+}
