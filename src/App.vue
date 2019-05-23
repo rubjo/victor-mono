@@ -1,7 +1,8 @@
 <template>
-  <div id="app">
+  <div
+    id="app"
+  >
     <NavBar
-      id="top"
       ref="navbar"
       :show="showNav"
     />
@@ -10,6 +11,28 @@
       :show-text="showHeaderText"
     />
     <div class="content">
+      <el-row
+        type="flex"
+        justify="center"
+      >
+        <el-col
+          :xs="22"
+          :sm="16"
+          :md="14"
+          :lg="12"
+        >
+          <p>
+            Victor Mono is a programming font with <em>cursive italics</em> and symbol ligatures (!=, ->>, =>, === && etc).
+            I drew it from scratch as a pet project because I couldn’t find another typeface I was entirely satisfied with.
+            I tried quite a few.
+          </p>
+          <p>
+            You can download and use it for free.
+            If you do try it out and like it, I would sure appreciate a donation.
+            €5 will cover a bottle of beer, €10 a bottle of wine and ~ €750M a Taj Mahal-style residence.
+          </p>
+        </el-col>
+      </el-row>
       <el-row>
         <el-col>
           <h1
@@ -25,7 +48,7 @@
         justify="center"
       >
         <el-col
-          :xs="20"
+          :xs="22"
           :sm="16"
           :md="14"
           :lg="12"
@@ -76,16 +99,18 @@
       >
         <el-col class="centre">
           <el-button
-            @click="window.open('https://paypal.me/runbjo')"
             icon="el-icon-medal-1"
             type="primary"
             round
-          >Donate
+            @click="goTo('https://paypal.me/runbjo')"
+          >
+            Donate
           </el-button>
           <el-button
             icon="el-icon-download"
             round
-          >Download
+          >
+            Download
           </el-button>
         </el-col>
       </el-row>
@@ -190,6 +215,9 @@ export default {
 
       const hideStart = mainTitle.getBoundingClientRect().top + margin
       this.showNav = window.scrollY < hideStart || window.scrollY > triggerHeight
+    },
+    goTo (url) {
+      window.open(url)
     }
   }
 }

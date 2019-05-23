@@ -47,12 +47,14 @@ export default {
   mounted () {
     this.initGradient()
     this.initTyped()
-    anime({
-      targets: this.$refs.videoBg,
-      opacity: 1,
-      duration: 3000,
-      easing: 'linear'
-    })
+    setTimeout(() => {
+      anime({
+        targets: this.$refs.videoBg,
+        opacity: 1,
+        duration: 1000,
+        easing: 'linear'
+      })
+    }, 1000)
   },
   methods: {
     initGradient () {
@@ -119,7 +121,8 @@ export default {
           'beautiful',
           'ideal',
           'slightly whimsical',
-          'victorious'
+          'victorious',
+          '"#%§§##/&*!'
         ],
         startDelay: 1000,
         typeSpeed: 50,
@@ -145,27 +148,24 @@ export default {
   top: 0;
   z-index: 1;
   width: 100%;
-  padding-top: calc(32px + 2vw);
+  padding-top: calc(48px + 2vw);
   text-align: center;
   h1 {
     margin: calc(2vw + 5px) 0 0 0;
-    font-size: 12vw;
+    font-size: calc(80px + 6vw);
     font-weight: normal;
-    color: #fff;
   }
 
   h2 {
-    margin: 2vw 0 4vw 0;
-    font-size: 3vw;
+    margin: 2vw 0 6vw 0;
+    font-size: calc(12px + 2vw);
     font-weight: normal;
-    color: #fff;
   }
 
   .large-icon {
     margin: 0 0 1vw 0;
     font-size: 3vw;
     font-weight: normal;
-    color: #fff;
   }
 
   .text {
@@ -181,8 +181,8 @@ export default {
       transition: opacity 0.25s;
       h1,
       h2 {
-        transition: 0;
-        transform: scale(0.9);
+        transition-duration: 0s;
+        transform: scale(0.85);
       }
     }
   }

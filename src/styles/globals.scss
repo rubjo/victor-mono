@@ -25,10 +25,20 @@ html,
 html {
   color: var(--color-text-primary);
   background: var(--background-color-base);
+  transition: color 1s, background 1s;
+}
+
+a {
+  transition: color 1s;
 }
 
 body {
   margin: 0;
+}
+
+p {
+  padding-bottom: 10px;
+  line-height: 2em;
 }
 
 .centre {

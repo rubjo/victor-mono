@@ -6,12 +6,12 @@ import VueCodemirror from 'vue-codemirror'
 import 'codemirror/lib/codemirror.css'
 
 Vue.config.productionTip = false
-// test
+
 Vue.use(VueScrollTo, {
   container: 'body',
-  duration: 500,
+  duration: 5000,
   easing: 'ease',
-  offset: -70,
+  offset: -50,
   force: true,
   cancelable: true,
   onStart: false,
