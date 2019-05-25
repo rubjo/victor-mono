@@ -3,8 +3,28 @@
     <div
       ref="videoBg"
       class="video-bg"
+      :class="{ 'inverted': inverted }"
+    >
+      <video
+        autobuffer
+        autoplay
+        muted
+        autoloop
+        loop>
+        <source
+          src="../assets/video/headerbg.mp4"
+          type="video/mp4"
+        >
+        <source
+          src="../assets/video/headerbg.webm"
+          type="video/webm"
+        >
+      </video>
+    </div>
+    <canvas
+      class="header-gradients"
+      :class="{ 'inverted': inverted }"
     />
-    <canvas class="header-gradients" />
     <div
       class="text"
       :class="{ 'hidden': !showText }"
@@ -13,7 +33,9 @@
         Victor Mono
       </h1>
       <h2>
-        The <em class="property" />programming font
+        The <em class="property" />
+        <br class="hidden-sm-and-up">
+        programming font
       </h2>
       <el-row
         type="flex"
@@ -37,46 +59,71 @@
 <script>
 import Granim from 'granim'
 import Typed from 'typed.js'
-import anime from 'animejs'
 
 export default {
   name: 'Header',
   props: {
-    showText: Boolean
+    showText: Boolean,
+    theme: {
+      type: String,
+      default: 'dark'
+    }
+  },
+  computed: {
+    inverted () {
+      return this.theme !== 'dark'
+    }
   },
   mounted () {
     this.initGradient()
     this.initTyped()
-    setTimeout(() => {
-      anime({
-        targets: this.$refs.videoBg,
-        opacity: 1,
-        duration: 1000,
-        easing: 'linear'
-      })
-    }, 1000)
   },
   methods: {
     initGradient () {
+      function shuffle (a) {
+        var j, x, i
+        for (i = a.length - 1; i > 0; i--) {
+          j = Math.floor(Math.random() * (i + 1))
+          x = a[i]
+          a[i] = a[j]
+          a[j] = x
+        }
+        return a
+      }
+
+      const gradients = [
+        [
+          { color: 'rgba(253,199,141,1)', pos: 0 },
+          { color: 'rgba(249,143,253,1)', pos: 1 }
+        ], [
+          { color: 'rgba(253,239,132,1)', pos: 0 },
+          { color: 'rgba(21,186,196,1)', pos: 1 }
+        ], [
+          { color: 'rgba(243,31,105,1)', pos: 0 },
+          { color: 'rgba(249,233,47,1)', pos: 1 }
+        ], [
+          { color: 'rgba(56,230,250,1)', pos: 0 },
+          { color: 'rgba(52,116,243,1)', pos: 1 }
+        ], [
+          { color: 'rgba(19,248,87,1)', pos: 0 },
+          { color: 'rgba(235,202,16,1)', pos: 1 }
+        ], [
+          { color: 'rgba(101,161,86,1)', pos: 0 },
+          { color: 'rgba(255,178,63,1)', pos: 1 }
+        ], [
+          { color: 'rgba(255,100,241,1)', pos: 0 },
+          { color: 'rgba(67,220,255,1)', pos: 1 }
+        ]
+      ]
+
       return new Granim({
         element: '.header-gradients',
         direction: 'diagonal',
         isPausedWhenNotInView: true,
         states: {
           'default-state': {
-            gradients: [
-              [
-                { color: 'rgba(255, 153, 102, .9)', pos: 0 },
-                { color: 'rgba(255, 94, 98, 1)', pos: 1 }
-              ], [
-                { color: 'rgba(0, 242, 96, .9)', pos: 0 },
-                { color: 'rgba(5, 117, 230, 1)', pos: 1 }
-              ], [
-                { color: 'rgba(225, 238, 195, .9)', pos: 0 },
-                { color: 'rgba(240, 80, 83, 1)', pos: 1 }
-              ]
-            ],
-            transitionSpeed: 10000
+            gradients: shuffle(gradients),
+            transitionSpeed: 5000
           }
         }
       })
@@ -87,6 +134,7 @@ export default {
           '==>',
           'cursive',
           '<span style="text-decoration: line-through;">modest</span>',
+          'break-the-wheel',
           'be-all and end-all',
           'donate-what-it\'s-worth',
           'good-looking',
@@ -194,8 +242,16 @@ export default {
   z-index: -2;
   width: 100%;
   height: calc(100% - 1px);
-  background: url('../assets/img/header-bg.mp4');
-  opacity: 0;
+  overflow: hidden;
+  opacity: 0.5;
+  &.inverted {
+    filter: invert(1);
+    opacity: 0.2;
+  }
+  video {
+    width: 100%;
+    min-width: 800px;
+  }
 }
 
 .header-gradients {
@@ -205,5 +261,9 @@ export default {
   z-index: -1;
   width: 100%;
   height: 100%;
+  mix-blend-mode: screen;
+  &.inverted {
+    mix-blend-mode: multiply;
+  }
 }
 </style>

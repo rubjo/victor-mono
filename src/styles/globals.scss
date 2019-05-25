@@ -38,7 +38,13 @@ body {
 
 p {
   padding-bottom: 10px;
-  line-height: 2em;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  &.columns {
+    column-count: 2;
+    column-width: 18em;
+    column-gap: 75px;
+  }
 }
 
 .centre {

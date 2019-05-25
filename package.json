@@ -10,6 +10,7 @@
   "dependencies": {
     "animejs": "^3.0.1",
     "core-js": "^2.6.5",
+    "dom-confetti": "^0.1.1",
     "element-ui": "^2.4.5",
     "granim": "^2.0.0",
     "scrollama": "^2.0.0",

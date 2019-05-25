@@ -8,7 +8,7 @@
         v-scroll-to="'#app'"
         href="#"
       >
-        Top</a>
+        <i class="el-icon-arrow-up" /></a>
       <a
         v-scroll-to="'#try'"
         href="#"
@@ -23,7 +23,7 @@
         v-scroll-to="'#download'"
         href="#"
       >
-        Download</a>
+        Get</a>
       <a
         v-scroll-to="'#faq'"
         href="#"
@@ -35,6 +35,7 @@
       >
         Credits</a>
       <a
+        ref="themeIcon"
         class="themeIcon"
         href="javascript:void(0)"
         @click="toggleTheme"
@@ -107,26 +108,13 @@ export default {
   },
   methods: {
     toggleTheme () {
-      this.theme = this.theme === 'dark' ? 'light' : 'dark'
-
-      if (this.theme === 'dark') {
-        this.backgroundColour = '#696969'
-        this.textColour = '#fff'
-      } else {
-        this.backgroundColour = '#fff'
-        this.textColour = '#333'
-      }
-
-      const root = document.documentElement
-      root.style.setProperty('--background-color-base', this.backgroundColour)
-      root.style.setProperty('--color-text-primary', this.textColour)
+      this.$refs.themeIcon.style.transform = 'scale(0)'
 
       anime({
         targets: '.themeIcon circle',
         scale: [0, 1],
         duration: 1500,
-        delay: 250,
-        easing: 'easeOutExpo'
+        easing: 'easeInOutSine'
       })
 
       anime({
@@ -134,7 +122,7 @@ export default {
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: 'easeInOutSine',
         duration: 2500,
-        delay (el, i) { return i * 250 },
+        delay (el, i) { return i * 250 + 250 },
         direction: 'normal',
         loop: false
       })
@@ -142,10 +130,31 @@ export default {
       anime({
         targets: '.themeIcon svg',
         rotate: [0, 315],
-        scale: [0.5, 0.5],
+        strokeColor: ['#f0f', '#000'],
+        delay: 500,
         duration: 3000,
-        easing: 'easeOutExpo'
+        easing: 'easeInOutSine'
       })
+
+      setTimeout(() => {
+        this.theme = this.theme === 'dark' ? 'light' : 'dark'
+
+        if (this.theme === 'dark') {
+          this.$emit('darkTheme')
+          this.backgroundColour = '#696969'
+          this.textColour = '#fff'
+        } else {
+          this.$emit('lightTheme')
+          this.backgroundColour = '#fff'
+          this.textColour = '#333'
+        }
+
+        const root = document.documentElement
+        root.style.setProperty('--background-color-base', this.backgroundColour)
+        root.style.setProperty('--color-text-primary', this.textColour)
+
+        this.$refs.themeIcon.style.transform = 'scale(0.5)'
+      }, 100)
     }
   }
 }
@@ -157,14 +166,13 @@ export default {
     top: 0;
     z-index: 2;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
-    font-size: calc(10px + 1vw);
+    font-size: calc(18px + 0.8vw);
     text-align: center;
     a {
       flex: 1;
-      max-width: 200px;
-      padding: calc(18px + 0.8vw) 0;
+      padding: calc(16px + 0.7vw) 0;
       color: var(--color-text-primary);
       text-decoration: none;
       &:hover {
@@ -175,10 +183,10 @@ export default {
       display: flex;
       justify-content: center;
       padding: 0.8vw 0;
+      transform: scale(0.5);
       .theme {
         text-align: center;
         svg {
-          transform: scale3d(0.5, 0.5, 1);
           circle {
             transform-origin-x: 50%;
             transform-origin-y: 50%;
