@@ -280,10 +280,8 @@ export default {
       const navBarHeight = mainTitle.offsetTop - margin
       const headerHeight = this.$refs.header.$el.offsetHeight
       const triggerHeight = headerHeight - navBarHeight
-      console.log('triggerHeight: ' + triggerHeight)
       if (top > triggerHeight) {
         const offset = this.$refs.header.$el.getBoundingClientRect().y
-        console.log('offset: ' + offset)
         if (offset !== triggerHeight) {
           this.$refs.header.$el.style.top = triggerHeight * -1
           anime({
