@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div class="window">
+    <div
+      class="window"
+      :class="{ 'light': theme !== 'dark' }"
+    >
       <div class="controls">
         <el-tooltip
           class="item"
@@ -25,7 +28,10 @@
         @input="onCmCodeChange"
       />
     </div>
-    <div class="caption">
+    <div
+      v-if="theme === 'dark'"
+      class="right caption"
+    >
       <a
         target="_blank"
         href="https://github.com/rubjo/ultimate-dark"
@@ -36,13 +42,24 @@
         href="https://packagecontrol.io/packages/Ultimate%20Dark"
       >Sublime Text 3 package</a>)
     </div>
+    <div
+      v-else
+      class="right caption"
+    >
+      <a
+        target="_blank"
+        href="https://github.com/chriskempson/base16"
+      >Base 16 Light</a>
+      colour scheme by Chris Kempson
+    </div>
   </div>
 </template>
 <script>
 // language
 import 'codemirror/mode/vue/vue.js'
-// theme css
+// themes css
 import '@/styles/ultimate-dark.css'
+import '@/styles/base-16-light.css'
 // active-line.js
 import 'codemirror/addon/selection/active-line.js'
 // styleSelectedText
@@ -53,6 +70,12 @@ import 'codemirror/addon/comment/comment.js'
 
 export default {
   name: 'CodeView',
+  props: {
+    theme: {
+      type: String,
+      default: localStorage.getItem('theme') || 'dark'
+    }
+  },
   data () {
     return {
       code: `<template>
@@ -103,21 +126,25 @@ export default {
         styleSelectedText: true,
         matchBrackets: true,
         showCursorWhenSelecting: true,
-        theme: 'ultimate-dark'
+        theme: this.theme === 'dark' ? 'ultimate-dark' : 'base16-light'
       }
+    }
+  },
+  watch: {
+    theme (newVal, oldVal) {
+      this.cm.setOption('theme', newVal === 'dark' ? 'ultimate-dark' : 'base16-light')
     }
   },
   mounted () {
   },
   methods: {
     onCmReady (cm) {
-      console.log('the editor is readied!', cm)
+      this.cm = cm
+      cm.setSize('100%', '100%')
     },
     onCmFocus (cm) {
-      console.log('the editor is focus!', cm)
     },
     onCmCodeChange (newCode) {
-      console.log('this is new code', newCode)
       this.code = newCode
     }
   }
@@ -131,12 +158,15 @@ export default {
 .window {
   position: relative;
   z-index: 0;
+  height: 40vw;
   border: 1px solid #303030;
   border-radius: 5px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  transition: border 1s;
   .controls {
     height: 34px;
     background: #303030;
+    transition: background 1s;
     div {
       float: left;
       width: 14px;
@@ -155,28 +185,17 @@ export default {
       background: #26c138;
     }
   }
+  &.light {
+    border-color: #ccc;
+    .controls {
+      background: #eee;
+    }
+  }
 }
 
 .code {
+  height: calc(100% - 34px);
   font-size: 16px;
   line-height: 1.5em;
-}
-
-.caption {
-  margin-top: 5px;
-  font-size: 0.75em;
-  font-style: italic;
-  color: #999;
-  text-align: right;
-  a {
-    color: #999;
-    text-decoration: none;
-    border-bottom: 1px dotted #999;
-    transition: color 0.5s, border-color 0.5s;
-    &:hover {
-      color: #ccc;
-      border-bottom: 1px dotted #ccc;
-    }
-  }
 }
 </style>

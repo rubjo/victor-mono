@@ -3,14 +3,16 @@
     <div
       ref="videoBg"
       class="video-bg"
-      :class="{ 'inverted': inverted }"
     >
       <video
+        ref="video"
         autobuffer
         autoplay
         muted
         autoloop
-        loop>
+        playsinline
+        loop
+      >
         <source
           src="../assets/video/headerbg.mp4"
           type="video/mp4"
@@ -22,8 +24,8 @@
       </video>
     </div>
     <canvas
+      ref="gradients"
       class="header-gradients"
-      :class="{ 'inverted': inverted }"
     />
     <div
       class="text"
@@ -59,6 +61,7 @@
 <script>
 import Granim from 'granim'
 import Typed from 'typed.js'
+import anime from 'animejs'
 
 export default {
   name: 'Header',
@@ -66,12 +69,40 @@ export default {
     showText: Boolean,
     theme: {
       type: String,
-      default: 'dark'
+      default: localStorage.getItem('theme') || 'dark'
     }
   },
-  computed: {
-    inverted () {
-      return this.theme !== 'dark'
+  watch: {
+    theme: {
+      async handler (newVal, oldVal) {
+        const oldOpacity = this.theme === 'dark' ? 0.2 : 0.5
+        const newOpacity = this.theme === 'dark' ? 0.5 : 0.2
+
+        await anime({
+          targets: this.$refs.videoBg,
+          opacity: [oldOpacity, 0],
+          duration: 250,
+          easing: 'linear'
+        }).finished
+
+        if (newVal === 'light') {
+          this.$refs.gradients.style.mixBlendMode = 'multiply'
+          this.$refs.videoBg.style.filter = 'invert(1)'
+        } else {
+          this.$refs.gradients.style.mixBlendMode = 'screen'
+          this.$refs.videoBg.style.filter = 'invert(0)'
+        }
+
+        anime({
+          targets: this.$refs.videoBg,
+          opacity: [0, newOpacity],
+          duration: 250,
+          easing: 'linear'
+        })
+
+        return Promise.resolve()
+      },
+      immediate: true
     }
   },
   mounted () {
@@ -192,21 +223,21 @@ export default {
   lang="scss"
 >
 .header {
-  position: sticky;
+  position: absolute;
   top: 0;
   z-index: 1;
   width: 100%;
   padding-top: calc(48px + 2vw);
   text-align: center;
   h1 {
-    margin: calc(2vw + 5px) 0 0 0;
+    margin: calc(3vw + 5px) 0 0 0;
     font-size: calc(80px + 6vw);
     font-weight: normal;
   }
 
   h2 {
-    margin: 2vw 0 6vw 0;
-    font-size: calc(12px + 2vw);
+    margin: 2vw 0 5vw 0;
+    font-size: calc(18px + 1.5vw);
     font-weight: normal;
   }
 
@@ -244,13 +275,9 @@ export default {
   height: calc(100% - 1px);
   overflow: hidden;
   opacity: 0.5;
-  &.inverted {
-    filter: invert(1);
-    opacity: 0.2;
-  }
   video {
     width: 100%;
-    min-width: 800px;
+    min-width: 1000px;
   }
 }
 
@@ -262,8 +289,5 @@ export default {
   width: 100%;
   height: 100%;
   mix-blend-mode: screen;
-  &.inverted {
-    mix-blend-mode: multiply;
-  }
 }
 </style>

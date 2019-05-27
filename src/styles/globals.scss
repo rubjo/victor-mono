@@ -38,8 +38,8 @@ body {
 
 p {
   padding-bottom: 10px;
-  font-size: 1.2rem;
-  line-height: 2.4rem;
+  font-size: calc(1rem + 0.25vw);
+  line-height: calc(2rem + 0.5vw);
   &.columns {
     column-count: 2;
     column-width: 18em;
@@ -47,6 +47,31 @@ p {
   }
 }
 
+.full-width {
+  width: 100%;
+}
+
 .centre {
   text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.caption {
+  margin-top: 5px;
+  font-size: 0.75em;
+  font-style: italic;
+  color: #aaa;
+  a {
+    color: #aaa;
+    text-decoration: none;
+    border-bottom: 1px dotted #aaa;
+    transition: color 0.5s, border-color 0.5s;
+    &:hover {
+      color: #ccc;
+      border-bottom: 1px dotted #ccc;
+    }
+  }
 }

@@ -99,12 +99,13 @@ export default {
   },
   data () {
     return {
-      theme: 'dark',
+      theme: localStorage.getItem('theme') || 'dark',
       backgroundColour: '#696969',
       textColour: '#fff'
     }
   },
   mounted () {
+    this.setAppearance()
   },
   methods: {
     toggleTheme () {
@@ -138,23 +139,25 @@ export default {
 
       setTimeout(() => {
         this.theme = this.theme === 'dark' ? 'light' : 'dark'
-
-        if (this.theme === 'dark') {
-          this.$emit('darkTheme')
-          this.backgroundColour = '#696969'
-          this.textColour = '#fff'
-        } else {
-          this.$emit('lightTheme')
-          this.backgroundColour = '#fff'
-          this.textColour = '#333'
-        }
-
-        const root = document.documentElement
-        root.style.setProperty('--background-color-base', this.backgroundColour)
-        root.style.setProperty('--color-text-primary', this.textColour)
-
+        localStorage.setItem('theme', this.theme)
+        this.setAppearance()
         this.$refs.themeIcon.style.transform = 'scale(0.5)'
       }, 100)
+    },
+    setAppearance () {
+      if (this.theme === 'dark') {
+        this.$emit('darkTheme')
+        this.backgroundColour = '#696969'
+        this.textColour = '#fff'
+      } else {
+        this.$emit('lightTheme')
+        this.backgroundColour = '#fff'
+        this.textColour = '#333'
+      }
+
+      const root = document.documentElement
+      root.style.setProperty('--background-color-base', this.backgroundColour)
+      root.style.setProperty('--color-text-primary', this.textColour)
     }
   }
 }
