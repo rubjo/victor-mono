@@ -147,6 +147,7 @@
       >
         <el-col class="centre">
           <el-button
+            id="donate-button"
             icon="el-icon-medal-1"
             type="primary"
             round
@@ -319,7 +320,7 @@ export default {
       this.showNav = window.scrollY < hideStart || window.scrollY > triggerHeight
     },
     celebrate () {
-      const button = document.querySelector('#donate')
+      const button = document.querySelector('#donate-button')
       confetti(button, {
         angle: 90,
         spread: 60,
