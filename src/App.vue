@@ -156,6 +156,7 @@
             Donate
           </el-button>
           <el-button
+            id="download-button"
             icon="el-icon-download"
             round
           >
