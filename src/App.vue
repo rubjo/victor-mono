@@ -280,19 +280,21 @@ export default {
       const navBarHeight = mainTitle.offsetTop - margin
       const headerHeight = this.$refs.header.$el.offsetHeight
       const triggerHeight = headerHeight - navBarHeight
+      console.log('triggerHeight: ' + triggerHeight)
       if (top > triggerHeight) {
         const offset = this.$refs.header.$el.getBoundingClientRect().y
+        console.log('offset: ' + offset)
         if (offset !== triggerHeight) {
           this.$refs.header.$el.style.top = triggerHeight * -1
           anime({
             targets: this.$refs.header.$el,
-            top: [this.$refs.header.$el.getBoundingClientRect().y, triggerHeight * -1],
+            top: [offset, triggerHeight * -1],
             duration: 100,
             easing: 'easeInOutSine'
           })
         }
-        if (this.$refs.header.$el.style.position !== 'sticky') {
-          this.$refs.header.$el.style.position = 'sticky'
+        if (this.$refs.header.$el.style.position !== '-webkit-sticky') {
+          this.$refs.header.$el.style.position = '-webkit-sticky'
           document.querySelector('body').style.paddingTop = 0
         }
       } else {
