@@ -5,6 +5,7 @@
     <NavBar
       ref="navbar"
       :show="showNav"
+      :show-go-to-top="showGoToTop"
       @darkTheme="theme = 'dark'"
       @lightTheme="theme = 'light'"
     />
@@ -25,11 +26,26 @@
           <p class="columns">
             Victor Mono is a programming font with
             <em>semi-connected cursive italics</em>
-            and symbol ligatures
-            (!=, ->>, =>, ===, && etc).
+            and some symbol ligatures (!=, ->>, =>, ===, && etc).
+            <br><br>
+            It was drawn from scratch as a pet project / experiment
+            <a
+              v-scroll-to="'#why'"
+              href="javascript:void(0)"
+            >because I couldn’t find another</a>
+            (free or paid) typeface I was entirely satisfied with.
             <br><br>
             The typeface is quite strict in style and features a large x-height.
-            It is optimised for code and legibility at small to medium sizes on high-DPI displays where the OS and app tries to render fonts nicely.
+            It is optimised for code and legibility at small to medium sizes on high-DPI displays where the
+            <el-tooltip
+              class="item"
+              effect="dark"
+              content="= might look weird on Windoze or in Electron-based apps"
+              placement="top-start"
+            >
+              <span>OS and app</span>
+            </el-tooltip>
+            tries to render fonts nicely.
           </p>
         </el-col>
       </el-row>
@@ -79,10 +95,9 @@
           :sm="16"
         >
           <p class="columns">
-            Victor Mono was drawn from scratch as a pet project because I couldn’t find another (free or paid) typeface I was entirely satisfied with.
-            I tried quite a few.
+            I'm rather particular about what width, weight, style etc makes an effective and enjoyable typeface for code.
             <br><br>
-            All other fonts or typeface combo mashups I tried using while coding had several of these — <em>subjectively, of course</em> — shortcomings:
+            All fonts or typeface combo mashups I tried using while coding had several of these shortcomings (<em>subjectively, of course</em>):
             <ul>
               <li>Missing cursive italics</li>
               <li>Missing programming symbol ligatures</li>
@@ -93,7 +108,8 @@
               <li>Seemed unfinished (had weird or misaligned curves/artifacts)</li>
               <li>Seemed childish or unprofessional (too soft or informal appearance)</li>
               <li>Seemed imbalanced or inconsistent</li>
-              <li>Was too expensive</li>
+              <li>Was a combination of eye-poppingly-different-in-style fonts</li>
+              <li>Was very expensive</li>
             </ul>
             So eventually, a couple of months ago I had the idea of trying to make something on my own. Both designing it and making a website to present it has been an interesting experiment, and has resulted in a typeface which feels right to me.
             <br><br>
@@ -101,6 +117,9 @@
           </p>
         </el-col>
       </el-row>
+    </div>
+    <div class="horisontal-large-image">
+      <img :src="specimenBanner">
     </div>
     <div
       id="download"
@@ -123,24 +142,40 @@
           :sm="16"
         >
           <p class="columns">
-            You can download and use the font for free.
-            It is available in Roman and Italic styles — and should you think the latter is just taking things too far, an Oblique style is also included as an alternative.
+            The font is available in Roman and <em>Italic</em> styles.
+            If you think the latter is a bit too much, an <em class="alt">Oblique</em> style is also included.
             <br><br>
-            If you do try it out and like it, I would very much appreciate a donation.
-            After initially planning to sell it, I decided to give it away for two
-            reasons:
+            <video
+              autobuffer
+              autoloop
+              loop
+              controls
+              alt="The glyphs"
+              class="specimen-loop"
+              :class="{ 'inverted': theme === 'light' }"
+            >
+              <source src="@/assets/video/cycle.mp4">
+            </video>
+            If you do try it out and like it, I would be very grateful for any
+            <a
+              href="javascript:void(0)"
+              @click="thanks"
+            >donations</a>.
+            After initially pondering whether or not to sell it, I decided to give it away:
             <br><br>
-            First, I couldn't really be bothered to set up a dedicated domain hosting and commit to providing support the way I feel a commercial product should.
+            First, I couldn't be bothered to set up hosting and commit to providing support the way a commercial product should.
             <br><br>
-            Secondly,
-            I can understand not wanting to shell out €40-100 ++ for a font. Perhaps the ones who are able to and want to will help cover time spent and rather expensive font design software voluntarily. To anyone actually donating: a sincere thank you! 🙏
+            Secondly, this has been an experiment to see if I could make something I wanted to use myself. As it stands, the font doesn't have a huge number of glyphs and ligatures — although I
+            <a
+              v-scroll-to="'#faq'"
+              href="javascript:void(0)"
+            >might add more</a>
+            in the future.
+            <br><br>
+            Finally, I can identify with not wanting to shell out €100++ on a font. If you are able to and want to contribute: a sincere thank you! 🙏
           </p>
         </el-col>
       </el-row>
-      <div
-        id="donate"
-        class="scroll-head"
-      />
       <el-row
         type="flex"
         justify="center"
@@ -151,21 +186,42 @@
             icon="el-icon-medal-1"
             type="primary"
             round
-            @mouseenter="celebrate"
             @click="thanks"
           >
             Donate
           </el-button>
-          <el-button
-            id="download-button"
-            icon="el-icon-download"
-            round
+          <el-tooltip
+            class="item"
+            effect="dark"
+            content="Coming soon"
+            placement="top-start"
           >
-            Download
-          </el-button>
+            <el-button
+              id="download-button"
+              icon="el-icon-download"
+              round
+            >
+              Download
+            </el-button>
+          </el-tooltip>
         </el-col>
       </el-row>
     </div>
+    <el-row
+      type="flex"
+      justify="center"
+    >
+      <el-col>
+        <p class="small centre">
+          <em>If you have a nice screenshot of the font in use / used it for something cool, I'd love to
+            <a
+              target="_blank"
+              href="mailto:victor.mono.font@gmail.com?subject=Here's how I used the font"
+            >hear from you</a>.
+          </em>
+        </p>
+      </el-col>
+    </el-row>
     <div
       id="faq"
       class="scroll-head"
@@ -182,10 +238,10 @@
           </h1>
           <transition name="el-zoom-in-top">
             <div
-              v-show="revealFaq"
               class="caption centre full-width"
             >
-              <em>Frequently Anticipated Questions</em>
+              &nbsp;
+              <em v-show="revealFaq">Frequently Anticipated Questions</em>
             </div>
           </transition>
         </el-col>
@@ -222,7 +278,122 @@
           :xs="22"
           :sm="16"
         >
-          Coming soon
+          <p class="small centre">
+            <em>Lovely gradients</em>
+            <br>
+            <a
+              target="_blank"
+              href="https://sarcadass.github.io/granim.js/"
+            >
+              Granim.js</a>
+            by
+            <a
+              target="_blank"
+              href="https://twitter.com/Sarcadass"
+            >
+              Benjamin Blonde</a>
+            <br><br>
+            <em>Cool animated typing</em>
+            <br>
+            <a
+              target="_blank"
+              href="https://github.com/mattboldt/typed.js/"
+            >
+              Typed.js</a>
+            by
+            <a
+              target="_blank"
+              href="https://mattboldt.com"
+            >
+              Matt Boldt</a>
+            <br><br>
+            <em>Code editor</em>
+            <br>
+            <a
+              target="_blank"
+              href="https://github.com/surmon-china/vue-codemirror"
+            >
+              Vue-Codemirror</a>
+            by
+            <a
+              target="_blank"
+              href="https://github.com/surmon-china"
+            >
+              Surmon</a> and
+            <a
+              target="_blank"
+              href="https://codemirror.net"
+            >
+              codemirror.net</a>
+            <br><br>
+            <em>Animations here & there</em>
+            <br>
+            <a
+              target="_blank"
+              href="https://animejs.com"
+            >
+              Anime.js</a>
+            <br><br>
+            <em>Smooth scrolling</em>
+            <br>
+            <a
+              target="_blank"
+              href="https://vue-scrollto.netlify.com"
+            >
+              vue-scrollto</a>
+            by
+            <a
+              target="_blank"
+              href="https://github.com/rigor789"
+            >
+              Igor Randjelovic</a>
+            <br><br>
+            <em>Thank-you-confetti</em>
+            <br>
+            <a
+              target="_blank"
+              href="https://www.npmjs.com/package/dom-confetti"
+            >
+              dom-confetti</a>
+            by
+            <a
+              target="_blank"
+              href="https://twitter.com/danielundin"
+            >
+              Daniel Lundin</a>
+            <br><br>
+            <em>CSS framework / component library</em>
+            <br>
+            <a
+              target="_blank"
+              href="https://element.eleme.io/#/en-US"
+            >
+              Element</a>
+            <br><br>
+            <em>Nicest framework</em>
+            <br>
+            <a
+              target="_blank"
+              href="https://vuejs.org"
+            >
+              Vue.js</a>
+            <br><br>
+            <em>Very nice (and expensive) font design software</em>
+            <br>
+            <a
+              target="_blank"
+              href="https://glyphsapp.com"
+            >
+              Glyphs</a>
+            <br><br>
+            <em>Font and web site</em>
+            <br>
+            <a
+              target="_blank"
+              href="mailto:victor.mono.font@gmail.com?subject=Thanks for making such a nice font"
+            >
+              Rune Bjørnerås</a>
+          </p>
         </el-col>
       </el-row>
     </div>
@@ -247,8 +418,14 @@ export default {
     return {
       showHeaderText: false,
       showNav: true,
+      showGoToTop: true,
       revealFaq: false,
       theme: localStorage.getItem('theme') || 'dark'
+    }
+  },
+  computed: {
+    specimenBanner () {
+      return require('./assets/img/specimen-' + this.theme + '.png')
     }
   },
   mounted () {
@@ -295,12 +472,14 @@ export default {
           this.$refs.header.$el.style.position = '-webkit-sticky'
           document.querySelector('body').style.paddingTop = 0
         }
+        this.showGoToTop = true
       } else {
         document.querySelector('body').style.paddingTop = headerHeight + 'px'
         if (this.$refs.header.$el.style.position !== 'absolute') {
           this.$refs.header.$el.style.position = 'absolute'
           this.$refs.header.$el.style.top = 0
         }
+        this.showGoToTop = false
       }
     },
     calculateHeaderText () {
@@ -319,9 +498,8 @@ export default {
       const hideStart = mainTitle.getBoundingClientRect().top + margin
       this.showNav = window.scrollY < hideStart || window.scrollY > triggerHeight
     },
-    celebrate () {
-      const button = document.querySelector('#donate-button')
-      confetti(button, {
+    celebrate (target) {
+      confetti(target, {
         angle: 90,
         spread: 60,
         startVelocity: 50,
@@ -360,9 +538,9 @@ export default {
 
       window.removeEventListener('focus', this.celebrate)
     },
-    thanks () {
+    thanks (e) {
       window.open('https://paypal.me/runbjo')
-      window.addEventListener('focus', this.celebrate)
+      window.addEventListener('focus', this.celebrate(e.target))
     }
   }
 }
@@ -379,7 +557,41 @@ export default {
   padding: 10px;
 }
 
+.horisontal-large-image {
+  width: 100%;
+  height: 37vw;
+  margin-top: 2em;
+  overflow: hidden;
+  img {
+    position: relative;
+    top: -5vw;
+    left: -50%;
+    width: 200%;
+    min-width: 100%;
+  }
+}
+
 h1 {
   font-weight: normal;
+}
+
+em.alt {
+  font-family: 'VictorMono-Oblique', monospace;
+}
+
+.specimen-loop {
+  float: right;
+  width: 60%;
+  margin: 5px 0 5px 15px;
+  filter: invert(1);
+  mix-blend-mode: screen;
+  &.inverted {
+    filter: none;
+    mix-blend-mode: normal;
+  }
+}
+
+.content .el-button {
+  font-size: 1.1em;
 }
 </style>

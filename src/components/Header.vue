@@ -201,7 +201,8 @@ export default {
           'ideal',
           'slightly whimsical',
           'victorious',
-          '"#%§§##/&*!'
+          '"#%§§##/&*!',
+          'experimental'
         ],
         startDelay: 1000,
         typeSpeed: 50,

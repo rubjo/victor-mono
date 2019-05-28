@@ -32,6 +32,7 @@
       v-if="theme === 'dark'"
       class="right caption"
     >
+      Based on
       <a
         target="_blank"
         href="https://github.com/rubjo/ultimate-dark"
@@ -46,6 +47,7 @@
       v-else
       class="right caption"
     >
+      Based on
       <a
         target="_blank"
         href="https://github.com/chriskempson/base16"
@@ -68,6 +70,10 @@ import 'codemirror/addon/selection/mark-selection.js'
 import 'codemirror/addon/edit/matchbrackets.js'
 import 'codemirror/addon/comment/comment.js'
 
+// sample code
+// eslint-disable-next-line
+import code from '!raw-loader!@/components/Sample.vue'
+
 export default {
   name: 'CodeView',
   props: {
@@ -78,44 +84,7 @@ export default {
   },
   data () {
     return {
-      code: `<template>
-        <div id="app">
-          <h1>My Todo App!</h1>
-          <TodoList/>
-        </div>
-      </template>
-
-      <script>
-        import TodoList from './components/TodoList.vue'
-
-        export default {
-          components: {
-            TodoList
-          }
-        }
-      /script>
-
-      <style lang="scss">
-        @import './variables.scss';
-
-        *, *::before, *::after {
-          box-sizing: border-box;
-        }
-
-        #app {
-          max-width: 400px;
-          margin: 0 auto;
-          line-height: 1.4;
-          font-family: 'Avenir', Helvetica, Arial, sans-serif;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-          color: $vue-blue;
-        }
-
-        h1 {
-          text-align: center;
-        }
-      </style>`,
+      code,
       cmOptions: {
         mode: 'text/x-vue',
         tabSize: 2,
@@ -158,7 +127,7 @@ export default {
 .window {
   position: relative;
   z-index: 0;
-  height: 40vw;
+  height: 65vh;
   border: 1px solid #303030;
   border-radius: 5px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);

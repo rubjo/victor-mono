@@ -5,6 +5,7 @@
       class="navbar"
     >
       <a
+        v-show="showGoToTop"
         v-scroll-to="'#app'"
         href="#"
       >
@@ -95,17 +96,26 @@ import anime from 'animejs'
 export default {
   name: 'NavBar',
   props: {
-    show: Boolean
+    show: Boolean,
+    showGoToTop: Boolean
   },
   data () {
     return {
       theme: localStorage.getItem('theme') || 'dark',
-      backgroundColour: '#696969',
-      textColour: '#fff'
+      backgroundColour: '#595959',
+      textColour: '#eee'
     }
   },
   mounted () {
     this.setAppearance()
+    anime({
+      targets: '.themeIcon svg',
+      rotate: [360, 315],
+      strokeColor: ['#f0f', '#000'],
+      delay: 500,
+      duration: 3000,
+      easing: 'easeInOutSine'
+    })
   },
   methods: {
     toggleTheme () {
@@ -147,12 +157,12 @@ export default {
     setAppearance () {
       if (this.theme === 'dark') {
         this.$emit('darkTheme')
-        this.backgroundColour = '#696969'
-        this.textColour = '#fff'
+        this.backgroundColour = '#595959'
+        this.textColour = '#eee'
       } else {
         this.$emit('lightTheme')
         this.backgroundColour = '#fff'
-        this.textColour = '#333'
+        this.textColour = '#222'
       }
 
       const root = document.documentElement

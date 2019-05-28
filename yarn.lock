@@ -7229,6 +7229,14 @@ raw-body@2.4.0:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
+raw-loader@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-2.0.0.tgz#e2813d9e1e3f80d1bbade5ad082e809679e20c26"
+  integrity sha512-kZnO5MoIyrojfrPWqrhFNLZemIAX8edMOCp++yC5RKxzFB3m92DqKNhKlU6+FvpOhWtvyh3jOaD7J6/9tpdIKg==
+  dependencies:
+    loader-utils "^1.1.0"
+    schema-utils "^1.0.0"
+
 rc@^1.2.7:
   version "1.2.8"
   resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.8.tgz#cd924bf5200a075b83c188cd6b9e211b7fc0d3ed"
@@ -7799,11 +7807,6 @@ schema-utils@^1.0.0:
     ajv "^6.1.0"
     ajv-errors "^1.0.0"
     ajv-keywords "^3.1.0"
-
-scrollama@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/scrollama/-/scrollama-2.0.0.tgz#ca9948270b4ebcc7f66d5f5e0c8804a6093cc3d6"
-  integrity sha512-25uZsy3ofyIOdlBB8EGUeCPeOWeTlumwnmG7ZUZDBmlmqNVM+x6n5c6eot1GN0gukCg+7iB23nKOptbOvFztyg==
 
 scss-tokenizer@^0.2.3:
   version "0.2.3"

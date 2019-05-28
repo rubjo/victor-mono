@@ -12,8 +12,15 @@
   src: url('assets/VictorMono-Italic.eot?#iefix') format('embedded-opentype'), url('assets/VictorMono-Italic.woff') format('woff'), url('assets/VictorMono-Italic.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'VictorMono-Oblique';
+  font-style: oblique;
+  src: url('assets/VictorMono-Oblique.eot');
+  src: url('assets/VictorMono-Oblique.eot?#iefix') format('embedded-opentype'), url('assets/VictorMono-Oblique.woff') format('woff'), url('assets/VictorMono-Oblique.ttf') format('truetype');
+}
+
 :root {
-  --background-color-base: #696969;
+  --background-color-base: #595959;
   --color-text-primary: #fff;
 }
 
@@ -29,21 +36,26 @@ html {
 }
 
 a {
+  color: var(--color-text-primary);
   transition: color 1s;
 }
 
 body {
-  margin: 0;
+  margin: 0 0 50px 0;
 }
 
 p {
   padding-bottom: 10px;
-  font-size: calc(1rem + 0.25vw);
-  line-height: calc(2rem + 0.5vw);
+  font-size: calc(1rem + 0.2vw);
+  line-height: calc(2rem + 0.4vw);
   &.columns {
     column-count: 2;
     column-width: 18em;
     column-gap: 75px;
+  }
+  &.small {
+    font-size: calc(0.75rem + 0.2vw);
+    line-height: calc(1.5rem + 0.2vw);
   }
 }
 
