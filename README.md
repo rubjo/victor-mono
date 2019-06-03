@@ -1,6 +1,8 @@
 # Victor Mono
 
-<img alt="Glyphs" src="https://github.com/rubjo/victor-mono/raw/master/src/assets/video/cycle.mp4" style="width: 20vw; min-width: 200px; float: right; margin: 0 0 5px 10px;">
+<video autobuffer autoloop loop controls style="width: 20vw; min-width: 200px; float: right; margin: 0 0 5px 10px;">
+    <source src="https://github.com/rubjo/victor-mono/raw/master/src/assets/video/cycle.mp4">
+</video>
 
 A programming font with semi-connected cursive italics and some symbol ligatures.
 
