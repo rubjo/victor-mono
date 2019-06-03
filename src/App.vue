@@ -21,7 +21,8 @@
       >
         <el-col
           :xs="22"
-          :sm="16"
+          :sm="18"
+          :lg="18"
         >
           <p class="columns">
             Victor Mono is a programming font with
@@ -35,6 +36,17 @@
             >because I couldn’t find another</a>
             (free or paid) typeface I was entirely satisfied with.
             <br><br>
+            <video
+              autobuffer
+              autoloop
+              loop
+              controls
+              alt="The glyphs"
+              class="specimen-loop"
+              :class="{ 'inverted': theme === 'light' }"
+            >
+              <source src="@/assets/video/cycle.mp4">
+            </video>
             The typeface is quite strict in style and features a large x-height.
             It is optimised for code and legibility at small to medium sizes on high-DPI displays where the
             <el-tooltip
@@ -66,7 +78,8 @@
       >
         <el-col
           :xs="22"
-          :sm="16"
+          :sm="18"
+          :lg="18"
         >
           <CodeView
             :theme="theme"
@@ -92,7 +105,8 @@
       >
         <el-col
           :xs="22"
-          :sm="16"
+          :sm="18"
+          :lg="18"
         >
           <p class="columns">
             I'm rather particular about what width, weight, style etc makes an effective and enjoyable typeface for code.
@@ -139,23 +153,13 @@
       >
         <el-col
           :xs="22"
-          :sm="16"
+          :sm="18"
+          :lg="18"
         >
           <p class="columns">
             The font is available in Roman and <em>Italic</em> styles.
             If you think the latter is a bit too much, an <em class="alt">Oblique</em> style is also included.
             <br><br>
-            <video
-              autobuffer
-              autoloop
-              loop
-              controls
-              alt="The glyphs"
-              class="specimen-loop"
-              :class="{ 'inverted': theme === 'light' }"
-            >
-              <source src="@/assets/video/cycle.mp4">
-            </video>
             If you do try it out and like it, I would be very grateful for any
             <a
               href="javascript:void(0)"
@@ -163,7 +167,7 @@
             >donations</a>.
             After initially pondering whether or not to sell it, I decided to give it away:
             <br><br>
-            First, I couldn't be bothered to set up hosting and commit to providing support the way a commercial product should.
+            First, I couldn't be bothered to set up hosting/payment and commit to providing support the way a commercial product should.
             <br><br>
             Secondly, this has been an experiment to see if I could make something I wanted to use myself. As it stands, the font doesn't have a huge number of glyphs and ligatures — although I
             <a
@@ -211,7 +215,11 @@
       type="flex"
       justify="center"
     >
-      <el-col>
+      <el-col
+        :xs="22"
+        :sm="18"
+        :lg="18"
+      >
         <p class="small centre">
           <em>If you have a nice screenshot of the font in use / used it for something cool, I'd love to
             <a
@@ -252,9 +260,15 @@
       >
         <el-col
           :xs="22"
-          :sm="16"
+          :sm="18"
+          :lg="18"
         >
-          Coming soon
+          <VueFaqAccordion
+            :items="faqItems"
+            active-color="#ccc"
+            border-color="transparent"
+            font-color="#ccc"
+          />
         </el-col>
       </el-row>
     </div>
@@ -276,7 +290,8 @@
       >
         <el-col
           :xs="22"
-          :sm="16"
+          :sm="18"
+          :lg="18"
         >
           <p class="small centre">
             <em>Lovely gradients</em>
@@ -348,6 +363,20 @@
             >
               Igor Randjelovic</a>
             <br><br>
+            <em>FAQ component</em>
+            <br>
+            <a
+              target="_blank"
+              href="https://github.com/gerasimvol/vue-faq-accordion"
+            >
+              vue-faq-accordion</a>
+            by
+            <a
+              target="_blank"
+              href="https://github.com/gerasimvol"
+            >
+              Vladimir Gerasimenko</a>
+            <br><br>
             <em>Thank-you-confetti</em>
             <br>
             <a
@@ -370,7 +399,7 @@
             >
               Element</a>
             <br><br>
-            <em>Nicest framework</em>
+            <em>The nice JS framework</em>
             <br>
             <a
               target="_blank"
@@ -392,7 +421,7 @@
               target="_blank"
               href="mailto:victor.mono.font@gmail.com?subject=Thanks for making such a nice font"
             >
-              Rune Bjørnerås</a>
+              Rune B</a>
           </p>
         </el-col>
       </el-row>
@@ -404,6 +433,7 @@
 import NavBar from '@/components/NavBar'
 import Header from '@/components/Header'
 import CodeView from '@/components/CodeView'
+import VueFaqAccordion from 'vue-faq-accordion'
 import anime from 'animejs'
 import { confetti } from 'dom-confetti'
 
@@ -412,7 +442,8 @@ export default {
   components: {
     NavBar,
     Header,
-    CodeView
+    CodeView,
+    VueFaqAccordion
   },
   data () {
     return {
@@ -420,7 +451,26 @@ export default {
       showNav: true,
       showGoToTop: true,
       revealFaq: false,
-      theme: localStorage.getItem('theme') || 'dark'
+      theme: localStorage.getItem('theme') || 'dark',
+      faqItems: [
+        {
+          title: 'The font is missing an obscure ligature symbol used for indicating an infinite loop in the language Goskell when writing in ancient Valyrian. Would you be willing to add it?',
+          value: '<a href="javascript:void(0)">I might</a>.',
+          category: 'Design & features'
+        }, {
+          title: 'The font is missing an obscure ligature symbol used for indicating an infinite loop in the language Goskell when writing in ancient Valyrian. Would you be willing to add it?',
+          value: '<a href="javascript:void(0)">I might</a>.',
+          category: 'Design & features'
+        }, {
+          title: 'How long is a day and year on Venus?',
+          value: 'Venus takes 224.7 Earth days to complete one orbit around the Sun.',
+          category: 'Usage'
+        }, {
+          title: 'What animal smells like popcorn?',
+          value: 'Binturongs smell like popcorn.',
+          category: 'Other'
+        }
+      ]
     }
   },
   computed: {
@@ -468,8 +518,9 @@ export default {
             easing: 'easeInOutSine'
           })
         }
-        if (this.$refs.header.$el.style.position !== '-webkit-sticky') {
-          this.$refs.header.$el.style.position = '-webkit-sticky'
+        if (this.$refs.header.$el.style.position !== 'sticky') {
+          this.$refs.header.$el.style.position = 'sticky'
+          this.$refs.header.$el.style.webkitPosition = 'sticky'
           document.querySelector('body').style.paddingTop = 0
         }
         this.showGoToTop = true
@@ -540,7 +591,9 @@ export default {
     },
     thanks (e) {
       window.open('https://paypal.me/runbjo')
-      window.addEventListener('focus', this.celebrate(e.target))
+      setTimeout(() => {
+        window.addEventListener('focus', this.celebrate(e.target))
+      }, 1000)
     }
   }
 }
@@ -558,16 +611,15 @@ export default {
 }
 
 .horisontal-large-image {
-  width: 100%;
+  width: 100vw;
   height: 37vw;
   margin-top: 2em;
   overflow: hidden;
   img {
     position: relative;
     top: -5vw;
-    left: -50%;
-    width: 200%;
-    min-width: 100%;
+    left: -50vw;
+    width: 200vw;
   }
 }
 

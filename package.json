@@ -16,6 +16,7 @@
     "typed.js": "^2.0.10",
     "vue": "^2.6.10",
     "vue-codemirror": "^4.0.6",
+    "vue-faq-accordion": "^1.2.1",
     "vue-scrollTo": "^2.4.1"
   },
   "devDependencies": {

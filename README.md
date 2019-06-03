@@ -1,6 +1,6 @@
 # Victor Mono
 
-<img alt="Glyphs" src="src/assets/video/cycle.mov" style="width: 20vw; min-width: 200px; float: right; margin: 0 0 5px 10px;">
+<img alt="Glyphs" src="src/assets/video/cycle.mp4" style="width: 20vw; min-width: 200px; float: right; margin: 0 0 5px 10px;">
 
 A programming font with semi-connected cursive italics and some symbol ligatures.
 
