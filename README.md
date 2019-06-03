@@ -1,6 +1,6 @@
 # Victor Mono
 
-<img alt="Glyphs" src="src/assets/video/cycle.mp4" style="width: 20vw; min-width: 200px; float: right; margin: 0 0 5px 10px;">
+<img alt="Glyphs" src="https://github.com/rubjo/victor-mono/raw/master/src/assets/video/cycle.mp4" style="width: 20vw; min-width: 200px; float: right; margin: 0 0 5px 10px;">
 
 A programming font with semi-connected cursive italics and some symbol ligatures.
 
@@ -8,4 +8,4 @@ I made it because I couldn’t find another (free or paid) typeface I was entire
 
 More information and download: [rubjo.github.io/victor-mono](https://rubjo.github.io/victor-mono). I would be grateful if you point others to the same URL.
 
-If you like it and want to say thanks, [donations](https://www.paypal.me/runbjo) are welcome. 
+If you like it and want to say thanks, [donations](https://www.paypal.me/runbjo) are welcome.
