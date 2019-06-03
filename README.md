@@ -1,6 +1,6 @@
 # Victor Mono
 
-<img src="https://github.com/rubjo/victor-mono/raw/master/src/assets/video/cycle.gif" alt="Glyphs" style="width: 20vw; min-width: 200px; float: right; margin: 0 0 5px 10px;">
+<img src="https://github.com/rubjo/victor-mono/raw/master/src/assets/video/cycle.gif" alt="Glyphs" align="right">
 
 A programming font with semi-connected cursive italics and some symbol ligatures.
 
