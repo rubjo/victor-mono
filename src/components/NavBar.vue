@@ -188,7 +188,7 @@ export default {
     text-align: center;
     a {
       flex: 1;
-      min-width: 100px;
+      min-width: 10px;
       padding: calc(12px + 0.7vw) 0;
       color: var(--color-text-primary);
       text-decoration: none;
