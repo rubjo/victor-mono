@@ -457,7 +457,7 @@ export default {
     return {
       showHeaderText: false,
       showNav: true,
-      showGoToTop: true,
+      showGoToTop: false,
       revealFaq: false,
       theme: localStorage.getItem('theme') || 'dark',
       faqItems: [
@@ -562,13 +562,11 @@ export default {
         this.$refs.header.$el.style.position = 'sticky'
         this.$refs.header.$el.style.position = '-webkit-sticky'
         document.querySelector('body').style.paddingTop = 0
-        this.showGoToTop = true
       } else {
         document.querySelector('body').style.paddingTop = headerHeight + 'px'
         this.$refs.header.$el.style.webkitPosition = 'absolute'
         this.$refs.header.$el.style.position = 'absolute'
         this.$refs.header.$el.style.top = 0
-        this.showGoToTop = false
       }
     },
     calculateHeaderText () {
@@ -580,8 +578,10 @@ export default {
       const triggerHeight = headerHeight - navBarHeight
       if (top > triggerHeight) {
         this.showHeaderText = false
+        this.showGoToTop = true
       } else {
         this.showHeaderText = true
+        this.showGoToTop = false
       }
 
       const hideStart = mainTitle.getBoundingClientRect().top + margin

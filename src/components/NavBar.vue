@@ -5,8 +5,8 @@
       class="navbar"
     >
       <a
-        v-show="showGoToTop"
         v-scroll-to="'#app'"
+        :class="{ 'collapsed': !showGoToTop }"
         href="#"
       >
         <i class="el-icon-arrow-up" /></a>
@@ -188,17 +188,24 @@ export default {
     text-align: center;
     a {
       flex: 1;
+      min-width: 100px;
       padding: calc(12px + 0.7vw) 0;
       color: var(--color-text-primary);
       text-decoration: none;
+      transition: all 1s;
       &:hover {
         font-style: italic;
+      }
+      &.collapsed {
+        flex: 0;
+        min-width: 0;
+        opacity: 0;
       }
     }
     .themeIcon {
       display: flex;
       justify-content: center;
-      padding: 0.7vw 0;
+      padding: calc(0.9% - 2px) 0;
       transform: scale(0.5);
       .theme {
         text-align: center;
