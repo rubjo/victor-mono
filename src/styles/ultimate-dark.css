@@ -1,0 +1,106 @@
+.cm-s-ultimate-dark.CodeMirror {
+  background: #2b2b2b;
+  color: #e2e0d7;
+  transition: background 1s, colour 1s;
+}
+
+.cm-s-ultimate-dark div.CodeMirror-selected {
+  background: #515151;
+}
+
+.cm-s-ultimate-dark .CodeMirror-line::selection,
+.cm-s-ultimate-dark .CodeMirror-line>span::selection,
+.cm-s-ultimate-dark .CodeMirror-line>span>span::selection {
+  background: rgba(45, 45, 45, 0.99);
+}
+
+.cm-s-ultimate-dark .CodeMirror-gutters {
+  background: #393939;
+  border-right: 0px;
+  transition: background 1s;
+}
+
+.cm-s-ultimate-dark .CodeMirror-guttermarker {
+  color: #ff7a7f;
+}
+
+.cm-s-ultimate-dark .CodeMirror-guttermarker-subtle {
+  color: #777;
+}
+
+.cm-s-ultimate-dark .CodeMirror-linenumber {
+  color: #515151;
+}
+
+.cm-s-ultimate-dark .CodeMirror-cursor {
+  border-left: 1px solid #6A6A6A;
+}
+
+.cm-s-ultimate-dark span.cm-comment {
+  font-style: italic;
+  color: #777;
+}
+
+.cm-s-ultimate-dark span.cm-atom {
+  color: #e2e0d7;
+}
+
+.cm-s-ultimate-dark span.cm-number {
+  color: #f99157;
+}
+
+.cm-s-ultimate-dark span.cm-attribute {
+  font-style: italic;
+  color: #f99157;
+}
+
+.cm-s-ultimate-dark span.cm-keyword {
+  font-style: italic;
+  color: #ff7a7f;
+}
+
+.cm-s-ultimate-dark span.cm-string {
+  color: #99dd99;
+}
+
+.cm-s-ultimate-dark span.cm-variable,
+.cm-s-ultimate-dark span.cm-builtin,
+.cm-s-ultimate-dark span.cm-qualifier {
+  font-style: italic;
+  color: #f99157;
+}
+
+.cm-s-ultimate-dark span.cm-variable-2 {
+  color: #66aadd;
+}
+
+.cm-s-ultimate-dark span.cm-def {
+  color: #66aadd;
+}
+
+.cm-s-ultimate-dark span.cm-bracket {
+  color: #e2e0d7;
+}
+
+.cm-s-ultimate-dark span.cm-tag {
+  color: #ff7a7f;
+}
+
+.cm-s-ultimate-dark span.cm-link {
+  color: #e2e0d7;
+}
+
+.cm-s-ultimate-dark span.cm-error {
+  background: #ff7a7f;
+  color: #6A6A6A;
+}
+
+.cm-s-ultimate-dark .CodeMirror-activeline-background {
+  background: #444;
+  transition: background 1s;
+}
+
+.cm-s-ultimate-dark .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}

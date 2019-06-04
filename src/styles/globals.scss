@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'VictorMono';
+  font-style: normal;
+  src: url('assets/VictorMono-Regular.eot');
+  src: url('assets/VictorMono-Regular.eot?#iefix') format('embedded-opentype'), url('assets/VictorMono-Regular.woff') format('woff'), url('assets/VictorMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'VictorMono';
+  font-style: italic;
+  src: url('assets/VictorMono-Italic.eot');
+  src: url('assets/VictorMono-Italic.eot?#iefix') format('embedded-opentype'), url('assets/VictorMono-Italic.woff') format('woff'), url('assets/VictorMono-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'VictorMono-Oblique';
+  font-style: oblique;
+  src: url('assets/VictorMono-Oblique.eot');
+  src: url('assets/VictorMono-Oblique.eot?#iefix') format('embedded-opentype'), url('assets/VictorMono-Oblique.woff') format('woff'), url('assets/VictorMono-Oblique.ttf') format('truetype');
+}
+
+:root {
+  --background-color-base: #595959;
+  --background-color-alternate: #505050;
+  --color-text-primary: #fff;
+  --color-text-accented: #0bf;
+}
+
+html,
+* {
+  font-family: 'VictorMono', monospace;
+}
+
+html {
+  color: var(--color-text-primary);
+  background: var(--background-color-base);
+  transition: color 1s, background 1s;
+}
+
+a {
+  color: var(--color-text-primary);
+  transition: color 1s;
+}
+
+body {
+  padding: 0;
+  margin: 0 0 50px 0;
+}
+
+p {
+  padding-bottom: 10px;
+  font-size: calc(0.9rem + 0.3vw);
+  line-height: calc(1.8rem + 0.6vw);
+  &.columns {
+    column-count: 2;
+    column-width: 18em;
+    column-gap: 75px;
+  }
+  &.small {
+    font-size: calc(0.75rem + 0.2vw);
+    line-height: calc(1.5rem + 0.2vw);
+  }
+}
+
+.alternate-bg {
+  background: var(--background-color-alternate);
+  transition: background 1s;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.centre {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.caption {
+  margin-top: 5px;
+  font-size: 0.75em;
+  font-style: italic;
+  color: #aaa;
+  a {
+    color: #aaa;
+    text-decoration: none;
+    border-bottom: 1px dotted #aaa;
+    transition: color 0.5s, border-color 0.5s;
+    &:hover {
+      color: #ccc;
+      border-bottom: 1px dotted #ccc;
+    }
+  }
+}
