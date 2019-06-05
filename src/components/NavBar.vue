@@ -32,6 +32,7 @@
         FAQ</a>
       <a
         v-scroll-to="'#credits'"
+        class="hidden-xs-only"
         href="#"
       >
         Credits</a>
@@ -192,7 +193,7 @@ export default {
       padding: calc(12px + 0.7vw) 0;
       color: var(--color-text-primary);
       text-decoration: none;
-      transition: all 1s;
+      transition: flex 1s;
       &:hover {
         font-style: italic;
       }
