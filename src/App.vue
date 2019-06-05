@@ -420,6 +420,14 @@
             >
               Vue CLI</a>
             <br><br>
+            <em>Automated building and deployment of web site from source</em>
+            <br>
+            <a
+              target="_blank"
+              href="https://travis-ci.org"
+            >
+              Travis CI</a>
+            <br><br>
             <em>Very nice (and rather expensive) font design software</em>
             <br>
             <a
