@@ -193,7 +193,7 @@ export default {
       padding: calc(12px + 0.7vw) 0;
       color: var(--color-text-primary);
       text-decoration: none;
-      transition: flex 1s;
+      transition: flex 1s, color 1s, opacity 1s;
       &:hover {
         font-style: italic;
       }
