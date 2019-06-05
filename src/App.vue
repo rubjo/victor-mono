@@ -188,19 +188,24 @@
         justify="center"
       >
         <el-col class="centre">
-          <el-button
-            id="donate-button"
-            icon="el-icon-medal-1"
-            type="primary"
-            round
-            @click="thanks"
+          <a
+            id="donate-link"
           >
-            Donate
-          </el-button>
-          &nbsp;
-          <a href="Victor Mono.zip">
             <el-button
-              id="download-button"
+              icon="el-icon-medal-1"
+              type="primary"
+              round
+              @click="thanks"
+            >
+              Donate
+            </el-button>
+          </a>
+          &nbsp;
+          <a
+            id="download-link"
+            href="Victor Mono.zip"
+          >
+            <el-button
               icon="el-icon-download"
               round
             >
