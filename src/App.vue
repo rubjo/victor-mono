@@ -476,11 +476,11 @@ export default {
       faqItems: [
         {
           title: 'The typeface is a bit light/heavy to my liking. Will you offer more weights in the future?',
-          value: '<a href="https://paypal.me/runbjo" target="_blank">Maybe</a>.',
+          value: '<a href="https://paypal.me/runbjo" target="_blank">Maybe</a>. As of now, the font uses the weight I think looks best on a high-DPI display using Sublime Text on a Mac – but I do understand others will prefer other weights.',
           category: 'Design & features'
         }, {
           title: 'There’s a feature of the font that I don’t like. Could you change it?',
-          value: 'Probably not. You can always use a different font. 😛',
+          value: 'Probably not. You can always use a different font. 😛 (Or <a href="https://github.com/rubjo/victor-mono/issues/new" target="_blank">open an issue</a> and describe what needs changing.)',
           category: 'Design & features'
         }, {
           title: 'Will you add some stylistic variations, like a slashed zero, sharper brackets etc.?',
@@ -492,11 +492,11 @@ export default {
           category: 'Design & features'
         }, {
           title: 'Can I use the font for anything?',
-          value: 'Yes. If you\'d like to say thanks, you can <a href="https://paypal.me/runbjo" target="_blank">donate</a>.',
+          value: 'Yes. If you\'d like to say thanks, you can <a href="https://paypal.me/runbjo" target="_blank">donate</a>. I\'d also appreciate it if you referred others to this web site rather than serving the font files from elsewhere.',
           category: 'Usage'
         }, {
           title: 'How do I use it?',
-          value: '1) <a href="#download">Download</a> the font<br>2) Unpack the ZIP<br>3) <a href="https://www.google.com/search?q=how+to+install+fonts" target="_blank">Install</a> the font',
+          value: '1) <a href="#download">Download</a> the font<br>2) Unpack the ZIP<br>3) <a href="https://www.google.com/search?q=how+to+install+fonts" target="_blank">Install</a> the font<br>4) Change the font settings in your code editor / IDE of choice to "Victor Mono".',
           category: 'Usage'
         }, {
           title: 'I found a bug. Where do I report it?',
