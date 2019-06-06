@@ -72,9 +72,16 @@ export default {
       default: localStorage.getItem('theme') || 'dark'
     }
   },
+  data () {
+    return {
+      granim: null
+    }
+  },
   watch: {
     theme: {
       async handler (newVal, oldVal) {
+        if (this.granim) this.granim.changeState(newVal)
+
         const oldOpacity = this.theme === 'dark' ? 0.2 : 0.5
         const newOpacity = this.theme === 'dark' ? 0.5 : 0.2
 
@@ -106,7 +113,8 @@ export default {
     }
   },
   mounted () {
-    this.initGradient()
+    this.granim = this.initGradient()
+    this.granim.changeState(this.theme)
     this.initTyped()
   },
   methods: {
@@ -122,29 +130,24 @@ export default {
         return a
       }
 
-      const gradients = [
-        [
-          { color: 'rgba(253,199,141,1)', pos: 0 },
-          { color: 'rgba(249,143,253,1)', pos: 1 }
-        ], [
-          { color: 'rgba(253,239,132,1)', pos: 0 },
-          { color: 'rgba(21,186,196,1)', pos: 1 }
-        ], [
-          { color: 'rgba(243,31,105,1)', pos: 0 },
-          { color: 'rgba(249,233,47,1)', pos: 1 }
-        ], [
-          { color: 'rgba(56,230,250,1)', pos: 0 },
-          { color: 'rgba(52,116,243,1)', pos: 1 }
-        ], [
-          { color: 'rgba(19,248,87,1)', pos: 0 },
-          { color: 'rgba(235,202,16,1)', pos: 1 }
-        ], [
-          { color: 'rgba(101,161,86,1)', pos: 0 },
-          { color: 'rgba(255,178,63,1)', pos: 1 }
-        ], [
-          { color: 'rgba(255,100,241,1)', pos: 0 },
-          { color: 'rgba(67,220,255,1)', pos: 1 }
-        ]
+      const darkGradients = [
+        ['#20002c', '#cbb4d4'],
+        ['#c33764', '#1d2671'],
+        ['#44a08d', '#093637'],
+        ['#093028', '#237a57'],
+        ['#f3904f', '#3b4371'],
+        ['#403a3e', '#be5869'],
+        ['#34e89e', '#0f3443']
+      ]
+
+      const lightGradients = [
+        ['#6190e8', '#a7bfe8'],
+        ['#43c6ac', '#f8ffae'],
+        ['#e8cbc0', '#636fa4'],
+        ['#c0c0aa', '#1cefff'],
+        ['#00c3ff', '#ffff1c'],
+        ['#928dab', '#00d2ff'],
+        ['#ffafbd', '#ffc3a0']
       ]
 
       return new Granim({
@@ -153,7 +156,15 @@ export default {
         isPausedWhenNotInView: true,
         states: {
           'default-state': {
-            gradients: shuffle(gradients),
+            gradients: shuffle(this.theme === 'dark' ? darkGradients : lightGradients),
+            transitionSpeed: 5000
+          },
+          'dark': {
+            gradients: shuffle(darkGradients),
+            transitionSpeed: 5000
+          },
+          'light': {
+            gradients: shuffle(lightGradients),
             transitionSpeed: 5000
           }
         }
