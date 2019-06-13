@@ -57,7 +57,7 @@
             >
               <span>OS and app</span>
             </el-tooltip>
-            tries to render fonts nicely.
+            try to render fonts nicely.
           </p>
         </el-col>
       </el-row>
