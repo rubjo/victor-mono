@@ -27,14 +27,14 @@
           <p class="columns">
             Victor Mono is a programming font with
             <em>semi-connected cursive italics</em>
-            and some symbol ligatures (!=, ->>, =>, ===, && ++).
+            and symbol ligatures (!=, ->>, =>, ===, &lt;=, &gt;= ++).
             <br><br>
             It was drawn from scratch as a pet project / experiment
             <a
               v-scroll-to="'#why'"
               href="javascript:void(0)"
             >because I couldn’t find another</a>
-            (free or paid) typeface I was entirely satisfied with.
+            free or paid typeface I was entirely satisfied with.
             <br><br>
             <video
               autobuffer
@@ -47,8 +47,8 @@
             >
               <source src="@/assets/video/cycle.mp4">
             </video>
-            The typeface is quite strict in style and features a large x-height.
-            It is optimised for code and legibility at small to medium sizes on high-DPI displays where the
+            The typeface is clean, crisp and strict, with a large x-height.
+            It is optimised for code and legibility on high-DPI displays where the
             <el-tooltip
               class="item"
               effect="dark"
@@ -111,7 +111,7 @@
           :lg="18"
         >
           <p class="columns">
-            I'm rather particular about what width, weight, style etc makes an effective and enjoyable typeface for code.
+            I'm rather particular about what width, weight and style makes an effective and enjoyable typeface for code.
             <br><br>
             All fonts or typeface combo mashups I tried using while coding had several of these shortcomings (<em>subjectively, of course</em>):
             <ul>
@@ -168,18 +168,9 @@
               href="javascript:void(0)"
               @click="thanks"
             >donations</a>.
-            After initially pondering whether or not to sell it, I decided to give it away:
-            <br><br>
-            First, I couldn't be bothered to set up hosting/payment and commit to providing support the way a commercial product should.
-            <br><br>
-            Secondly, this has been an experiment to see if I could make something I wanted to use myself. As it stands, the font doesn't have a huge number of glyphs and ligatures — although I
-            <a
-              v-scroll-to="'#faq'"
-              href="javascript:void(0)"
-            >might add more</a>
-            in the future.
-            <br><br>
-            Finally, I can identify with not wanting to shell out €100++ on a font. If you are able to and want to contribute: a sincere thank you! 🙏
+            After initially pondering whether or not to sell it,
+            I decided to give it away.
+            If you are able to and want to contribute: a sincere thank you! 🙏
           </p>
         </el-col>
       </el-row>
@@ -748,6 +739,5 @@ em.alt {
       color: inherit;
     }
   }
-
 }
 </style>
