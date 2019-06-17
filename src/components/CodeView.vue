@@ -127,7 +127,7 @@ export default {
 .window {
   position: relative;
   z-index: 0;
-  height: 65vh;
+  height: 75vh;
   border: 1px solid #303030;
   border-radius: 5px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -164,7 +164,7 @@ export default {
 
 .code {
   height: calc(100% - 34px);
-  font-size: 16px;
+  font-size: calc(12px + 0.45vw);
   line-height: 1.5em;
 }
 </style>
