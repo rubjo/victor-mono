@@ -131,22 +131,22 @@ export default {
       }
 
       const darkGradients = [
-        ['#f761a1', '#8c1bab'],
-        ['#30cfd0', '#330867'],
-        ['#667eea', '#764ba2'],
+        ['#cc6622', '#8c1bab'],
+        ['#380036', '#0cbaba'],
+        ['#85d797', '#5d4257'],
         ['#0250c5', '#d43f8d'],
         ['#13547a', '#60b0b7'],
         ['#2b76b9', '#35eb93'],
-        ['#24107a', '#449800']
+        ['#a40606', '#d98324']
       ]
 
       const lightGradients = [
-        ['#fad0c4', '#ffd1ff'],
+        ['#8af094', '#ffd1ff'],
         ['#f6d365', '#fda085'],
         ['#84fab0', '#8fd3f4'],
         ['#fa709a', '#fee140'],
         ['#4facfe', '#00f2fe'],
-        ['#43e97b', '#38f9d7'],
+        ['#43e97b', '#38c9f7'],
         ['#f83600', '#f9d423']
       ]
 
@@ -221,7 +221,9 @@ export default {
           'budget-friendly',
           'trustworthy',
           'poor man’s',
-          'real aesthete’s'
+          'real aesthete’s',
+          '(im)peachy',
+          '>=<=-><-=>><<='
         ],
         startDelay: 1000,
         typeSpeed: 50,
