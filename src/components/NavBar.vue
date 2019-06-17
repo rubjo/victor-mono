@@ -111,7 +111,8 @@ export default {
     this.setAppearance()
     anime({
       targets: '.themeIcon svg',
-      rotate: [360, 315],
+      rotate: [-45, 315],
+      scale: [0.75, 1.25, 1, 1],
       strokeColor: ['#f0f', '#000'],
       delay: 500,
       duration: 3000,
