@@ -216,6 +216,15 @@
         :lg="18"
       >
         <p class="small centre">
+          <em>With
+            <a
+              target="_blank"
+              href="https://github.com/Homebrew/homebrew-cask-fonts">
+              homebrew-cask-fonts</a>,
+            just run
+            <code>brew cask install font-victor-mono</code>.
+          </em>
+          <br>
           <em>If you have a nice screenshot of the font in use / used it for something cool, I'd love to
             <a
               target="_blank"
@@ -687,6 +696,14 @@ em.alt {
 
 .content .el-button {
   font-size: 1.1em;
+}
+
+code {
+  padding: 6px;
+  font-style: normal;
+  background: var(--background-color-alternate);
+  border-radius: 6px;
+  transition: background 1s;
 }
 
 .content section.faq {
