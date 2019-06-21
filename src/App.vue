@@ -57,7 +57,7 @@
             >
               <span>OS and app</span>
             </el-tooltip>
-            try to render fonts nicely.
+            try to render fonts nicely. (More weights to be released soon, to make it usable in eg. VS Code. 🙂)
           </p>
         </el-col>
       </el-row>
