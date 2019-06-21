@@ -36,28 +36,22 @@
             >because I couldn’t find another</a>
             free or paid typeface I was entirely satisfied with.
             <br><br>
-            <video
-              autobuffer
-              autoloop
-              loop
-              controls
-              alt="The glyphs"
-              class="specimen-loop"
-              :class="{ 'inverted': theme === 'light' }"
-            >
-              <source src="@/assets/video/cycle.mp4">
-            </video>
             The typeface is clean, crisp and strict, with a large x-height.
-            It is optimised for code and legibility on high-DPI displays where the
-            <el-tooltip
-              class="item"
-              effect="dark"
-              content="= might look weird on Windoze or in Electron-based apps"
-              placement="top-start"
+            <br><br>
+            <img
+              v-if="theme === 'dark'"
+              :src="stylesDark"
+              class="styles-image dark"
             >
-              <span>OS and app</span>
-            </el-tooltip>
-            try to render fonts nicely.
+            <img
+              v-else
+              :src="stylesLight"
+              class="styles-image light"
+            >
+            It is optimised for code and legibility, and comes in seven weights.
+            This site employs the Light variant, which is the one I prefer using in Sublime Text.
+            VS Code and other apps might need higher weights for a matching
+            appearance.
           </p>
         </el-col>
       </el-row>
@@ -194,7 +188,7 @@
           &nbsp;
           <a
             id="download-link"
-            href="Victor Mono.zip"
+            href="VictorMonoComplete.zip"
           >
             <el-button
               icon="el-icon-download"
@@ -219,7 +213,8 @@
           <em>With
             <a
               target="_blank"
-              href="https://github.com/Homebrew/homebrew-cask-fonts">
+              href="https://github.com/Homebrew/homebrew-cask-fonts"
+            >
               homebrew-cask-fonts</a>,
             just run
             <code>brew cask install font-victor-mono</code>.
@@ -404,6 +399,20 @@
             >
               Element</a>
             <br><br>
+            <em>Image zoom</em>
+            <br>
+            <a
+              target="_blank"
+              href="https://desmonding.me/zooming/"
+            >
+              zooming</a>
+            by
+            <a
+              target="_blank"
+              href="https://github.com/kingdido999"
+            >
+              Desmond Ding</a>
+            <br><br>
             <em>The nice JS framework</em>
             <br>
             <a
@@ -457,6 +466,7 @@ import CodeView from '@/components/CodeView'
 import VueFaqAccordion from 'vue-faq-accordion'
 import anime from 'animejs'
 import { confetti } from 'dom-confetti'
+import Zooming from 'zooming'
 
 export default {
   name: 'Home',
@@ -475,10 +485,6 @@ export default {
       theme: localStorage.getItem('theme') || 'dark',
       faqItems: [
         {
-          title: 'The typeface is a bit light/heavy to my liking. Will you offer more weights in the future?',
-          value: '<a href="https://paypal.me/runbjo" target="_blank">Maybe</a>. As of now, the font uses the weight I think looks best on a high-DPI display using Sublime Text on a Mac – but I do understand others will prefer other weights.',
-          category: 'Design & features'
-        }, {
           title: 'There’s a feature of the font that I don’t like. Could you change it?',
           value: 'Probably not. You can always use a different font. 😛 (Or <a href="https://github.com/rubjo/victor-mono/issues/new" target="_blank">open an issue</a> and describe what needs changing.)',
           category: 'Design & features'
@@ -527,6 +533,12 @@ export default {
     }
   },
   computed: {
+    stylesDark () {
+      return require('./assets/img/styles-dark.png')
+    },
+    stylesLight () {
+      return require('./assets/img/styles-light.png')
+    },
     specimenBanner () {
       return require('./assets/img/specimen-' + this.theme + '.png')
     }
@@ -535,6 +547,14 @@ export default {
     this.initScrollWatcher()
     this.setHeaderHeight()
     this.calculateHeaderText()
+    const zoomingDark = new Zooming({
+      bgColor: '#333'
+    })
+    const zoomingLight = new Zooming({
+      bgColor: '#ddd'
+    })
+    zoomingDark.listen('.styles-image.dark')
+    zoomingLight.listen('.styles-image.light')
   },
   methods: {
     initScrollWatcher () {
@@ -682,16 +702,10 @@ em.alt {
   font-family: 'VictorMono-Oblique', monospace;
 }
 
-.specimen-loop {
+.styles-image {
   float: right;
-  width: 60%;
-  margin: 5px 0 5px 15px;
-  filter: invert(1);
-  mix-blend-mode: screen;
-  &.inverted {
-    filter: none;
-    mix-blend-mode: normal;
-  }
+  width: 40%;
+  margin: 0 0 5px 15px;
 }
 
 .content .el-button {
