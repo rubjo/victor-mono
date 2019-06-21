@@ -17,7 +17,8 @@
     "vue": "^2.6.10",
     "vue-codemirror": "^4.0.6",
     "vue-faq-accordion": "^1.2.1",
-    "vue-scrollTo": "^2.4.1"
+    "vue-scrollTo": "^2.4.1",
+    "zooming": "^2.1.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.7.0",
