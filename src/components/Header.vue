@@ -180,7 +180,6 @@ export default {
           'be-all and end-all',
           'donate-what-it\'s-worth',
           'good-looking',
-          'schizophrenic',
           'de facto',
           'one true',
           'awesome',
