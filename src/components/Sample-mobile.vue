@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <h1>My App!</h1>
-    <MainView />
+    <h1 class="zero-margin">
+      My App!
+    </h1>
+    <MainView styling="italic-liga" />
   </div> <!-- An HTML comment -->
 </template>
 
@@ -35,10 +37,14 @@ const double = arr.map(v => v * 2)
 
 // More concise promise chains
 func().then(a => {
-  return new Promise((resolve, reject) => {
-    if (a !== 1) resolve()
-    else reject(new Error('This aint right'))
-  })
+  return new Promise(
+    (resolve, reject) => {
+      if (a !== 1) resolve()
+      else reject(
+        new Error('This aint right')
+      )
+    }
+  )
 }).then(b => {
   // ...
 }).catch(err => {
@@ -67,8 +73,9 @@ setTimeout(() => {
     line-height: 42;
     color: $wild-gradient;
   }
-
-  h1 { // Mwwhooahhaha, they'll never know what hit them
+  // Mwwhooahhaha, they'll never know
+  // what hit them
+  h1 {
     position: absolute;
     top: 0;
     right: -1000px;

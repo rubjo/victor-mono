@@ -22,7 +22,6 @@
         <el-col
           :xs="22"
           :sm="18"
-          :lg="18"
         >
           <p class="columns">
             Victor Mono is a programming font with
@@ -40,12 +39,14 @@
             <br><br>
             <img
               v-if="theme === 'dark'"
-              :src="stylesDark"
+              :src="stylesDarkThumb"
+              :data-original="stylesDark"
               class="styles-image dark"
             >
             <img
               v-else
-              :src="stylesLight"
+              :src="stylesLightThumb"
+              :data-original="stylesLight"
               class="styles-image light"
             >
             It is optimised for code and legibility, and comes in seven weights.
@@ -75,7 +76,6 @@
         <el-col
           :xs="22"
           :sm="18"
-          :lg="18"
         >
           <CodeView
             :theme="theme"
@@ -102,7 +102,6 @@
         <el-col
           :xs="22"
           :sm="18"
-          :lg="18"
         >
           <p class="columns">
             I'm rather particular about what width, weight and style makes an effective and enjoyable typeface for code.
@@ -151,7 +150,6 @@
         <el-col
           :xs="22"
           :sm="18"
-          :lg="18"
         >
           <p class="columns">
             The font is available in Roman and <em>Italic</em> styles.
@@ -261,7 +259,6 @@
         <el-col
           :xs="22"
           :sm="18"
-          :lg="18"
         >
           <VueFaqAccordion
             :items="faqItems"
@@ -289,7 +286,6 @@
         <el-col
           :xs="22"
           :sm="18"
-          :lg="18"
         >
           <p class="small centre">
             If making this font has been a learning experiment, the same can be said for trying out a number of frameworks/packages to make this web site. Big thanks to the following:
@@ -533,12 +529,10 @@ export default {
     }
   },
   computed: {
-    stylesDark () {
-      return require('./assets/img/styles-dark.png')
-    },
-    stylesLight () {
-      return require('./assets/img/styles-light.png')
-    },
+    stylesDarkThumb () { return require('./assets/img/styles-dark-thumb.png') },
+    stylesLightThumb () { return require('./assets/img/styles-light-thumb.png') },
+    stylesDark () { return require('./assets/img/styles-dark.png') },
+    stylesLight () { return require('./assets/img/styles-light.png') },
     specimenBanner () {
       return require('./assets/img/specimen-' + this.theme + '.png')
     }

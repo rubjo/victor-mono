@@ -72,7 +72,8 @@ import 'codemirror/addon/comment/comment.js'
 
 // sample code
 // eslint-disable-next-line
-import code from '!raw-loader!@/components/Sample.vue'
+import mobileCode from '!raw-loader!@/components/Sample-mobile.vue'
+import desktopCode from '!raw-loader!@/components/Sample-desktop.vue'
 
 export default {
   name: 'CodeView',
@@ -84,13 +85,11 @@ export default {
   },
   data () {
     return {
-      code,
+      code: window.innerWidth <= 768 ? mobileCode : desktopCode,
       cmOptions: {
         mode: 'text/x-vue',
         tabSize: 2,
         styleActiveLine: true,
-        lineNumbers: true,
-        lineWrapping: true,
         line: true,
         styleSelectedText: true,
         matchBrackets: true,
