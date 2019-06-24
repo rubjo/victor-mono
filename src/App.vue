@@ -215,9 +215,10 @@
             >
               homebrew-cask-fonts</a>,
             just run
-            <code>brew cask install font-victor-mono</code>.
+            <code>brew tap homebrew/cask-fonts && brew cask install font-victor-mono</code>.
           </em>
-          <br>
+        </p>
+        <p class="small centre">
           <em>If you have a nice screenshot of the font in use / used it for something cool, I'd love to
             <a
               target="_blank"
