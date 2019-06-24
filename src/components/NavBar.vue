@@ -114,8 +114,8 @@ export default {
       rotate: [-45, 315],
       scale: [0.75, 1.25, 1, 1],
       strokeColor: ['#f0f', '#000'],
-      delay: 500,
-      duration: 3000,
+      delay: 1500,
+      duration: 2000,
       easing: 'easeInOutSine'
     })
   },
