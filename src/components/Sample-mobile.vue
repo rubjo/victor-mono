@@ -1,10 +1,10 @@
-<template>
+<template> <!-- Go ahead and edit me -->
   <div id="app">
     <h1 class="zero-margin">
       My App!
     </h1>
     <MainView styling="italic-liga" />
-  </div> <!-- An HTML comment -->
+  </div>
 </template>
 
 <script> /* eslint-disable */

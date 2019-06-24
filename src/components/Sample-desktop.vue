@@ -1,5 +1,5 @@
-<template>
-  <div id="app">
+<template> <!-- Go ahead and edit me -->
+  <div id="app" mode="inception">
     <NavBar ref="navbar" :show="showNav" :show-go-to-top="showGoToTop" />
     <Header ref="header" :show-text="showHeaderText" :theme="theme" />
     <div class="content">
@@ -8,10 +8,13 @@
           <p class="columns">
             Victor Mono is a programming font with <em>semi-connected cursive italics</em>
             and symbol ligatures (!=, ->>, =>, === ++).
-</p></el-col></el-row></div></div></template>
+<!-- [...] -->
 
 <script>
-  import LotsOfStuff from '@/everywhere'
+  // ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅÄÖ  abcdefghijklmnopqrstuvwxyzæøåäö  1234567890
+  // .,-;:_!"#$%&/|\§(){}[]=?*+~^@€`´<> <= ==> -> <-> == === !== != <=> <- <== >=
+
+  import lotsOfStuff from '@/everywhere'
 
   export default {
     name: 'Home',
@@ -56,21 +59,15 @@
 <style lang="scss">
   @import 'styles/globals.scss';
 
+  em.alt {
+    font-family: 'VictorMono-Oblique', monospace;
+  }
+
   .horisontal-large-image {
     width: 100vw;
     height: 37vw;
     margin-top: 2em;
     overflow: hidden;
-    img {
-      position: relative;
-      top: -5vw;
-      left: -50vw;
-      width: 200vw;
-    }
-  }
-
-  em.alt {
-    font-family: 'VictorMono-Oblique', monospace;
   }
 
   code {
