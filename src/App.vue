@@ -677,15 +677,15 @@ export default {
 }
 
 .horisontal-large-image {
-  width: 100vw;
+  width: 100%;
   height: 37vw;
   margin-top: 2em;
   overflow: hidden;
   img {
     position: relative;
     top: -5vw;
-    left: -50vw;
-    width: 200vw;
+    left: -50%;
+    width: 200%;
   }
 }
 
