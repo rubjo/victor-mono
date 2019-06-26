@@ -4,6 +4,7 @@ import VueScrollTo from 'vue-scrollTo'
 import './plugins/element.js'
 import VueCodemirror from 'vue-codemirror'
 import 'codemirror/lib/codemirror.css'
+import SocialSharing from 'vue-social-sharing'
 
 Vue.config.productionTip = false
 
@@ -22,6 +23,8 @@ Vue.use(VueScrollTo, {
 })
 
 Vue.use(VueCodemirror)
+
+Vue.use(SocialSharing)
 
 window.application = new Vue({
   render: h => h(App)
