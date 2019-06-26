@@ -24,7 +24,7 @@
           :sm="18"
         >
           <p class="columns">
-            Victor Mono is a programming font with
+            Victor Mono is a free programming font with
             <em>semi-connected cursive italics</em>
             and symbol ligatures (!=, ->>, =>, ===, &lt;=, &gt;= ++).
             <br><br>
@@ -32,10 +32,8 @@
             <a
               v-scroll-to="'#why'"
               href="javascript:void(0)"
-            >because I couldn’t find another</a>
-            free or paid typeface I was entirely satisfied with.
-            <br><br>
-            The typeface is clean, crisp and strict, with a large x-height.
+            >because I couldn’t find</a>
+            a free or paid typeface I was entirely satisfied with.
             <br><br>
             <img
               v-if="theme === 'dark'"
@@ -49,10 +47,13 @@
               :data-original="stylesLight"
               class="styles-image light"
             >
-            It is optimised for code and legibility, and comes in seven weights.
-            This site employs the Light variant, which is the one I prefer using in Sublime Text.
-            VS Code and other apps might need higher weights for a matching
-            appearance.
+            The typeface is clean, crisp and narrow, with a large x-height.
+            <br><br>
+            It is optimised for legible code, and comes in seven weight styles.
+            It is available in Roman and <em>Italic</em> styles.
+            If you think the latter is a bit too much, an <em class="alt">Oblique</em> style is also included.
+            <br><br>
+            This site uses the Regular weight. For use in VS Code or other OSes / apps where it appears very thin, you might want to use a heavier style or tweak the font weight settings.
           </p>
         </el-col>
       </el-row>
@@ -149,13 +150,11 @@
       >
         <el-col
           :xs="22"
-          :sm="18"
+          :sm="16"
+          :lg="12"
         >
-          <p class="columns">
-            The font is available in Roman and <em>Italic</em> styles.
-            If you think the latter is a bit too much, an <em class="alt">Oblique</em> style is also included.
-            <br><br>
-            If you do try it out and like it, I would be very grateful for any
+          <p>
+            If you try it out and like it, I would be very grateful for any
             <a
               href="javascript:void(0)"
               @click="thanks"
@@ -176,7 +175,8 @@
           >
             <el-button
               icon="el-icon-medal-1"
-              type="primary"
+              plain
+              type="success"
               round
               @click="thanks"
             >
@@ -190,6 +190,8 @@
           >
             <el-button
               icon="el-icon-download"
+              plain
+              type="info"
               round
             >
               Download
@@ -204,8 +206,8 @@
     >
       <el-col
         :xs="22"
-        :sm="18"
-        :lg="18"
+        :sm="16"
+        :lg="12"
       >
         <p class="small centre">
           <em>With
@@ -215,7 +217,8 @@
             >
               homebrew-cask-fonts</a>,
             just run
-            <code>brew tap homebrew/cask-fonts && brew cask install font-victor-mono</code>.
+            <br>
+            <code>brew tap homebrew/cask-fonts && brew cask install font-victor-mono</code>
           </em>
         </p>
         <p class="small centre">
@@ -410,6 +413,20 @@
             >
               Desmond Ding</a>
             <br><br>
+            <em>Sharing component</em>
+            <br>
+            <a
+              target="_blank"
+              href="https://github.com/nicolasbeauvais/vue-social-sharing"
+            >
+              vue-social-sharing</a>
+            by
+            <a
+              target="_blank"
+              href="https://github.com/nicolasbeauvais"
+            >
+              Nicolas Beauvais</a>
+            <br><br>
             <em>The nice JS framework</em>
             <br>
             <a
@@ -524,6 +541,10 @@ export default {
         }, {
           title: 'The font is missing an obscure ligature symbol used for indicating an infinite loop in the language Goskell when writing in ancient Ghiscari. Would you be willing to add it?',
           value: 'Not very likely, but <a href="https://paypal.me/runbjo" target="_blank">I might</a>.',
+          category: 'Design & features'
+        }, {
+          title: 'A programming font with cursive italics and ligatures is the worst idea in the world. This is absolutely horrible. BTW, I am really angry.',
+          value: 'Not really a question, but anyway: People actually like different things. And it\'s OK. It\'s OK if someone else prefers a different font for code than you do. We don\'t have to use the same one. ❤️',
           category: 'Design & features'
         }
       ]
