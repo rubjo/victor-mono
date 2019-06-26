@@ -10,7 +10,7 @@
             and symbol ligatures (!=, ->>, =>, === ++).
 <!-- [...] -->
 
-<script>
+<script> /* eslint-disable */
   // ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅÄÖ  abcdefghijklmnopqrstuvwxyzæøåäö  1234567890
   // .,-;:_!"#$%&/|\§(){}[]=?*+~^@€`´<> <= ==> -> <-> == === !== != <=> <- <== >=
 
