@@ -35,6 +35,8 @@
             >because I couldn’t find</a>
             a free or paid typeface I was entirely satisfied with.
             <br><br>
+            The typeface is clean, crisp and narrow, with a large x-height.
+            <br><br>
             <img
               v-if="theme === 'dark'"
               :src="stylesDarkThumb"
@@ -47,11 +49,8 @@
               :data-original="stylesLight"
               class="styles-image light"
             >
-            The typeface is clean, crisp and narrow, with a large x-height.
-            <br><br>
-            It is optimised for legible code, and comes in seven weight styles.
-            It is available in Roman and <em>Italic</em> styles.
-            If you think the latter is a bit too much, an <em class="alt">Oblique</em> style is also included.
+            It is optimised for legible code, and comes in seven weights.
+            It is available in Roman, <em>Italic</em> and <em class="alt">Oblique</em> styles.
             <br><br>
             This site uses the Regular weight. For use in VS Code or other OSes / apps where it appears very thin, you might want to use a heavier style or tweak the font weight settings.
           </p>
@@ -175,7 +174,6 @@
           >
             <el-button
               icon="el-icon-medal-1"
-              plain
               type="success"
               round
               @click="thanks"
