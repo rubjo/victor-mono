@@ -66,6 +66,14 @@
         <el-col>
           <h1 class="centre">
             <em>Try it</em>
+            <span class="caption">
+              &middot;
+              <a
+                class="small"
+                href="javascript:void(0)"
+                @click="$refs.navbar.toggleTheme()"
+              >Toggle theme</a>
+            </span>
           </h1>
         </el-col>
       </el-row>
