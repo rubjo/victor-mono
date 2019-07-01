@@ -344,7 +344,7 @@ export default {
   }
 
   .actions {
-    padding: 2vw 0 4vw 0;
+    padding: calc(10px + 2vw) 0 calc(20px + 4vw) 0;
     white-space: nowrap;
   }
 
