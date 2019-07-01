@@ -227,17 +227,15 @@
             <code>brew tap homebrew/cask-fonts && brew cask install font-victor-mono</code>
           </em>
         </p>
-        <p class="small centre">
-          <em>If you have a nice screenshot of the font in use / used it for something cool, I'd love to
-            <a
-              target="_blank"
-              href="mailto:victor.mono.font@gmail.com?subject=Here's how I used the font"
-            >hear from you</a>.
-          </em>
-        </p>
       </el-col>
     </el-row>
-    <div class="content alternate-bg">
+    <div class="horisontal-large-image">
+      <img
+        class="powerline"
+        :src="powerlineBanner"
+      >
+    </div>
+    <div class="content">
       <div
         id="faq"
         class="scroll-head"
@@ -277,7 +275,7 @@
         </el-col>
       </el-row>
     </div>
-    <div class="content">
+    <div class="content alternate-bg">
       <div
         id="credits"
         class="scroll-head"
@@ -563,6 +561,9 @@ export default {
     stylesLight () { return require('./assets/img/styles-light.png') },
     specimenBanner () {
       return require('./assets/img/specimen-' + this.theme + '.png')
+    },
+    powerlineBanner () {
+      return require('./assets/img/powerline-' + this.theme + '.png')
     }
   },
   mounted () {
@@ -713,6 +714,11 @@ export default {
     top: -5vw;
     left: -50%;
     width: 200%;
+    &.powerline {
+      top: -112%;
+      left: -9%;
+      width: 115%;
+    }
   }
 }
 
