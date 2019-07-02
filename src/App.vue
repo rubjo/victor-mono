@@ -62,18 +62,16 @@
         id="try"
         class="scroll-head"
       />
-      <el-row>
-        <el-col>
+      <el-row
+        type="flex"
+        justify="center"
+      >
+        <el-col
+          :xs="22"
+          :sm="18"
+        >
           <h1 class="centre">
             <em>Try it</em>
-            <span class="caption">
-              &middot;
-              <a
-                class="small"
-                href="javascript:void(0)"
-                @click="$refs.navbar.toggleTheme()"
-              >Toggle theme</a>
-            </span>
           </h1>
         </el-col>
       </el-row>
@@ -88,6 +86,25 @@
           <CodeView
             :theme="theme"
           />
+        </el-col>
+      </el-row>
+      <el-row
+        type="flex"
+        justify="center"
+      >
+        <el-col
+          :xs="22"
+        >
+          <p class="small centre">
+            <em>Test and compare free programming fonts on
+              <a
+                target="_blank"
+                href="https://app.programmingfonts.org#victor-mono"
+              >
+                app.programmingfonts.org</a>
+            </em>
+            ⭐️
+          </p>
         </el-col>
       </el-row>
     </div>
@@ -114,22 +131,22 @@
           <p class="columns">
             I'm rather particular about what width, weight and style makes an effective and enjoyable typeface for code.
             <br><br>
-            All fonts or typeface combo mashups I tried using while coding had several of these shortcomings (<em>subjectively, of course</em>):
+            All fonts I tried using while coding had several of these shortcomings (<em>subjectively, of course</em>):
             <ul>
               <li>No cursive italics</li>
-              <li>Had nice italics, but regular/Roman style was not to my taste</li>
+              <li>Regular/Roman style was not to my taste</li>
               <li>No programming symbol ligatures</li>
               <li>Too heavy and inelegant</li>
               <li>Too light and straining to read</li>
-              <li>Too wide and wasted space</li>
+              <li>Too wide/spaced and wasted space</li>
               <li>Too narrow and hard to scan</li>
-              <li>Seemed unfinished or had weird/misaligned curves/artifacts</li>
-              <li>Seemed childish or unprofessional (too soft or informal appearance)</li>
+              <li>Seemed unfinished in some way</li>
+              <li>Seemed childish or unprofessional</li>
               <li>Seemed imbalanced or inconsistent</li>
-              <li>Combined two eye-poppingly-too-different-in-style fonts</li>
+              <li>Combined two fonts too different in style</li>
               <li>Very expensive</li>
             </ul>
-            So eventually, a couple of months ago I had the idea of trying to make something on my own. Both designing it and making a website to present it has been an interesting experiment, and has resulted in a typeface which feels right to me.
+            So eventually, a few months ago, I started making something myself. The resulting typeface, although still a work in progress, feels right to me.
             <br><br>
             You might like it as well. That's brilliant! You might not. That's also fine: you are free to use a different font. 😛
           </p>
@@ -137,7 +154,10 @@
       </el-row>
     </div>
     <div class="horisontal-large-image">
-      <img :src="specimenBanner">
+      <img
+        class="glyphs"
+        :src="glyphsBanner"
+      >
     </div>
     <div class="content">
       <div
@@ -205,34 +225,35 @@
           </a>
         </el-col>
       </el-row>
-    </div>
-    <el-row
-      type="flex"
-      justify="center"
-    >
-      <el-col
-        :xs="22"
-        :sm="16"
-        :lg="12"
+      <el-row
+        type="flex"
+        justify="center"
       >
-        <p class="small centre">
-          <em>With
-            <a
-              target="_blank"
-              href="https://github.com/Homebrew/homebrew-cask-fonts"
-            >
-              homebrew-cask-fonts</a>,
-            just run
-            <br>
-            <code>brew tap homebrew/cask-fonts && brew cask install font-victor-mono</code>
-          </em>
-        </p>
-      </el-col>
-    </el-row>
+        <el-col
+          :xs="22"
+          :sm="16"
+          :lg="12"
+        >
+          <p class="small centre">
+            <em>With
+              <a
+                target="_blank"
+                href="https://github.com/Homebrew/homebrew-cask-fonts"
+              >
+                homebrew-cask-fonts</a>,
+              just run
+              <br>
+              <code>brew tap homebrew/cask-fonts && brew cask install font-victor-mono</code>
+              🚀
+            </em>
+          </p>
+        </el-col>
+      </el-row>
+    </div>
     <div class="horisontal-large-image">
       <img
-        class="powerline"
-        :src="powerlineBanner"
+        class="specimen"
+        :src="specimenBanner"
       >
     </div>
     <div class="content">
@@ -274,6 +295,12 @@
           />
         </el-col>
       </el-row>
+    </div>
+    <div class="horisontal-large-image">
+      <img
+        class="powerline"
+        :src="powerlineBanner"
+      >
     </div>
     <div class="content alternate-bg">
       <div
@@ -559,12 +586,9 @@ export default {
     stylesLightThumb () { return require('./assets/img/styles-light-thumb.png') },
     stylesDark () { return require('./assets/img/styles-dark.png') },
     stylesLight () { return require('./assets/img/styles-light.png') },
-    specimenBanner () {
-      return require('./assets/img/specimen-' + this.theme + '.png')
-    },
-    powerlineBanner () {
-      return require('./assets/img/powerline-' + this.theme + '.png')
-    }
+    specimenBanner () { return require('./assets/img/specimen-' + this.theme + '.png') },
+    powerlineBanner () { return require('./assets/img/powerline-' + this.theme + '.png') },
+    glyphsBanner () { return require('./assets/img/glyphs-' + this.theme + '.png') }
   },
   mounted () {
     this.initScrollWatcher()
@@ -697,33 +721,44 @@ export default {
 @import 'styles/globals.scss';
 
 .scroll-head {
-  height: calc(36px + 2vw);
+  position: absolute;
+  margin-top: -3vw;
+}
+
+h1 {
+  font-weight: normal;
 }
 
 .content {
   padding: 10px 10px 40px 10px;
+  h1 {
+    padding-top: 40px;
+  }
 }
 
 .horisontal-large-image {
   width: 100%;
   height: 37vw;
-  margin-top: 2em;
   overflow: hidden;
+  opacity: 0.4;
   img {
     position: relative;
-    top: -5vw;
-    left: -50%;
-    width: 200%;
+    &.specimen {
+      top: -12%;
+      left: -50%;
+      width: 200%;
+    }
     &.powerline {
       top: -112%;
       left: -9%;
       width: 115%;
     }
+    &.glyphs {
+      top: -3%;
+      left: 0;
+      width: 100%;
+    }
   }
-}
-
-h1 {
-  font-weight: normal;
 }
 
 em.alt {
@@ -734,10 +769,6 @@ em.alt {
   float: right;
   width: 40%;
   margin: 0 0 5px 15px;
-}
-
-.content .el-button {
-  font-size: 1.1em;
 }
 
 code {

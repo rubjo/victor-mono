@@ -17,6 +17,14 @@
             <div class="max" />
           </span>
         </el-tooltip>
+        <a
+          class="theme-toggle"
+          href="javascript:void(0)"
+          @click="toggleTheme"
+        >
+          <i class="el-icon-refresh" />
+          Toggle theme
+        </a>
       </div>
       <codemirror
         ref="myCm"
@@ -114,6 +122,10 @@ export default {
     },
     onCmCodeChange (newCode) {
       this.code = newCode
+    },
+    toggleTheme () {
+      // Probably the laziest thing ever
+      this.$root.$children[0].$refs.navbar.toggleTheme()
     }
   }
 }
@@ -151,6 +163,13 @@ export default {
     }
     .max {
       background: #26c138;
+    }
+    .theme-toggle {
+      float: right;
+      margin-right: 10px;
+      font-size: 0.8em;
+      line-height: 2.7em;
+      text-decoration: none;
     }
   }
   &.light {

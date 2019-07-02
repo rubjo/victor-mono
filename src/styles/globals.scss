@@ -67,6 +67,10 @@ p {
   }
 }
 
+.el-button {
+  font-size: 1.1em;
+}
+
 .alternate-bg {
   background: var(--background-color-alternate);
   transition: background 1s;
