@@ -1,4 +1,5 @@
-[<img src="https://github.com/rubjo/victor-mono/raw/master/public/header.png" alt="Header">](https://rubjo.github.io/victor-mono)
+[<img src="https://github.com/rubjo/victor-mono/raw/master/public/header.gif" alt="Header">](https://rubjo.github.io/victor-mono)
+[<img src="https://github.com/rubjo/victor-mono/raw/master/public/powerline-cropped.png" align="right" alt="Powerline">](https://rubjo.github.io/victor-mono)
 
 ![GitHub release](https://img.shields.io/github/release/rubjo/victor-mono.svg)
 ![GitHub Release Date](https://img.shields.io/github/release-date/rubjo/victor-mono.svg)
@@ -14,6 +15,5 @@
 
 #### If you like it and want to say thanks, [donations](https://www.paypal.me/runbjo) are welcome. ❤️
 
-[<img src="https://github.com/rubjo/victor-mono/raw/master/public/powerline-cropped.png" align="right" alt="Powerline">](https://rubjo.github.io/victor-mono)
 [<img src="https://github.com/rubjo/victor-mono/raw/master/public/specimens-cropped.png" align="right" alt="Specimens">](https://rubjo.github.io/victor-mono)
 [<img src="https://github.com/rubjo/victor-mono/raw/master/src/assets/img/glyphs-dark.png" align="right" alt="Design">](https://rubjo.github.io/victor-mono)
