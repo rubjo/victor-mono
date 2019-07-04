@@ -49,9 +49,6 @@
             v-scroll-to="'#download'"
           >
             <el-button
-              round
-              plain
-              type="info"
               icon="el-icon-download"
             >
               Download
@@ -62,9 +59,6 @@
             @click="showSharing = !showSharing"
           >
             <el-button
-              round
-              plain
-              type="info"
               icon="el-icon-share"
             >
               Share

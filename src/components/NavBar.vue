@@ -170,6 +170,7 @@ export default {
       }
 
       const root = document.documentElement
+      root.dataset.theme = this.theme
       root.style.setProperty('--background-color-base', this.backgroundColour)
       root.style.setProperty('--background-color-alternate', this.alternateBackgroundColour)
       root.style.setProperty('--color-text-primary', this.textColour)

@@ -26,6 +26,9 @@
   --color-text-accented: #0bf;
 }
 
+$background-dark: #595959;
+$background-light: #fff;
+
 html,
 * {
   font-family: 'VictorMono', monospace;
@@ -69,6 +72,44 @@ p {
 
 .el-button {
   font-size: 1.1em;
+  color: var(--text-color);
+  background: rgba($background-dark, 0.25);
+  border-color: var(--text-color);
+  border-width: 2px;
+  transition-duration: 1s;
+  &.el-button--success {
+    border-color: rgba(50,255,50,1);
+  }
+  &:hover {
+    color: var(--text-color);
+    background: rgba($background-dark, 1);
+    border-color: var(--text-color);
+    border-radius: 32px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: all 0.25s;
+    transform: scale(1.1);
+    &.el-button--success {
+      background: linear-gradient(to bottom right, rgba(0,170,0,1), rgba(0,160,207,1));
+      border-color: var(--text-color);
+    }
+  }
+}
+
+[data-theme=light] {
+  .el-button {
+    background: rgba($background-light, 0.25);
+    &.el-button--success {
+      border-color: rgba(0,170,0,1);
+    }
+    &:hover {
+      background: rgba($background-light, 1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      &.el-button--success {
+        background: linear-gradient(to bottom right, rgba(50,255,50,1), rgba(50,225,255,1));
+        border-color: var(--text-color);
+      }
+    }
+  }
 }
 
 .alternate-bg {

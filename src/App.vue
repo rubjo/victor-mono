@@ -203,7 +203,6 @@
             <el-button
               icon="el-icon-medal-1"
               type="success"
-              round
               @click="thanks"
             >
               Donate
@@ -216,9 +215,7 @@
           >
             <el-button
               icon="el-icon-download"
-              plain
               type="info"
-              round
             >
               Download
             </el-button>

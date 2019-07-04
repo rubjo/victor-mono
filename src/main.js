@@ -1,7 +1,7 @@
+import './plugins/element.js'
 import Vue from 'vue'
 import App from './App.vue'
 import VueScrollTo from 'vue-scrollTo'
-import './plugins/element.js'
 import VueCodemirror from 'vue-codemirror'
 import 'codemirror/lib/codemirror.css'
 import SocialSharing from 'vue-social-sharing'
