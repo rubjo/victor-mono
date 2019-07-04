@@ -1,12 +1,12 @@
 <img src="https://github.com/rubjo/victor-mono/raw/master/public/header.png" alt="Header">
 
-<img src="https://github.com/rubjo/victor-mono/raw/master/public/code-sample.png" align="right" width="45%" alt="Code sample">
-
 ![GitHub release](https://img.shields.io/github/release/rubjo/victor-mono.svg)
 ![GitHub Release Date](https://img.shields.io/github/release-date/rubjo/victor-mono.svg)
 ![Travis (.org)](https://img.shields.io/travis/rubjo/victor-mono.svg?logo=travis)
 ![GitHub](https://img.shields.io/github/license/rubjo/victor-mono.svg)
 ![GitHub stars](https://img.shields.io/github/stars/rubjo/victor-mono.svg?style=social)
+
+<img src="https://github.com/rubjo/victor-mono/raw/master/public/code-sample.png" align="right" width="45%" alt="Code sample">
 
 ## **A programming font with semi-connected cursive italics and some symbol ligatures.**
 
