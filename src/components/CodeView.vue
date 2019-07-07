@@ -35,32 +35,32 @@
         @focus="onCmFocus"
         @input="onCmCodeChange"
       />
-    </div>
-    <div
-      v-if="theme === 'dark'"
-      class="right caption"
-    >
-      Based on
-      <a
-        target="_blank"
-        href="https://github.com/rubjo/ultimate-dark"
-      >Ultimate Dark</a>
-      colour scheme
-      (<a
-        target="_blank"
-        href="https://packagecontrol.io/packages/Ultimate%20Dark"
-      >Sublime Text 3 package</a>)
-    </div>
-    <div
-      v-else
-      class="right caption"
-    >
-      Based on
-      <a
-        target="_blank"
-        href="https://github.com/chriskempson/base16"
-      >Base 16 Light</a>
-      colour scheme by Chris Kempson
+      <div
+        v-if="theme === 'dark'"
+        class="right caption"
+      >
+        Based on
+        <a
+          target="_blank"
+          href="https://github.com/rubjo/ultimate-dark"
+        >Ultimate Dark</a>
+        colour scheme
+        (<a
+          target="_blank"
+          href="https://packagecontrol.io/packages/Ultimate%20Dark"
+        >Sublime Text 3 package</a>)
+      </div>
+      <div
+        v-else
+        class="right caption"
+      >
+        Based on
+        <a
+          target="_blank"
+          href="https://github.com/chriskempson/base16"
+        >Base 16 Light</a>
+        colour scheme by Chris Kempson
+      </div>
     </div>
   </div>
 </template>
@@ -139,6 +139,7 @@ export default {
   position: relative;
   z-index: 0;
   height: 75vh;
+  margin-bottom: 20px;
   border: 1px solid #303030;
   border-radius: 5px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -182,7 +183,7 @@ export default {
 
 .code {
   height: calc(100% - 34px);
-  font-size: calc(12px + 0.45vw);
+  font-size: calc(14px + 0.45vw);
   line-height: 1.5em;
 }
 </style>
