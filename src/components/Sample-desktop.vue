@@ -6,7 +6,8 @@
       <el-row type="flex" justify="center">
         <el-col :xs="22" :sm="18">
           <p class="columns">
-            Victor Mono is a programming font with <em>semi-connected cursive italics</em>
+            Victor Mono is a programming font with
+            <em>semi-connected cursive italics</em>
             and symbol ligatures (!=, ->>, =>, === ++).
 <!-- [...] -->
 
