@@ -153,12 +153,10 @@
         </el-col>
       </el-row>
     </div>
-    <div class="horisontal-large-image">
-      <img
-        class="glyphs"
-        :src="glyphsBanner"
-      >
-    </div>
+    <HeroImage
+      image="glyphs"
+      :theme="theme"
+    />
     <div class="content">
       <div
         id="download"
@@ -247,345 +245,63 @@
         </el-col>
       </el-row>
     </div>
-    <div class="horisontal-large-image">
-      <img
-        class="specimen"
-        :src="specimenBanner"
-      >
-    </div>
-    <div class="content">
-      <div
-        id="faq"
-        class="scroll-head"
-      />
-      <el-row>
-        <el-col>
-          <h1
-            class="centre"
-            @mouseenter="revealFaq = true"
-            @touchstart="revealFaq = true"
-            @mouseleave="revealFaq = false"
-          >
-            <em>FAQ*</em>
-          </h1>
-          <transition name="el-zoom-in-top">
-            <div
-              class="caption centre full-width"
-            >
-              &nbsp;
-              <em v-show="revealFaq">Frequently Anticipated Questions</em>
-            </div>
-          </transition>
-        </el-col>
-      </el-row>
-      <el-row
-        type="flex"
-        justify="center"
-      >
-        <el-col
-          :xs="22"
-          :sm="18"
-        >
-          <VueFaqAccordion
-            :items="faqItems"
-            border-color="transparent"
-          />
-        </el-col>
-      </el-row>
-    </div>
-    <div class="horisontal-large-image">
-      <img
-        class="powerline"
-        :src="powerlineBanner"
-      >
-    </div>
-    <div class="content alternate-bg">
-      <div
-        id="credits"
-        class="scroll-head"
-      />
-      <el-row>
-        <el-col>
-          <h1 class="centre">
-            <em>Credits</em>
-          </h1>
-        </el-col>
-      </el-row>
-      <el-row
-        type="flex"
-        justify="center"
-      >
-        <el-col
-          :xs="22"
-          :sm="18"
-        >
-          <p class="small centre">
-            If making this font has been a learning experiment, the same can be said for trying out a number of frameworks/packages to make this web site. Big thanks to the following:
-            <br><br><br>
-            <em>Lovely gradients</em>
-            <br>
-            <a
-              target="_blank"
-              href="https://sarcadass.github.io/granim.js/"
-            >
-              Granim.js</a>
-            by
-            <a
-              target="_blank"
-              href="https://twitter.com/Sarcadass"
-            >
-              Benjamin Blonde</a>
-            <br><br>
-            <em>Cool animated typing</em>
-            <br>
-            <a
-              target="_blank"
-              href="https://github.com/mattboldt/typed.js/"
-            >
-              Typed.js</a>
-            by
-            <a
-              target="_blank"
-              href="https://mattboldt.com"
-            >
-              Matt Boldt</a>
-            <br><br>
-            <em>Code editor</em>
-            <br>
-            <a
-              target="_blank"
-              href="https://github.com/surmon-china/vue-codemirror"
-            >
-              Vue-Codemirror</a>
-            by
-            <a
-              target="_blank"
-              href="https://github.com/surmon-china"
-            >
-              Surmon</a> and
-            <a
-              target="_blank"
-              href="https://codemirror.net"
-            >
-              codemirror.net</a>
-            <br><br>
-            <em>Animations here & there</em>
-            <br>
-            <a
-              target="_blank"
-              href="https://animejs.com"
-            >
-              Anime.js</a>
-            <br><br>
-            <em>Smooth scrolling</em>
-            <br>
-            <a
-              target="_blank"
-              href="https://vue-scrollto.netlify.com"
-            >
-              vue-scrollto</a>
-            by
-            <a
-              target="_blank"
-              href="https://github.com/rigor789"
-            >
-              Igor Randjelovic</a>
-            <br><br>
-            <em>FAQ component</em>
-            <br>
-            <a
-              target="_blank"
-              href="https://github.com/gerasimvol/vue-faq-accordion"
-            >
-              vue-faq-accordion</a>
-            by
-            <a
-              target="_blank"
-              href="https://github.com/gerasimvol"
-            >
-              Vladimir Gerasimenko</a>
-            <br><br>
-            <em>Thank-you-confetti</em>
-            <br>
-            <a
-              target="_blank"
-              href="https://www.npmjs.com/package/dom-confetti"
-            >
-              dom-confetti</a>
-            by
-            <a
-              target="_blank"
-              href="https://twitter.com/danielundin"
-            >
-              Daniel Lundin</a>
-            <br><br>
-            <em>CSS framework / component library</em>
-            <br>
-            <a
-              target="_blank"
-              href="https://element.eleme.io/#/en-US"
-            >
-              Element</a>
-            <br><br>
-            <em>Image zoom</em>
-            <br>
-            <a
-              target="_blank"
-              href="https://desmonding.me/zooming/"
-            >
-              zooming</a>
-            by
-            <a
-              target="_blank"
-              href="https://github.com/kingdido999"
-            >
-              Desmond Ding</a>
-            <br><br>
-            <em>Sharing component</em>
-            <br>
-            <a
-              target="_blank"
-              href="https://github.com/nicolasbeauvais/vue-social-sharing"
-            >
-              vue-social-sharing</a>
-            by
-            <a
-              target="_blank"
-              href="https://github.com/nicolasbeauvais"
-            >
-              Nicolas Beauvais</a>
-            <br><br>
-            <em>The nice JS framework</em>
-            <br>
-            <a
-              target="_blank"
-              href="https://vuejs.org"
-            >
-              Vue.js</a>
-            <br><br>
-            <em>Supercool scaffolding and tools for Vue.js development</em>
-            <br>
-            <a
-              target="_blank"
-              href="https://cli.vuejs.org"
-            >
-              Vue CLI</a>
-            <br><br>
-            <em>Automated building and deployment of web site from source</em>
-            <br>
-            <a
-              target="_blank"
-              href="https://travis-ci.org"
-            >
-              Travis CI</a>
-            <br><br>
-            <em>Very nice (and rather expensive) font design software</em>
-            <br>
-            <a
-              target="_blank"
-              href="https://glyphsapp.com"
-            >
-              Glyphs</a>
-            <br><br>
-            <em>Font and web site</em>
-            <br>
-            <a
-              target="_blank"
-              href="mailto:victor.mono.font@gmail.com?subject=Thanks for making such a nice font"
-            >
-              Rune B</a>
-          </p>
-        </el-col>
-      </el-row>
-    </div>
+    <HeroImage
+      image="specimen"
+      :theme="theme"
+    />
+    <Faq />
+    <HeroImage
+      image="powerline"
+      :theme="theme"
+    />
+    <Credits />
   </div>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar'
 import Header from '@/components/Header'
-import CodeView from '@/components/CodeView'
-import VueFaqAccordion from 'vue-faq-accordion'
+import lazyLoadComponent from '@/utils/lazy-load-component.js'
+import Loader from '@/components/Loader'
 import anime from 'animejs'
 import { confetti } from 'dom-confetti'
 import Zooming from 'zooming'
+import Faq from '@/components/Faq'
+import Credits from '@/components/Credits'
 
 export default {
   name: 'Home',
   components: {
     NavBar,
     Header,
-    CodeView,
-    VueFaqAccordion
+    CodeView: lazyLoadComponent({
+      componentFactory: () => import('@/components/CodeView'),
+      background: localStorage.getItem('theme') === 'dark' ? '#515151' : '#f5f5f5',
+      height: 'calc(75vh + 20px)',
+      loading: Loader
+    }),
+    HeroImage: lazyLoadComponent({
+      componentFactory: () => import('@/components/HeroImage'),
+      background: localStorage.getItem('theme') === 'dark' ? '#515151' : '#f5f5f5',
+      height: '37vw',
+      loading: Loader
+    }),
+    Faq,
+    Credits
   },
   data () {
     return {
       showHeaderText: false,
       showNav: true,
       showGoToTop: false,
-      revealFaq: false,
-      theme: localStorage.getItem('theme') || 'dark',
-      faqItems: [
-        {
-          title: 'There’s a feature of the font that I don’t like. Could you change it?',
-          value: 'Probably not. You can always use a different font. 😛 (Or <a href="https://github.com/rubjo/victor-mono/issues/new" target="_blank">open an issue</a> and describe what needs changing.)',
-          category: 'Design & features'
-        }, {
-          title: 'Will you add some stylistic variations, like a slashed zero, sharper brackets etc.?',
-          value: '<a href="https://paypal.me/runbjo" target="_blank">I might</a>.',
-          category: 'Design & features'
-        }, {
-          title: 'Will you make a custom style generator, where one can pick the preferred stylistic alternatives and download the corresponding font files?',
-          value: 'Probably not. It depends on the reception and <a href="https://paypal.me/runbjo" target="_blank">donations</a>, as this is something I do in my spare time.',
-          category: 'Design & features'
-        }, {
-          title: 'Can I use the font for anything?',
-          value: 'Yes. If you\'d like to say thanks, you can <a href="https://paypal.me/runbjo" target="_blank">donate</a>. I\'d also appreciate it if you referred others to this web site rather than serving the font files from elsewhere.',
-          category: 'Usage'
-        }, {
-          title: 'How do I use it?',
-          value: '1) <a href="#download">Download</a> the font<br>2) Unpack the ZIP<br>3) <a href="https://www.google.com/search?q=how+to+install+fonts" target="_blank">Install</a> the font<br>4) Change the font settings in your code editor / IDE of choice to "Victor Mono".',
-          category: 'Usage'
-        }, {
-          title: 'I found a bug. Where do I report it?',
-          value: 'Please <a href="https://github.com/rubjo/victor-mono/issues/new" target="_blank">open an issue</a>.',
-          category: 'Usage'
-        }, {
-          title: 'Since it’s called Victor Mono, will a Victor Sans or Serif be released in the future?',
-          value: 'Probably not.',
-          category: 'Other'
-        }, {
-          title: 'How does one simply make a font?',
-          value: 'Trial and error, some research, good software, patience and time.',
-          category: 'Other'
-        }, {
-          title: 'Why are you giving it away?',
-          value: 'I originally planned on selling it for some (smaller or much larger) sum, like others do. But I eventually decided against it: I couldn’t be bothered to set up hosting, payment, EULAs etc, nor do I have time for the level of support I feel should accompany a commercial product. This typeface isn’t meant to be the perfect font for anyone - I just made the one perfect for me. If you’re unemployed or struggle to make ends meet, download the font with a clear conscience. If you work in a corporate setting or are relatively well off, consider <a href="https://paypal.me/runbjo" target="_blank">supporting</a> the hours spent designing this font. If you want to and are able to donate anything: thank you!',
-          category: 'Other'
-        }, {
-          title: 'Did you know that the [insert typeface property here] violates some 500-year old font design convention?',
-          value: 'I might. If I did, I didn’t care, or I deliberately chose to go a different direction.',
-          category: 'Design & features'
-        }, {
-          title: 'The font is missing an obscure ligature symbol used for indicating an infinite loop in the language Goskell when writing in ancient Ghiscari. Would you be willing to add it?',
-          value: 'Not very likely, but <a href="https://paypal.me/runbjo" target="_blank">I might</a>.',
-          category: 'Design & features'
-        }, {
-          title: 'A programming font with cursive italics and ligatures is the worst idea in the world. This is absolutely horrible. BTW, I am really angry.',
-          value: 'Not really a question, but anyway: People actually like different things. And it\'s OK. It\'s OK if someone else prefers a different font for code than you do. We don\'t have to use the same one. ❤️',
-          category: 'Design & features'
-        }
-      ]
+      theme: localStorage.getItem('theme') || 'dark'
     }
   },
   computed: {
     stylesDarkThumb () { return require('./assets/img/styles-dark-thumb.png') },
     stylesLightThumb () { return require('./assets/img/styles-light-thumb.png') },
     stylesDark () { return require('./assets/img/styles-dark.png') },
-    stylesLight () { return require('./assets/img/styles-light.png') },
-    specimenBanner () { return require('./assets/img/specimen-' + this.theme + '.png') },
-    powerlineBanner () { return require('./assets/img/powerline-' + this.theme + '.png') },
-    glyphsBanner () { return require('./assets/img/glyphs-' + this.theme + '.png') }
+    stylesLight () { return require('./assets/img/styles-light.png') }
   },
   mounted () {
     this.initScrollWatcher()
@@ -715,116 +431,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import 'styles/globals.scss';
-
-.scroll-head {
-  position: absolute;
-  margin-top: -3vw;
-}
-
-h1 {
-  font-weight: normal;
-}
-
-.content {
-  padding: 10px 10px 40px 10px;
-  h1 {
-    padding-top: 40px;
-  }
-}
-
-.horisontal-large-image {
-  width: 100%;
-  height: 37vw;
-  overflow: hidden;
-  opacity: 0.4;
-  img {
-    position: relative;
-    &.specimen {
-      top: -12%;
-      left: -50%;
-      width: 200%;
-    }
-    &.powerline {
-      top: -112%;
-      left: -9%;
-      width: 115%;
-    }
-    &.glyphs {
-      top: -3%;
-      left: 0;
-      width: 100%;
-    }
-  }
-}
-
-em.alt {
-  font-family: 'VictorMono-Oblique', monospace;
-}
-
-.styles-image {
-  float: right;
-  width: 40%;
-  margin: 0 0 5px 15px;
-}
-
-code {
-  padding: 6px;
-  font-style: normal;
-  background: var(--background-color-alternate);
-  border-radius: 6px;
-  transition: background 1s;
-}
-
-.content section.faq {
-  padding: 0;
-  font-size: 1.1em;
-  .faq-wrapper {
-    max-width: none;
-    p {
-      font-size: 85%;
-      line-height: 170%;
-    }
-    .faq__nav-item {
-      font-weight: inherit;
-      color: inherit;
-      transition: inherit;
-      &.faq__nav-item_active {
-        font-style: italic;
-      }
-      &:hover {
-        color: var(--color-text-accented);
-      }
-    }
-    .accordion__toggle-button[data-v-36e025b4] {
-      &::before,
-      &::after {
-        background: var(--color-text-primary);
-        transition: background 1s;
-      }
-    }
-    .accordion__title {
-      padding: 20px 0 10px 0;
-      color: inherit;
-      transition: inherit;
-      &:hover {
-        color: var(--color-text-accented);
-        .accordion__toggle-button[data-v-36e025b4] {
-          &::before,
-          &::after {
-            background: var(--color-text-accented);
-          }
-        }
-      }
-      button {
-        padding-left: 20px;
-        margin-left: 5vw;
-      }
-    }
-    .accordion__value {
-      padding: 0 25px 25px 50px;
-      color: inherit;
-    }
-  }
-}
+  @import 'styles/globals.scss';
 </style>

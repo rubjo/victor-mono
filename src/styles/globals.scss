@@ -150,3 +150,37 @@ p {
   margin: 0 10px;
   cursor: pointer;
 }
+
+.scroll-head {
+  position: absolute;
+  margin-top: -3vw;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+.content {
+  padding: 10px 10px 40px 10px;
+  h1 {
+    padding-top: 40px;
+  }
+}
+
+em.alt {
+  font-family: 'VictorMono-Oblique', monospace;
+}
+
+.styles-image {
+  float: right;
+  width: 40%;
+  margin: 0 0 5px 15px;
+}
+
+code {
+  padding: 6px;
+  font-style: normal;
+  background: var(--background-color-alternate);
+  border-radius: 6px;
+  transition: background 1s;
+}
