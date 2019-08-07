@@ -110,7 +110,7 @@ export default {
 <style lang="scss">
   .content section.faq {
     padding: 0;
-    font-size: 1.1em;
+    font-size: calc(1.1rem + 0.4vw);
     .faq-wrapper {
       max-width: none;
       p {
