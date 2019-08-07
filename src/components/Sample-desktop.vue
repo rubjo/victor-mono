@@ -3,16 +3,14 @@
     <NavBar ref="navbar" :show="showNav" :show-go-to-top="showGoToTop" />
     <Header ref="header" :show-text="showHeaderText" :theme="theme" />
     <div class="content">
-      <el-row type="flex" justify="center">
-        <el-col :xs="22" :sm="18">
-          <p class="columns">
-            Victor Mono is a programming font with
-            <em>semi-connected cursive italics</em>
-            and symbol ligatures (!=, ->>, =>, === ++).
+      Victor Mono is a free programming font with <em>semi-connected cursive italics</em>,
+      symbol ligatures (!=, ->>, =>, ===, >= ++) and Latin, Cyrillic and Greek characters.
 <!-- [...] -->
 
 <script> /* eslint-disable */
   // ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅÄÖ  abcdefghijklmnopqrstuvwxyzæøåäö  1234567890
+  // АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЮЯ абвгдежзийклмнопрстуфхцчшщьюя
+  // ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ αβγδεζηθικλμνξοπρστυφχψω
   // .,-;:_!"#$%&/|\§(){}[]=?*+~^@€`´<> <= ==> -> <-> == === !== != <=> <- <== >=
 
   import lotsOfStuff from '@/everywhere'
