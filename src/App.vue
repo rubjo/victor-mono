@@ -26,16 +26,15 @@
           <p class="columns">
             Victor Mono is a free programming font with
             <em>semi-connected cursive italics</em>
-            and symbol ligatures (!=, ->>, =>, ===, &lt;=, &gt;= ++).
+            symbol ligatures (!=, ->>, =>, ===, &lt;=, &gt;= ++)
+            and Latin, Cyrillic and Greek characters.
             <br><br>
             It was drawn from scratch as a pet project / experiment
             <a
               v-scroll-to="'#why'"
               href="javascript:void(0)"
             >because I couldn’t find</a>
-            a free or paid typeface I was entirely satisfied with.
-            <br><br>
-            The typeface is clean, crisp and narrow, with a large x-height.
+            a free or paid font I was entirely satisfied with.
             <br><br>
             <img
               v-if="theme === 'dark'"
@@ -49,10 +48,20 @@
               :data-original="stylesLight"
               class="styles-image light"
             >
-            It is optimised for legible code, and comes in seven weights.
-            It is available in Roman, <em>Italic</em> and <em class="alt">Oblique</em> styles.
+            The typeface is clean, crisp and narrow, with a large x-height and clear punctuation,
+            making it legible and ideal for code. It comes in seven weights,
+            and is available in Roman, <em>Italic</em> and <em class="alt">Oblique</em> styles.
             <br><br>
-            This site uses the Regular weight. For use in VS Code or other OSes / apps where it appears very thin, you might want to use a heavier style or tweak the font weight settings.
+          </p>
+          <p class="centre">
+            <em>
+              If you try it, like it and want to say thanks, any
+              <a
+                href="javascript:void(0)"
+                @click="thanks"
+              >donation</a>
+              is very welcome.
+            </em>
           </p>
         </el-col>
       </el-row>
