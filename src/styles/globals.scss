@@ -56,8 +56,8 @@ body {
 }
 
 p {
-  padding-bottom: 10px;
-  font-size: calc(0.9rem + 0.3vw);
+  padding-bottom: 20px;
+  font-size: calc(0.9rem + 0.4vw);
   line-height: calc(1.8rem + 0.6vw);
   &.columns {
     column-count: 2;
@@ -65,8 +65,8 @@ p {
     column-gap: 75px;
   }
   &.small {
-    font-size: calc(0.75rem + 0.2vw);
-    line-height: calc(1.5rem + 0.2vw);
+    font-size: calc(0.8rem + 0.3vw);
+    line-height: calc(1.75rem + 0.2vw);
   }
 }
 
