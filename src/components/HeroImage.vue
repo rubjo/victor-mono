@@ -45,7 +45,7 @@ export default {
   img {
     position: relative;
     &.specimen {
-      top: -12%;
+      top: -25%;
       left: -50%;
       width: 200%;
     }
