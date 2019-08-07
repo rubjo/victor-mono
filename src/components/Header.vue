@@ -248,6 +248,7 @@ export default {
       const options = {
         strings: [
           '==>',
+          'efficient',
           'cursive',
           '<span style="text-decoration: line-through;">modest</span>',
           'break-the-wheel',
@@ -296,7 +297,13 @@ export default {
           'poor man’s',
           'real aesthete’s',
           '(im)peachy',
-          '>=<=-><-=>><<='
+          '>=<=-><-=>><<=',
+          'κυριλλικό',
+          'отлично',
+          'прекрасный',
+          'πανεμορφη',
+          'ανέξοδος',
+          'ελληνιστικός'
         ],
         startDelay: 1000,
         typeSpeed: 50,
