@@ -58,6 +58,7 @@
               If you try it, like it and want to say thanks, any
               <a
                 href="javascript:void(0)"
+                class="donate"
                 @click="thanks"
               >donation</a>
               is very welcome.
@@ -191,6 +192,7 @@
             If you try it out and like it, I would be very grateful for any
             <a
               href="javascript:void(0)"
+              class="donate"
               @click="thanks"
             >donations</a>.
             After initially pondering whether or not to sell it,
@@ -205,7 +207,7 @@
       >
         <el-col class="centre">
           <a
-            id="donate-link"
+            class="donate"
           >
             <el-button
               icon="el-icon-medal-1"
@@ -263,6 +265,36 @@
       image="powerline"
       :theme="theme"
     />
+    <div class="content">
+      <div
+        id="languages"
+        class="scroll-head"
+      />
+      <el-row>
+        <el-col>
+          <h1 class="centre">
+            <em>Supported languages</em>
+          </h1>
+        </el-col>
+      </el-row>
+      <el-row
+        type="flex"
+        justify="center"
+      >
+        <el-col
+          :xs="22"
+          :sm="18"
+        >
+          <p class="narrow columns">
+            Afrikaans<br>Albanian<br>Bulgarian<br>Catalan<br>Croatian<br>Czech<br>Danish<br>Dutch
+            <br>English<br>Estonian<br>Finnish<br>French<br>German<br>Greek<br>Hungarian<br>
+            Icelandic<br>Italian<br>Latvian<br>Lithuanian<br>Maltese<br>Norwegian<br>Polish<br>
+            Portugese<br>Romanian<br>Russian<br>Slovak<br>Slovenian<br>Spanish<br>Swedish<br>
+            Turkish<br>Zulu
+          </p>
+        </el-col>
+      </el-row>
+    </div>
     <Credits />
   </div>
 </template>

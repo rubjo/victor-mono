@@ -62,11 +62,11 @@ export default {
           category: 'Design & features'
         }, {
           title: 'Will you make a custom style generator, where one can pick the preferred stylistic alternatives and download the corresponding font files?',
-          value: 'Probably not. It depends on the reception and <a href="https://paypal.me/runbjo" target="_blank">donations</a>, as this is something I do in my spare time.',
+          value: 'Probably not. It depends on the reception and <a href="https://paypal.me/runbjo" class="donate" target="_blank">donations</a>, as this is something I do in my spare time.',
           category: 'Design & features'
         }, {
           title: 'Can I use the font for anything?',
-          value: 'Yes. If you\'d like to say thanks, you can <a href="https://paypal.me/runbjo" target="_blank">donate</a>. I\'d also appreciate it if you referred others to this web site rather than serving the font files from elsewhere.',
+          value: 'Yes. If you\'d like to say thanks, you can <a href="https://paypal.me/runbjo" class="donate" target="_blank">donate</a>. I\'d also appreciate it if you referred others to this web site rather than serving the font files from elsewhere.',
           category: 'Usage'
         }, {
           title: 'How do I use it?',
@@ -86,7 +86,7 @@ export default {
           category: 'Other'
         }, {
           title: 'Why are you giving it away?',
-          value: 'I originally planned on selling it for some (smaller or much larger) sum, like others do. But I eventually decided against it: I couldn’t be bothered to set up hosting, payment, EULAs etc, nor do I have time for the level of support I feel should accompany a commercial product. This typeface isn’t meant to be the perfect font for anyone - I just made the one perfect for me. If you’re unemployed or struggle to make ends meet, download the font with a clear conscience. If you work in a corporate setting or are relatively well off, consider <a href="https://paypal.me/runbjo" target="_blank">supporting</a> the hours spent designing this font. If you want to and are able to donate anything: thank you!',
+          value: 'I originally planned on selling it for some (smaller or much larger) sum, like others do. But I eventually decided against it: I couldn’t be bothered to set up hosting, payment, EULAs etc, nor do I have time for the level of support I feel should accompany a commercial product. This typeface isn’t meant to be the perfect font for anyone - I just made the one perfect for me. If you’re unemployed or struggle to make ends meet, download the font with a clear conscience. If you work in a corporate setting or are relatively well off, consider <a href="https://paypal.me/runbjo" class="donate" target="_blank">supporting</a> the hours spent designing this font. If you want to and are able to donate anything: thank you!',
           category: 'Other'
         }, {
           title: 'Did you know that the [insert typeface property here] violates some 500-year old font design convention?',
