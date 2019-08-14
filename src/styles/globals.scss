@@ -63,6 +63,11 @@ p {
     column-count: 2;
     column-width: 18em;
     column-gap: 75px;
+    &.narrow {
+      column-count: 4;
+      column-width: 8em;
+      column-gap: 50px;
+    }
   }
   &.small {
     font-size: calc(0.8rem + 0.3vw);
