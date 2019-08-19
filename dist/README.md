@@ -8,11 +8,14 @@
 
 ## A programming font with semi-connected cursive italics and symbol ligatures.
 
-### More information and download: [rubjo.github.io/victor-mono](https://rubjo.github.io/victor-mono). I would be grateful if you point others to the same URL.
+#### More information and download: [rubjo.github.io/victor-mono](https://rubjo.github.io/victor-mono). I would be grateful if you point others to the same URL.
 
-### Or: `npm i victor-mono`
+#### For use in apps, web pages or other projects:
+1. `npm i victor-mono`
+2. `import 'victor-mono'` (when using ES6 via Babel)
+3. Style elements with `font-family: 'Victor Mono'`
 
-### If you like it and want to say thanks, [donations](https://www.paypal.me/runbjo) are welcome. ❤️
+#### If you like it and want to say thanks, [donations](https://www.paypal.me/runbjo) are welcome. ❤️
 
 [<img src="https://github.com/rubjo/victor-mono/raw/master/public/code-sample.png" align="right" width="100%" alt="Code sample">](https://rubjo.github.io/victor-mono)
 [<img src="https://github.com/rubjo/victor-mono/raw/master/public/powerline-cropped.png" align="right" alt="Powerline">](https://rubjo.github.io/victor-mono)
