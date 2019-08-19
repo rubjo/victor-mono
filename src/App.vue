@@ -282,15 +282,10 @@
         justify="center"
       >
         <el-col
-          :xs="22"
-          :sm="18"
+          :span="23"
         >
-          <p class="narrow columns">
-            Afrikaans<br>Albanian<br>Bulgarian<br>Catalan<br>Croatian<br>Czech<br>Danish<br>Dutch
-            <br>English<br>Estonian<br>Finnish<br>French<br>German<br>Greek<br>Hungarian<br>
-            Icelandic<br>Italian<br>Latvian<br>Lithuanian<br>Maltese<br>Norwegian<br>Polish<br>
-            Portugese<br>Romanian<br>Russian<br>Slovak<br>Slovenian<br>Spanish<br>Swedish<br>
-            Turkish<br>Zulu
+          <p class="extra-small narrow columns">
+            Abenaki<br>Afaan Oromo<br>Afar<br>Albanian<br>Alsatian<br>Amis<br>Anuta<br>Aragonese<br>Aranese<br>Aromanian<br>Arrernte<br>Arvanitic (Latin)<br>Asturian<br>Atayal<br>Aymara<br>Bashkir (Latin)<br>Basque<br>Bemba<br>Bikol<br>Bislama<br>Bosnian<br>Breton<br>Cape Verdean Creole<br>Cebuano<br>Chamorro<br>Chavacano<br>Chichewa<br>Chickasaw<br>Cimbrian<br>Cofán<br>Corsican<br>Creek<br>Crimean Tatar (Latin)<br>Croatian<br>Czech<br>Dawan<br>Delaware<br>Dholuo<br>Drehu<br>English<br>Estonian<br>Faroese<br>Fijian<br>Filipino<br>Finnish<br>Folkspraak<br>French<br>Frisian<br>Friulian<br>Gagauz (Latin)<br>Galician<br>Ganda<br>Genoese<br>German<br>Gikuyu<br>Gooniyandi<br>Guadeloupean Creole<br>Gwich’in<br>Haitian Creole<br>Hän<br>Hawaiian<br>Hiligaynon<br>Hopi<br>Hotcąk (Latin)<br>Hungarian<br>Ido<br>Igbo<br>Ilocano<br>Indonesian<br>Interglossa<br>Interlingua<br>Irish<br>Istro-Romanian<br>Italian<br>Jamaican<br>Javanese (Latin)<br>Jèrriais<br>Kaingang<br>Kala Lagaw Ya<br>Kapampangan (Latin)<br>Kaqchikel<br>Karakalpak (Latin)<br>Karelian (Latin)<br>Kashubian<br>Kikongo<br>Kinyarwanda<br>Kiribati<br>Kirundi<br>Klingon<br>Ladin<br>Latin<br>Latino sine Flexione<br>Latvian<br>Lithuanian<br>Lojban<br>Lombard<br>Low Saxon<br>Luxembourgish<br>Maasai<br>Makhuwa<br>Malay<br>Maltese<br>Manx<br>Māori<br>Marquesan<br>Megleno-Romanian<br>Meriam Mir<br>Mirandese<br>Mohawk<br>Moldovan<br>Montagnais<br>Montenegrin<br>Murrinh-Patha<br>Nagamese Creole<br>Ndebele<br>Neapolitan<br>Ngiyambaa<br>Niuean<br>Noongar<br>Norwegian<br>Novial<br>Occidental<br>Occitan<br>Oshiwambo<br>Ossetian (Latin)<br>Palauan<br>Papiamento<br>Piedmontese<br>Polish<br>Portuguese<br>Potawatomi<br>Q’eqchi’<br>Quechua<br>Rarotongan<br>Romanian<br>Romansh<br>Rotokas<br>Sami (Inari Sami)<br>Sami (Lule Sami)<br>Sami (Northern Sami)<br>Sami (Southern Sami)<br>Samoan<br>Sango<br>Saramaccan<br>Sardinian<br>Scottish Gaelic<br>Serbian (Latin)<br>Seri<br>Seychellois Creole<br>Shawnee<br>Shona<br>Sicilian<br>Silesian<br>Slovak<br>Slovenian<br>Slovio (Latin)<br>Somali<br>Sorbian (Lower Sorbian)<br>Sorbian (Upper Sorbian)<br>Sotho (Northern)<br>Sotho (Southern)<br>Spanish<br>Sranan<br>Sundanese (Latin)<br>Swahili<br>Swazi<br>Swedish<br>Tagalog<br>Tahitian<br>Tetum<br>Tok Pisin<br>Tokelauan<br>Tongan<br>Tshiluba<br>Tsonga<br>Tswana<br>Tumbuka<br>Turkish<br>Turkmen (Latin)<br>Tuvaluan<br>Tzotzil<br>Uzbek (Latin)<br>Venetian<br>Vepsian<br>Volapük<br>Võro<br>Wallisian<br>Walloon<br>Waray-Waray<br>Warlpiri<br>Wayuu<br>Welsh<br>Wik-Mungkan<br>Wiradjuri<br>Wolof<br>Xavante<br>Xhosa<br>Yapese<br>Yindjibarndi<br>Zapotec<br>Zulu<br>Zuni<br>
           </p>
         </el-col>
       </el-row>
