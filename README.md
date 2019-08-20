@@ -10,10 +10,10 @@
 
 #### More information and download: [rubjo.github.io/victor-mono](https://rubjo.github.io/victor-mono). I would be grateful if you point others to the same URL.
 
-#### For use in apps, web pages or other projects  (will work soon):
-1. `npm i victor-mono`
-2. `import 'victor-mono'` (when using ES6 via Babel)
-3. Style elements with `font-family: 'Victor Mono'`
+#### For use in apps, web pages or other projects:
+1. `npm i victormono`
+2. `import 'victormono'` (in a typical modern setup, eg. webpack)
+3. Style classes with `font-family: 'Victor Mono'`
 
 #### If you like it and want to say thanks, [donations](https://www.paypal.me/runbjo) are welcome. ❤️
 

@@ -238,7 +238,6 @@
         <el-col
           :xs="22"
           :sm="16"
-          :lg="12"
         >
           <p class="small centre">
             <em>With
@@ -248,10 +247,20 @@
               >
                 homebrew-cask-fonts</a>,
               just run
-              <br>
-              <code>brew tap homebrew/cask-fonts && brew cask install font-victor-mono</code>
-              🚀
             </em>
+            <br>
+            <code>brew tap homebrew/cask-fonts && brew cask install font-victor-mono</code>
+            🚀
+          </p>
+          <p class="small centre">
+            <em>For use in apps, web pages or other projects:</em>
+            <br>
+            <code>npm i victor-mono</code>
+            -->
+            <code>import 'victor-mono'</code>
+            -->
+            Style elements with <code>font-family: 'Victor Mono'</code>
+            🎆
           </p>
         </el-col>
       </el-row>
