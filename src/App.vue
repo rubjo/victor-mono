@@ -255,9 +255,9 @@
           <p class="small centre">
             <em>For use in apps, web pages or other projects:</em>
             <br>
-            <code>npm i victor-mono</code>
+            <code>npm i victormono</code>
             -->
-            <code>import 'victor-mono'</code>
+            <code>import 'victormono'</code>
             -->
             Style elements with <code>font-family: 'Victor Mono'</code>
             🎆
