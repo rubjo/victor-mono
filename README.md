@@ -11,9 +11,9 @@
 #### More information and download: [rubjo.github.io/victor-mono](https://rubjo.github.io/victor-mono). I would be grateful if you point others to the same URL.
 
 #### For use in apps, web pages or other projects:
-1. `npm i victormono`
+1. `npm i victormono` (installs Regular, Italic, Bold and Bold Italic styles)
 2. `import 'victormono'` (in a typical modern setup, eg. webpack)
-3. Style classes with `font-family: 'Victor Mono'`
+3. Style classes with `font-family: 'Victor Mono'`, `font-weight` and `font-style`
 
 #### If you like it and want to say thanks, [donations](https://www.paypal.me/runbjo) are welcome. ❤️
 
