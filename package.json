@@ -1,7 +1,37 @@
 {
-  "name": "victor-mono",
-  "version": "0.1.0",
-  "private": true,
+  "name": "victormono",
+  "version": "1.0.2",
+  "description": "Victor Mono: a free programming font with semi-connected cursive italics and symbol ligatures",
+  "files": [
+    "dist/"
+  ],
+  "main": "dist/index.css",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubjo/victor-mono.git"
+  },
+  "keywords": [
+    "font",
+    "monospace",
+    "cursive",
+    "italics",
+    "ligatures",
+    "Victor Mono",
+    "programming-font",
+    "coding-font",
+    "typeface"
+  ],
+  "author": {
+    "name": "Rune B",
+    "email": "victor.mono.font@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rubjo/victor-mono/issues"
+  },
+  "homepage": "https://rubjo.github.io/victor-mono/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
