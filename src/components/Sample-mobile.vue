@@ -1,8 +1,6 @@
 <template> <!-- Go ahead and edit me -->
   <div id="app">
-    <h1 class="zero-margin">
-      My App!
-    </h1>
+    <h1 class="zero-margin">My App!</h1>
     <MainView styling="italic-liga" />
   </div>
 </template>
@@ -14,26 +12,6 @@
     components: { MainView },
     methods: {
       init () {
-/*ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅÄÖ
-  abcdefghijklmnopqrstuvwxyzæøåäö
-   АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЮЯ
-   абвгдежзийклмнопрстуфхцчшщьюя
-     ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ
-     αβγδεζηθικλμνξοπρστυφχψω
-    1  2  3  4  5  6  7  8  9  0
- .,-;:_!"#$%&/|\§(){}[]=?*+~^@€`´<>
- <= ==> -> == === !== != <- <== >=
-*/
-
-// An empty arrow function returns undefined
-let empty = () => {}
-
-const simple = a => a > 15 ? 15 : a 
-simple(16) // 15
-simple(10) // 10
-
-let max = (a, b) => a > b ? a : b
-
 // Easy array filtering, mapping, ...
 const arr = [5, 6, 13, 0, 1, 18, 23]
 const sum = arr.reduce((a, b) => a + b)

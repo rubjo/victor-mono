@@ -8,11 +8,6 @@
 <!-- [...] -->
 
 <script> /* eslint-disable */
-  // ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅÄÖ  abcdefghijklmnopqrstuvwxyzæøåäö  1234567890
-  // АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЬЮЯ абвгдежзийклмнопрстуфхцчшщьюя
-  // ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ αβγδεζηθικλμνξοπρστυφχψω
-  // .,-;:_!"#$%&/|\§(){}[]=?*+~^@€`´<> <= ==> -> <-> == === !== != <=> <- <== >=
-
   import lotsOfStuff from '@/everywhere'
 
   export default {
@@ -25,9 +20,7 @@
       stylesDarkThumb () { return require('./assets/img/styles-dark-thumb.png') },
       stylesLightThumb () { return require('./assets/img/styles-light-thumb.png') }
     },
-    mounted () {
-      this.doLotsOfStuff()
-    },
+    mounted () { this.doLotsOfStuff() },
     methods: {
       initScrollWatcher () {
         function throttle (fn, wait) {
