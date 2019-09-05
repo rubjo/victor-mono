@@ -140,9 +140,10 @@
         >
           <p class="columns">
             I'm rather particular about what width, weight and style makes an effective and enjoyable typeface for code. I prefer something dual-natured: strict, readable and
-            relatively condensed for the code proper, contrasting and complemented with a more informal, flowing and "human" style for things like comments and reserved keywords.
+            relatively condensed for the code proper, contrasted and complemented with a more
+            <em>informal, flowing and human style</em> for things like comments and reserved keywords.
             <br><br>
-            However, I haven't been able to find anything along these lines that work for me. All the fonts I've tried have several of these (subjective) shortcomings:
+            However, I haven't been able to find anything along these lines that works for me. All the fonts I've tried have several of these (subjective) shortcomings:
             <ul>
               <li>No cursive italics</li>
               <li>Regular/Roman style was not to my taste</li>
