@@ -33,8 +33,8 @@
             <a
               v-scroll-to="'#why'"
               href="javascript:void(0)"
-            >because I couldn’t find</a>
-            a free or paid font I was entirely satisfied with.
+            >because there just wasn't any</a>
+            free or paid font that I found both readable, effective and elegant.
             <br><br>
             <img
               v-if="theme === 'dark'"
@@ -139,11 +139,12 @@
           :sm="18"
         >
           <p class="columns">
-            I'm rather particular about what width, weight and style makes an effective and enjoyable typeface for code. I prefer something dual-natured: strict, readable and
-            relatively condensed for the code proper, contrasted and complemented with a more
-            <em>informal, flowing and human style</em> for things like comments and reserved keywords.
+            When it comes to programming fonts, I prefer something strict, readable and relatively condensed for the code proper, complemented with a more <em>informal, flowing and human style</em> for things like comments and reserved keywords.
             <br><br>
-            However, I haven't been able to find anything along these lines that works for me. All the fonts I've tried have several of these (subjective) shortcomings:
+            I've tried lots of alternatives, each with their strengths (Operator Mono: the pricey
+            and hip original, Dank Mono: the cheaper one with a wide, younger look, Fira
+            Code with the ligatures I use plus a zillion more, ...). However, I always ended up rejecting
+            the fonts I tried because something didn't look right to me:
             <ul>
               <li>No cursive italics</li>
               <li>Regular/Roman style was not to my taste</li>
@@ -158,9 +159,11 @@
               <li>Combined two fonts too different in style</li>
               <li>Very expensive</li>
             </ul>
-            So eventually, a few months ago, I started making something myself. The resulting typeface, although still a work in progress, feels right to me.
+            So eventually, I started making something myself. The resulting typeface, although still
+            a work in progress, feels right to me.
             <br><br>
-            You might like it as well. That's brilliant! You might not. That's also fine: you are free to use a different font. 😛
+            You might like it as well. That's brilliant! You might not. That's also fine: use a font
+            that works for you. 😛
           </p>
         </el-col>
       </el-row>
