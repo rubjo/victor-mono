@@ -139,12 +139,16 @@
           :sm="18"
         >
           <p class="columns">
-            When it comes to programming fonts, I prefer something strict, readable and relatively condensed for the code proper, complemented with a more <em>informal, flowing and human style</em> for things like comments and reserved keywords.
+            When it comes to programming fonts, I prefer something strict, readable and relatively
+            condensed for the code proper, complemented with a more
+            <em>informal, flowing and human style</em>
+            for things like comments and reserved keywords.
             <br><br>
             I've tried lots of alternatives, each with their strengths (Operator Mono: the pricey
             and hip original, Dank Mono: the cheaper one with a wide, younger look, Fira
-            Code with the ligatures I use plus a zillion more, ...). However, I always ended up rejecting
-            the fonts I tried because something didn't look right to me:
+            Code with the ligatures I use plus a zillion more, compressed and endlessly
+            customisable Pragmata or Monoid - the list goes on). However, I always ended up
+            rejecting the fonts I tried because something didn't look right to me:
             <ul>
               <li>No cursive italics</li>
               <li>Regular/Roman style was not to my taste</li>
