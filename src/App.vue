@@ -59,9 +59,15 @@
               <a
                 href="javascript:void(0)"
                 class="donate"
-                @click="thanks"
-              >donation</a>
-              is very welcome.
+                @click="paypal"
+              >PayPal</a>
+              or
+              <a
+                href="javascript:void(0)"
+                class="donate"
+                @click="patreon"
+              >Patreon</a>
+              donation is very welcome.
             </em>
           </p>
         </el-col>
@@ -202,8 +208,15 @@
             <a
               href="javascript:void(0)"
               class="donate"
-              @click="thanks"
-            >donations</a>.
+              @click="paypal"
+            >PayPal</a>
+            or
+            <a
+              href="javascript:void(0)"
+              class="donate"
+              @click="patreon"
+            >Patreon</a>
+            donations.
             After initially pondering whether or not to sell it,
             I decided to give it away.
             If you are able to and want to contribute: a sincere thank you! 🙏
@@ -221,7 +234,7 @@
             <el-button
               icon="el-icon-medal-1"
               type="success"
-              @click="thanks"
+              @click="paypal"
             >
               Donate
             </el-button>
@@ -474,8 +487,14 @@ export default {
 
       window.removeEventListener('focus', this.celebrate)
     },
-    thanks (e) {
+    paypal (e) {
       window.open('https://paypal.me/runbjo')
+      setTimeout(() => {
+        window.addEventListener('focus', this.celebrate(e.target))
+      }, 1000)
+    },
+    patreon (e) {
+      window.open('https://www.patreon.com/rune_b')
       setTimeout(() => {
         window.addEventListener('focus', this.celebrate(e.target))
       }, 1000)
