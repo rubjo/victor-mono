@@ -55,7 +55,7 @@
     font-family: 'VictorMono-Oblique', monospace;
   }
 
-  .horisontal-large-image {
+  .horizontal-large-image {
     width: 100vw;
     height: 37vw;
     margin-top: 2em;
