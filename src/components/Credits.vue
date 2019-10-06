@@ -155,6 +155,14 @@
           >
             Nicolas Beauvais</a>
           <br><br>
+          <em>Supporter tier medal design</em>
+          <br>
+          <a
+            target="_blank"
+            href="https://psdblast.com"
+          >
+            Andy (psdblast.com)</a>
+          <br><br>
           <em>First-class apps for compressing images</em>
           <br>
           <a

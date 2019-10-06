@@ -201,25 +201,10 @@
         <el-col
           :xs="22"
           :sm="16"
-          :lg="12"
         >
           <p>
-            If you try it out and like it, I would be very grateful for any
-            <a
-              href="javascript:void(0)"
-              class="donate"
-              @click="paypal"
-            >PayPal</a>
-            or
-            <a
-              href="javascript:void(0)"
-              class="donate"
-              @click="patreon"
-            >Patreon</a>
-            donations.
-            After initially pondering whether or not to sell it,
-            I decided to give it away.
-            If you are able to and want to contribute: a sincere thank you! 🙏
+            If you try it out and like it, I would be very grateful for any donations.
+            It means I can cover some costs for software and time spent - and keep refining and extending the font.
           </p>
         </el-col>
       </el-row>
@@ -233,10 +218,26 @@
           >
             <el-button
               icon="el-icon-medal-1"
+              class="double-line margin-bottom"
               type="success"
               @click="paypal"
             >
-              Donate
+              Donate<br>
+              <em>via PayPal</em>
+            </el-button>
+          </a>
+          &nbsp;
+          <a
+            class="donate"
+          >
+            <el-button
+              icon="el-icon-medal-1"
+              class="double-line margin-bottom"
+              type="success"
+              @click="patreon"
+            >
+              Support<br>
+              <em>via Patreon</em>
             </el-button>
           </a>
           &nbsp;
@@ -246,9 +247,11 @@
           >
             <el-button
               icon="el-icon-download"
+              class="double-line margin-bottom"
               type="info"
             >
-              Download
+              Download<br>
+              <em>~5MB ZIP</em>
             </el-button>
           </a>
         </el-col>
@@ -259,7 +262,8 @@
       >
         <el-col
           :xs="22"
-          :sm="16"
+          :sm="12"
+          :lg="10"
         >
           <p class="small centre">
             <em>With
@@ -271,19 +275,123 @@
               just run
             </em>
             <br>
-            <code>brew tap homebrew/cask-fonts && brew cask install font-victor-mono</code>
-            🚀
+            <code>brew tap homebrew/cask-fonts</code><br>
+            <code>brew cask install font-victor-mono</code>
           </p>
+        </el-col>
+        <el-col
+          :xs="22"
+          :sm="12"
+          :lg="10"
+        >
           <p class="small centre">
             <em>For use in apps, web pages or other projects:</em>
             <br>
             <code>npm i victormono</code>
-            -->
+            ->
             <code>import 'victormono'</code>
-            -->
+            <br>
             Style elements with <code>font-family: 'Victor Mono'</code>
-            🎆
           </p>
+        </el-col>
+      </el-row>
+      <el-row>
+        <el-col>
+          <h1 class="centre no-padding">
+            <em>Supporters</em>
+          </h1>
+        </el-col>
+      </el-row>
+      <el-row
+        type="flex"
+        justify="center"
+      >
+        <el-col
+          :xs="6"
+        >
+          <p class="centre no-padding no-margin-bottom">
+            <img src="./assets/img/bronze.png">
+          </p>
+          <h2 class="centre no-margin">
+            Bronze<br>
+            <div class="small">
+              Fan
+            </div>
+          </h2>
+          <p class="small centre">
+            <em>$1/month or - $9.99 once</em>
+          </p>
+          <div class="centre">
+            Thank you to everyone contributing! ❤️
+          </div>
+        </el-col>
+        <el-col
+          :xs="6"
+        >
+          <p class="centre no-padding no-margin-bottom">
+            <img src="./assets/img/silver.png">
+          </p>
+          <h2 class="centre no-margin">
+            Silver<br>
+            <div class="small">
+              Supporter
+            </div>
+          </h2>
+          <p class="small centre">
+            <em>$2/month or $10 - $24.99 once</em>
+          </p>
+          <div class="centre">
+            Thank you to everyone contributing! ❤️
+          </div>
+        </el-col>
+        <el-col
+          :xs="6"
+          class="gold"
+        >
+          <p class="centre no-padding no-margin-bottom">
+            <img src="./assets/img/gold.png">
+          </p>
+          <h2 class="centre no-margin">
+            Gold<br>
+            <div class="small">
+              Patron
+            </div>
+          </h2>
+          <p class="small centre">
+            <em>$5/month or $25 - $44.99 once</em>
+          </p>
+          <div class="centre">
+            Thank you to:
+          </div>
+          <div class="centre supporter">
+            Colton Borg
+          </div>
+          <div class="centre supporter">
+            Christoph Siedentop
+          </div>
+        </el-col>
+        <el-col
+          :xs="6"
+          class="rainbow"
+        >
+          <p class="centre no-padding no-margin-bottom">
+            <img src="./assets/img/unicorn.png">
+          </p>
+          <h2 class="centre no-margin">
+            Rainbow<br>
+            <div class="small">
+              Champion Guardian Unicorn
+            </div>
+          </h2>
+          <p class="small centre">
+            <em>$10/month or $45+ once</em>
+          </p>
+          <div class="centre">
+            Thank you to:
+          </div>
+          <div class="centre supporter">
+            April Collier
+          </div>      
         </el-col>
       </el-row>
     </div>
@@ -296,31 +404,6 @@
       image="powerline"
       :theme="theme"
     />
-    <div class="content">
-      <div
-        id="languages"
-        class="scroll-head"
-      />
-      <el-row>
-        <el-col>
-          <h1 class="centre">
-            <em>Supported languages</em>
-          </h1>
-        </el-col>
-      </el-row>
-      <el-row
-        type="flex"
-        justify="center"
-      >
-        <el-col
-          :span="23"
-        >
-          <p class="extra-small narrow columns">
-            Abenaki<br>Afaan Oromo<br>Afar<br>Albanian<br>Alsatian<br>Amis<br>Anuta<br>Aragonese<br>Aranese<br>Aromanian<br>Arrernte<br>Arvanitic (Latin)<br>Asturian<br>Atayal<br>Aymara<br>Bashkir (Latin)<br>Basque<br>Bemba<br>Bikol<br>Bislama<br>Bosnian<br>Breton<br>Cape Verdean Creole<br>Cebuano<br>Chamorro<br>Chavacano<br>Chichewa<br>Chickasaw<br>Cimbrian<br>Cofán<br>Corsican<br>Creek<br>Crimean Tatar (Latin)<br>Croatian<br>Czech<br>Dawan<br>Delaware<br>Dholuo<br>Drehu<br>English<br>Estonian<br>Faroese<br>Fijian<br>Filipino<br>Finnish<br>Folkspraak<br>French<br>Frisian<br>Friulian<br>Gagauz (Latin)<br>Galician<br>Ganda<br>Genoese<br>German<br>Gikuyu<br>Gooniyandi<br>Guadeloupean Creole<br>Gwich’in<br>Haitian Creole<br>Hän<br>Hawaiian<br>Hiligaynon<br>Hopi<br>Hotcąk (Latin)<br>Hungarian<br>Ido<br>Igbo<br>Ilocano<br>Indonesian<br>Interglossa<br>Interlingua<br>Irish<br>Istro-Romanian<br>Italian<br>Jamaican<br>Javanese (Latin)<br>Jèrriais<br>Kaingang<br>Kala Lagaw Ya<br>Kapampangan (Latin)<br>Kaqchikel<br>Karakalpak (Latin)<br>Karelian (Latin)<br>Kashubian<br>Kikongo<br>Kinyarwanda<br>Kiribati<br>Kirundi<br>Klingon<br>Ladin<br>Latin<br>Latino sine Flexione<br>Latvian<br>Lithuanian<br>Lojban<br>Lombard<br>Low Saxon<br>Luxembourgish<br>Maasai<br>Makhuwa<br>Malay<br>Maltese<br>Manx<br>Māori<br>Marquesan<br>Megleno-Romanian<br>Meriam Mir<br>Mirandese<br>Mohawk<br>Moldovan<br>Montagnais<br>Montenegrin<br>Murrinh-Patha<br>Nagamese Creole<br>Ndebele<br>Neapolitan<br>Ngiyambaa<br>Niuean<br>Noongar<br>Norwegian<br>Novial<br>Occidental<br>Occitan<br>Oshiwambo<br>Ossetian (Latin)<br>Palauan<br>Papiamento<br>Piedmontese<br>Polish<br>Portuguese<br>Potawatomi<br>Q’eqchi’<br>Quechua<br>Rarotongan<br>Romanian<br>Romansh<br>Rotokas<br>Sami (Inari Sami)<br>Sami (Lule Sami)<br>Sami (Northern Sami)<br>Sami (Southern Sami)<br>Samoan<br>Sango<br>Saramaccan<br>Sardinian<br>Scottish Gaelic<br>Serbian (Latin)<br>Seri<br>Seychellois Creole<br>Shawnee<br>Shona<br>Sicilian<br>Silesian<br>Slovak<br>Slovenian<br>Slovio (Latin)<br>Somali<br>Sorbian (Lower Sorbian)<br>Sorbian (Upper Sorbian)<br>Sotho (Northern)<br>Sotho (Southern)<br>Spanish<br>Sranan<br>Sundanese (Latin)<br>Swahili<br>Swazi<br>Swedish<br>Tagalog<br>Tahitian<br>Tetum<br>Tok Pisin<br>Tokelauan<br>Tongan<br>Tshiluba<br>Tsonga<br>Tswana<br>Tumbuka<br>Turkish<br>Turkmen (Latin)<br>Tuvaluan<br>Tzotzil<br>Uzbek (Latin)<br>Venetian<br>Vepsian<br>Volapük<br>Võro<br>Wallisian<br>Walloon<br>Waray-Waray<br>Warlpiri<br>Wayuu<br>Welsh<br>Wik-Mungkan<br>Wiradjuri<br>Wolof<br>Xavante<br>Xhosa<br>Yapese<br>Yindjibarndi<br>Zapotec<br>Zulu<br>Zuni<br>
-          </p>
-        </el-col>
-      </el-row>
-    </div>
     <Credits />
   </div>
 </template>
