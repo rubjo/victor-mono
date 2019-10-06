@@ -1,5 +1,5 @@
 <template>
-  <div class="horisontal-large-image">
+  <div class="horizontal-large-image">
     <img
       :class="image"
       :src="imagePath"
@@ -37,7 +37,7 @@ export default {
 <style
   lang="scss"
 >
-.horisontal-large-image {
+.horizontal-large-image {
   width: 100%;
   height: 37vw;
   overflow: hidden;
