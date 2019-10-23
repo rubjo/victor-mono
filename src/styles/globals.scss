@@ -192,7 +192,13 @@ h1 {
   font-weight: normal;
 }
 
+.medal {
+  width: 100%;
+  max-width: 150px;
+}
+
 h2 {
+  font-weight: 400;
   .small {
     font-size: 0.5em;
     line-height: 1em;

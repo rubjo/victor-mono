@@ -126,6 +126,37 @@
     </div>
     <div class="content">
       <div
+        id="ligatures"
+        class="scroll-head"
+      />
+      <el-row>
+        <el-col>
+          <h1 class="centre">
+            <em>Ligatures</em>
+          </h1>
+        </el-col>
+      </el-row>
+      <el-row
+        type="flex"
+        justify="center"
+      >
+        <el-col
+          :xs="22"
+          :sm="18"
+        >
+          <h2>
+            --&gt; -| -&gt; -&gt;&gt; -&lt; -&lt;&lt; -~ .- .= :: := :&gt; :&lt; ;; != !== ?= ## ### ####
+            /= /== /&gt; /\ \/ __ && |- |-&gt; |= |=&gt; |&gt; $&gt; ++ +++ +&gt; =:= =!= == ===
+            ==&gt; =&gt; =&gt;&gt; =&lt;&lt; =/= &gt;- &gt;-&gt; &gt;: &gt;= &gt;=&gt; &gt;&gt;- &gt;&gt;= &lt;- &lt;-- &lt;-&gt; &lt;-&lt; &lt;!--
+            &lt;| &lt;|&gt; &lt;$ &lt;$&gt; &lt;+ &lt;+&gt; &lt;= &lt;== &lt;=&gt; &lt;=&lt; &lt;&gt; &lt;&lt;- &lt;&lt;= &lt;~ &lt;~&gt; &lt;~~ &lt;/ &lt;/&gt; ~-
+            ~@ ~&gt; ~~ ~~&gt;
+          </h2>
+        </el-col>
+      </el-row>
+    </div>
+
+    <div class="content alternate-bg">
+      <div
         id="why"
         class="scroll-head"
       />
@@ -200,7 +231,7 @@
       >
         <el-col
           :xs="22"
-          :sm="16"
+          :sm="18"
         >
           <p>
             If you try it out and like it, I would be very grateful for any donations.
@@ -302,15 +333,18 @@
           </h1>
         </el-col>
       </el-row>
-      <el-row
-        type="flex"
-        justify="center"
-      >
+      <el-row justify="center">
         <el-col
-          :xs="6"
+          :xs="24"
+          :sm="12"
+          :md="6"
+          class="margin-bottom"
         >
           <p class="centre no-padding no-margin-bottom">
-            <img src="./assets/img/bronze.png">
+            <img
+              class="medal"
+              src="./assets/img/bronze.png"
+            >
           </p>
           <h2 class="centre no-margin">
             Bronze<br>
@@ -318,18 +352,24 @@
               Fan
             </div>
           </h2>
-          <p class="small centre">
-            <em>$1/month or - $9.99 once</em>
+          <p class="small centre no-padding">
+            <em>$1/month or - $9.99 in total</em>
           </p>
           <div class="centre">
             Thank you to everyone contributing! ❤️
           </div>
         </el-col>
         <el-col
-          :xs="6"
+          :xs="24"
+          :sm="12"
+          :md="6"
+          class="margin-bottom"
         >
           <p class="centre no-padding no-margin-bottom">
-            <img src="./assets/img/silver.png">
+            <img
+              class="medal"
+              src="./assets/img/silver.png"
+            >
           </p>
           <h2 class="centre no-margin">
             Silver<br>
@@ -337,19 +377,24 @@
               Supporter
             </div>
           </h2>
-          <p class="small centre">
-            <em>$2/month or $10 - $24.99 once</em>
+          <p class="small centre no-padding">
+            <em>$2/month or $10-25 in total</em>
           </p>
           <div class="centre">
             Thank you to everyone contributing! ❤️
           </div>
         </el-col>
         <el-col
-          :xs="6"
-          class="gold"
+          :xs="24"
+          :sm="12"
+          :md="6"
+          class="gold bottom-margin"
         >
           <p class="centre no-padding no-margin-bottom">
-            <img src="./assets/img/gold.png">
+            <img
+              class="medal"
+              src="./assets/img/gold.png"
+            >
           </p>
           <h2 class="centre no-margin">
             Gold<br>
@@ -357,8 +402,8 @@
               Patron
             </div>
           </h2>
-          <p class="small centre">
-            <em>$5/month or $25 - $44.99 once</em>
+          <p class="small centre no-padding">
+            <em>$5/month or $25-45 in total</em>
           </p>
           <div class="centre">
             Thank you to:
@@ -371,11 +416,16 @@
           </div>
         </el-col>
         <el-col
-          :xs="6"
-          class="rainbow"
+          :xs="24"
+          :sm="12"
+          :md="6"
+          class="rainbow bottom-margin"
         >
           <p class="centre no-padding no-margin-bottom">
-            <img src="./assets/img/unicorn.png">
+            <img
+              class="medal"
+              src="./assets/img/unicorn.png"
+            >
           </p>
           <h2 class="centre no-margin">
             Rainbow<br>
@@ -383,15 +433,15 @@
               Champion Guardian Unicorn
             </div>
           </h2>
-          <p class="small centre">
-            <em>$10/month or $45+ once</em>
+          <p class="small centre no-padding">
+            <em>$10/month or $45+ in total</em>
           </p>
           <div class="centre">
             Thank you to:
           </div>
           <div class="centre supporter">
             April Collier
-          </div>      
+          </div>
         </el-col>
       </el-row>
     </div>
