@@ -4,7 +4,7 @@
     <Header ref="header" :show-text="showHeaderText" :theme="theme" />
     <div class="content">
       Victor Mono is a free programming font with <em>semi-connected cursive italics</em>,
-      symbol ligatures (!=, ->>, =>, ===, >= ++) and Latin, Cyrillic and Greek characters.
+      symbol ligatures (!=, ->>, =>, ===, >=, ++) and Latin, Cyrillic and Greek characters.
 <!-- [...] -->
 
 <script> /* eslint-disable */
