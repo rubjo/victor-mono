@@ -109,6 +109,14 @@ p {
       line-height: 0.6em;
     }
   }
+  &.normal {
+    position: relative;
+    top: -5px;
+    display: inline;
+    padding: 0.5em;
+    font-size: 0.5em;
+    line-height: 0.5em;
+  }
 }
 
 [data-theme=light] {
@@ -131,6 +139,10 @@ p {
 .alternate-bg {
   background: var(--background-color-alternate);
   transition: background 1s;
+}
+
+.no-ligatures {
+  font-feature-settings: 'calt' 0;
 }
 
 .full-width {
@@ -190,6 +202,20 @@ p {
 
 h1 {
   font-weight: normal;
+}
+
+.ligature-samples {
+  display: grid;
+}
+
+.crossfade {
+  grid-row: 1;
+  grid-column: 1;
+  transition: opacity 0.5s;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 .medal {

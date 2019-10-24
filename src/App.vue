@@ -124,7 +124,10 @@
         </el-col>
       </el-row>
     </div>
-    <div class="content">
+    <div
+      ref="ligatures"
+      class="content"
+    >
       <div
         id="ligatures"
         class="scroll-head"
@@ -132,7 +135,14 @@
       <el-row>
         <el-col>
           <h1 class="centre">
-            <em>Ligatures</em>
+            <em>Ligatures&nbsp;</em>
+            <el-button
+              class="normal"
+              type=""
+              @click="toggleLigatures"
+            >
+              <em>enabled</em>
+            </el-button>
           </h1>
         </el-col>
       </el-row>
@@ -144,13 +154,34 @@
           :xs="22"
           :sm="18"
         >
-          <h2>
-            --&gt; -| -&gt; -&gt;&gt; -&lt; -&lt;&lt; -~ .- .= :: := :&gt; :&lt; ;; != !== ?= ## ### ####
-            /= /== /&gt; /\ \/ __ && |- |-&gt; |= |=&gt; |&gt; $&gt; ++ +++ +&gt; =:= =!= == ===
-            ==&gt; =&gt; =&gt;&gt; =&lt;&lt; =/= &gt;- &gt;-&gt; &gt;: &gt;= &gt;=&gt; &gt;&gt;- &gt;&gt;= &lt;- &lt;-- &lt;-&gt; &lt;-&lt; &lt;!--
-            &lt;| &lt;|&gt; &lt;$ &lt;$&gt; &lt;+ &lt;+&gt; &lt;= &lt;== &lt;=&gt; &lt;=&lt; &lt;&gt; &lt;&lt;- &lt;&lt;= &lt;~ &lt;~&gt; &lt;~~ &lt;/ &lt;/&gt; ~-
-            ~@ ~&gt; ~~ ~~&gt;
-          </h2>
+          <div class="ligature-samples">
+            <h1 class="no-margin centre crossfade visible">
+              &lt;/ &lt;/&gt; /&gt; ~- -~ ~@
+              &lt;~ &lt;~&gt; &lt;~~ ~&gt; ~~ ~~&gt;<br>
+              &gt;= &lt;= &lt;!-- ## ### #### |- -| |-&gt; |= |=&gt;<br>
+              &gt;- &lt;- &lt;-- --&gt; -&gt; -&lt;
+              &gt;-&gt; &gt;&gt;- &lt;&lt;- &lt;-&gt; -&gt;&gt; -&lt;&lt; &lt;-&lt;<br>
+              ==&gt; =&gt; =/= !== != &lt;==
+              &gt;&gt;= =&gt;&gt; &gt;=&gt; &lt;=&gt; &lt;=&lt; &lt;&lt;= =&lt;&lt;<br>
+              .- .= =:= =!= == === :: := :&gt; :&lt; &gt;: ;;
+              &lt;| &lt;|&gt; |&gt; &lt;&gt;<br>
+              &lt;$ &lt;$&gt; $&gt; &lt;+ &lt;+&gt; +&gt;
+              ?= /= /== /\ \/ __ && ++ +++<br>
+            </h1>
+            <h1 class="no-margin centre crossfade hidden no-ligatures">
+              &lt;/ &lt;/&gt; /&gt; ~- -~ ~@
+              &lt;~ &lt;~&gt; &lt;~~ ~&gt; ~~ ~~&gt;<br>
+              &gt;= &lt;= &lt;!-- ## ### #### |- -| |-&gt; |= |=&gt;<br>
+              &gt;- &lt;- &lt;-- --&gt; -&gt; -&lt;
+              &gt;-&gt; &gt;&gt;- &lt;&lt;- &lt;-&gt; -&gt;&gt; -&lt;&lt; &lt;-&lt;<br>
+              ==&gt; =&gt; =/= !== != &lt;==
+              &gt;&gt;= =&gt;&gt; &gt;=&gt; &lt;=&gt; &lt;=&lt; &lt;&lt;= =&lt;&lt;<br>
+              .- .= =:= =!= == === :: := :&gt; :&lt; &gt;: ;;
+              &lt;| &lt;|&gt; |&gt; &lt;&gt;<br>
+              &lt;$ &lt;$&gt; $&gt; &lt;+ &lt;+&gt; +&gt;
+              ?= /= /== /\ \/ __ && ++ +++<br>
+            </h1>
+          </div>
         </el-col>
       </el-row>
     </div>
@@ -631,6 +662,15 @@ export default {
       setTimeout(() => {
         window.addEventListener('focus', this.celebrate(e.target))
       }, 1000)
+    },
+    toggleLigatures (e) {
+      e.target.innerText = e.target.innerText === 'enabled'
+        ? 'disabled'
+        : 'enabled'
+
+      this.$refs.ligatures.querySelectorAll('.crossfade').forEach(sample => {
+        sample.classList.toggle('hidden')
+      })
     }
   }
 }
