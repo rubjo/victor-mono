@@ -192,7 +192,7 @@ export default {
     a {
       flex: 1;
       min-width: 10px;
-      padding: calc(12px + 0.7vw) 0;
+      padding: calc(10px + 0.7vw) 0;
       color: var(--color-text-primary);
       text-decoration: none;
       transition: flex 1s, color 1s, opacity 1s;
