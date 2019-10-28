@@ -473,6 +473,9 @@
           <div class="centre supporter">
             April Collier
           </div>
+          <div class="centre supporter">
+            Sven Koschnicke
+          </div>
         </el-col>
       </el-row>
     </div>
