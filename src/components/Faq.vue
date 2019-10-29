@@ -69,10 +69,6 @@ export default {
           value: 'Yes. If you\'d like to say thanks, you can <a href="https://paypal.me/runbjo" class="donate" target="_blank">donate</a>. I\'d also appreciate it if you referred others to this web site rather than serving the font files from elsewhere.',
           category: 'Usage'
         }, {
-          title: 'How do I use it?',
-          value: '1) <a href="#download">Download</a> the font<br>2) Unpack the ZIP<br>3) <a href="https://www.google.com/search?q=how+to+install+fonts" target="_blank">Install</a> the font<br>4) Change the font settings in your code editor / IDE of choice to "Victor Mono".',
-          category: 'Usage'
-        }, {
           title: 'I found a bug. Where do I report it?',
           value: 'Please <a href="https://github.com/rubjo/victor-mono/issues/new" target="_blank">open an issue</a>.',
           category: 'Usage'

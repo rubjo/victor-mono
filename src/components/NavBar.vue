@@ -26,6 +26,12 @@
       >
         Get</a>
       <a
+        v-scroll-to="'#how'"
+        class="hidden-xs-only"
+        href="#"
+      >
+        How</a>
+      <a
         v-scroll-to="'#faq'"
         href="#"
       >
