@@ -43,6 +43,16 @@
       >
         Credits</a>
       <a
+        v-scroll-to="'#credits'"
+        href="https://github.com/rubjo/victor-mono"
+      >
+        <img
+          src="../assets/img/github.png"
+          class="octocat"
+          alt="Octocat"
+        >
+      </a>
+      <a
         ref="themeIcon"
         class="themeIcon"
         href="javascript:void(0)"
@@ -228,4 +238,10 @@ export default {
     }
   }
 
+  .octocat {
+    height: calc(20px + 0.75vw);
+    margin-top: 5px;
+    filter: invert(0%);
+    transition: -webkit-filter 1s;
+  }
 </style>

@@ -48,8 +48,7 @@
     "vue-codemirror": "^4.0.6",
     "vue-faq-accordion": "^1.2.1",
     "vue-scrollTo": "^2.4.1",
-    "vue-social-sharing": "^2.4.6",
-    "zooming": "^2.1.1"
+    "vue-social-sharing": "^2.4.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",

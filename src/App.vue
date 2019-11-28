@@ -36,18 +36,26 @@
             >because there just wasn't any</a>
             free or paid font that I found both readable, effective and elegant.
             <br><br>
-            <img
+            <a
               v-if="theme === 'dark'"
-              :src="stylesDarkThumb"
-              :data-original="stylesDark"
-              class="styles-image dark"
+              :href="stylesDark"
+              target="_blank"
             >
-            <img
+              <img
+                :src="stylesDarkThumb"
+                class="styles-image dark"
+              >
+            </a>
+            <a
               v-else
-              :src="stylesLightThumb"
-              :data-original="stylesLight"
-              class="styles-image light"
+              :href="stylesLight"
+              target="_blank"
             >
+              <img
+                :src="stylesLightThumb"
+                class="styles-image light"
+              >
+            </a>
             The typeface is clean, crisp and narrow, with a large x-height and clear punctuation,
             making it legible and ideal for code. It comes in seven weights,
             and is available in Roman, <em>Italic</em> and <em class="alt">Oblique</em> styles.
@@ -548,7 +556,6 @@ import lazyLoadComponent from '@/utils/lazy-load-component.js'
 import Loader from '@/components/Loader'
 import anime from 'animejs'
 import { confetti } from 'dom-confetti'
-import Zooming from 'zooming'
 import Faq from '@/components/Faq'
 import Credits from '@/components/Credits'
 
@@ -590,14 +597,6 @@ export default {
     this.initScrollWatcher()
     this.setHeaderHeight()
     this.calculateHeaderText()
-    const zoomingDark = new Zooming({
-      bgColor: '#333'
-    })
-    const zoomingLight = new Zooming({
-      bgColor: '#ddd'
-    })
-    zoomingDark.listen('.styles-image.dark')
-    zoomingLight.listen('.styles-image.light')
   },
   methods: {
     initScrollWatcher () {

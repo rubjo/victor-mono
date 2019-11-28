@@ -134,6 +134,10 @@ p {
       }
     }
   }
+  .octocat {
+    filter: invert(100%);
+    transition: -webkit-filter 1s;
+  }
 }
 
 .alternate-bg {

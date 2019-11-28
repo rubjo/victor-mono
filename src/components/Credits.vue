@@ -229,6 +229,14 @@
           >
             Glyphs</a>
           <br><br>
+          <em>Hosted by the nice folks at</em>
+          <br>
+          <a
+            target="_blank"
+            href="https://github.com/about"
+          >
+            GitHub</a>
+          <br><br>
           <em>Font and web site</em>
           <br>
           <a
