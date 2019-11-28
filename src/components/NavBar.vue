@@ -43,8 +43,8 @@
       >
         Credits</a>
       <a
-        v-scroll-to="'#credits'"
         href="https://github.com/rubjo/victor-mono"
+        target="_blank"
       >
         <img
           src="../assets/img/github.png"
