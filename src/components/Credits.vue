@@ -127,19 +127,6 @@
           >
             Element</a>
           <br><br>
-          <em>Image zoom</em>
-          <br>
-          <a
-            target="_blank"
-            href="https://desmonding.me/zooming/"
-          >
-            zooming</a>
-          by
-          <a
-            target="_blank"
-            href="https://github.com/kingdido999"
-          >
-            Desmond Ding</a>
           <br><br>
           <em>Sharing component</em>
           <br>
