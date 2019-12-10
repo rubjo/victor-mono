@@ -24,12 +24,12 @@
           :sm="18"
         >
           <p class="columns">
-            Victor Mono is a free programming font with
+            Victor Mono is a free programming font with optional
             <em>semi-connected cursive italics</em>,
             symbol ligatures (!=, ->>, =>, ===, &lt;=, &gt;=, ++)
             and Latin, Cyrillic and Greek characters.
             <br><br>
-            It was drawn from scratch as a pet project / experiment
+            It was drawn from scratch
             <a
               v-scroll-to="'#why'"
               href="javascript:void(0)"
@@ -58,12 +58,12 @@
             </a>
             The typeface is clean, crisp and narrow, with a large x-height and clear punctuation,
             making it legible and ideal for code. It comes in seven weights,
-            and is available in Roman, <em>Italic</em> and <em class="alt">Oblique</em> styles.
+            and is available in Roman, <em>Italic</em> and <em class="alt">Oblique</em>.
             <br><br>
           </p>
           <p class="centre">
             <em>
-              If you try it, like it and want to say thanks, any
+              If you want to say thanks, any
               <a
                 href="javascript:void(0)"
                 class="donate"
@@ -526,6 +526,9 @@
           </p>
           <div class="centre">
             Thank you to:
+          </div>
+          <div class="centre supporter">
+            Parker Ault
           </div>
           <div class="centre supporter">
             April Collier
