@@ -500,6 +500,9 @@
             Colton Borg
           </div>
           <div class="centre supporter">
+            Michael Schore
+          </div>
+          <div class="centre supporter">
             Christoph Siedentop
           </div>
         </el-col>
