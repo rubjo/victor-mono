@@ -23,19 +23,7 @@
           :xs="22"
           :sm="18"
         >
-          <p class="columns">
-            Victor Mono is a free programming font with optional
-            <em>semi-connected cursive italics</em>,
-            symbol ligatures (!=, ->>, =>, ===, &lt;=, &gt;=, ++)
-            and Latin, Cyrillic and Greek characters.
-            <br><br>
-            It was drawn from scratch
-            <a
-              v-scroll-to="'#why'"
-              href="javascript:void(0)"
-            >because there just wasn't any</a>
-            free or paid font that I found both readable, effective and elegant.
-            <br><br>
+          <p class="large">
             <a
               v-if="theme === 'dark'"
               :href="stylesDark"
@@ -56,27 +44,14 @@
                 class="styles-image light"
               >
             </a>
+            Victor Mono is a free programming font with optional
+            <em>semi-connected cursive italics</em>,
+            symbol ligatures (!=, ->>, =>, ===, &lt;=, &gt;=, ++)
+            and Latin, Cyrillic and Greek characters.
+            <br><br>
             The typeface is clean, crisp and narrow, with a large x-height and clear punctuation,
             making it legible and ideal for code. It comes in seven weights,
             and is available in Roman, <em>Italic</em> and <em class="alt">Oblique</em>.
-            <br><br>
-          </p>
-          <p class="centre">
-            <em>
-              If you want to say thanks, any
-              <a
-                href="javascript:void(0)"
-                class="donate"
-                @click="paypal"
-              >PayPal</a>
-              or
-              <a
-                href="javascript:void(0)"
-                class="donate"
-                @click="patreon"
-              >Patreon</a>
-              donation is very welcome.
-            </em>
           </p>
         </el-col>
       </el-row>
@@ -110,25 +85,6 @@
           <CodeView
             :theme="theme"
           />
-        </el-col>
-      </el-row>
-      <el-row
-        type="flex"
-        justify="center"
-      >
-        <el-col
-          :xs="22"
-        >
-          <p class="small centre">
-            <em>Test and compare free programming fonts on
-              <a
-                target="_blank"
-                href="https://app.programmingfonts.org#victor-mono"
-              >
-                app.programmingfonts.org</a>
-            </em>
-            ⭐️
-          </p>
         </el-col>
       </el-row>
     </div>
@@ -194,6 +150,11 @@
       </el-row>
     </div>
 
+    <HeroImage
+      image="glyphs"
+      :theme="theme"
+    />
+
     <div class="content alternate-bg">
       <div
         id="why"
@@ -215,16 +176,13 @@
           :sm="18"
         >
           <p class="columns">
-            When it comes to programming fonts, I prefer something strict, readable and relatively
-            condensed for the code proper, complemented with a more
-            <em>informal, flowing and human style</em>
+            When it comes to programming fonts, I prefer something thin, crisp
+            and relatively condensed for the code proper,
+            complemented with a more <em>informal, flowing and human style</em>
             for things like comments and reserved keywords.
             <br><br>
-            I've tried lots of alternatives, each with their strengths (Operator Mono: the pricey
-            and hip original, Dank Mono: the cheaper one with a wide, younger look, Fira
-            Code with the ligatures I use plus a zillion more, compressed and endlessly
-            customisable Pragmata or Monoid - the list goes on). However, I always ended up
-            rejecting the fonts I tried because something didn't look right to me:
+            In the past, I always ended up looking for something else after
+            using a font for a while, because something didn't look right to me:
             <ul>
               <li>No cursive italics</li>
               <li>Regular/Roman style was not to my taste</li>
@@ -239,8 +197,8 @@
               <li>Combined two fonts too different in style</li>
               <li>Very expensive</li>
             </ul>
-            So eventually, I started making something myself. The resulting typeface, although still
-            a work in progress, feels right to me.
+            So eventually, I started sketching and designing something myself.
+            The resulting typeface, although still a work in progress, feels right to me.
             <br><br>
             You might like it as well. That's brilliant! You might not. That's also fine: use a font
             that works for you. 😛
@@ -248,11 +206,10 @@
         </el-col>
       </el-row>
     </div>
-    <HeroImage
-      image="glyphs"
-      :theme="theme"
-    />
-    <div class="content">
+
+    <Compare :theme="theme"/>
+
+    <div class="content alternate-bg">
       <div
         id="download"
         class="scroll-head"
@@ -370,7 +327,7 @@
       id="how"
       class="scroll-head"
     />
-    <div class="content alternate-bg">
+    <div class="content">
       <el-row>
         <el-col>
           <h1 class="centre">
@@ -413,7 +370,7 @@
         </el-col>
       </el-row>
     </div>
-    <div class="content">
+    <div class="content alternate-bg">
       <el-row>
         <el-col>
           <h1 class="centre">
@@ -578,6 +535,12 @@ export default {
     }),
     HeroImage: lazyLoadComponent({
       componentFactory: () => import('@/components/HeroImage'),
+      background: localStorage.getItem('theme') === 'dark' ? '#515151' : '#f5f5f5',
+      height: '37vw',
+      loading: Loader
+    }),
+    Compare: lazyLoadComponent({
+      componentFactory: () => import('@/components/Compare'),
       background: localStorage.getItem('theme') === 'dark' ? '#515151' : '#f5f5f5',
       height: '37vw',
       loading: Loader

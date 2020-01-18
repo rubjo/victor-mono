@@ -42,13 +42,9 @@
         Based on
         <a
           target="_blank"
-          href="https://github.com/rubjo/ultimate-dark"
-        >Ultimate Dark</a>
-        colour scheme
-        (<a
-          target="_blank"
-          href="https://packagecontrol.io/packages/Ultimate%20Dark"
-        >Sublime Text 3 package</a>)
+          href="https://github.com/voronianski/oceanic-next-color-scheme"
+        >Oceanic Next</a>
+        colour scheme by Dmitri Voronianski
       </div>
       <div
         v-else
@@ -67,8 +63,9 @@
 <script>
 // language
 import 'codemirror/mode/vue/vue.js'
+import 'codemirror/mode/javascript/javascript.js'
 // themes css
-import '@/styles/ultimate-dark.css'
+import '@/styles/oceanic-next.css'
 import '@/styles/base-16-light.css'
 // active-line.js
 import 'codemirror/addon/selection/active-line.js'
@@ -81,7 +78,7 @@ import 'codemirror/addon/comment/comment.js'
 // sample code
 // eslint-disable-next-line
 import mobileCode from '!raw-loader!@/components/Sample-mobile.vue'
-import desktopCode from '!raw-loader!@/components/Sample-desktop.vue'
+import desktopCode from '!raw-loader!@/components/Sample-desktop.js'
 
 export default {
   name: 'CodeView',
@@ -95,20 +92,20 @@ export default {
     return {
       code: window.innerWidth <= 768 ? mobileCode : desktopCode,
       cmOptions: {
-        mode: 'text/x-vue',
+        mode: window.innerWidth <= 768 ? 'text/x-vue' : 'text/javascript',
         tabSize: 2,
         styleActiveLine: true,
         line: true,
         styleSelectedText: true,
         matchBrackets: true,
         showCursorWhenSelecting: true,
-        theme: this.theme === 'dark' ? 'ultimate-dark' : 'base16-light'
+        theme: this.theme === 'dark' ? 'oceanic-next' : 'base16-light'
       }
     }
   },
   watch: {
     theme (newVal, oldVal) {
-      this.cm.setOption('theme', newVal === 'dark' ? 'ultimate-dark' : 'base16-light')
+      this.cm.setOption('theme', newVal === 'dark' ? 'oceanic-next' : 'base16-light')
     }
   },
   mounted () {

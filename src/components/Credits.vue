@@ -91,6 +91,20 @@
           >
             Igor Randjelovic</a>
           <br><br>
+          <em>Image comparison component</em>
+          <br>
+          <a
+            target="_blank"
+            href="https://github.com/mhayes/vue-twentytwenty"
+          >
+            vue-twentytwenty</a>
+          by
+          <a
+            target="_blank"
+            href="https://github.com/mhayes"
+          >
+            Mark Hayes</a>
+          <br><br>
           <em>FAQ component</em>
           <br>
           <a
@@ -126,7 +140,6 @@
             href="https://element.eleme.io/#/en-US"
           >
             Element</a>
-          <br><br>
           <br><br>
           <em>Sharing component</em>
           <br>

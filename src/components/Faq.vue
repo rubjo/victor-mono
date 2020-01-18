@@ -147,6 +147,10 @@ export default {
         button {
           padding-left: 20px;
           margin-left: 5vw;
+          &::before,
+          &::after {
+            background: var(--color-text-accented);
+          }
         }
       }
       .accordion__value {
