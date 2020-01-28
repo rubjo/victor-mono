@@ -1,9 +1,5 @@
 <template>
-  <div class="content">
-    <div
-      id="compare"
-      class="scroll-head"
-    />
+  <div>
     <el-row>
       <el-col>
         <h1 class="centre">

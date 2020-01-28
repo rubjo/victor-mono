@@ -207,7 +207,13 @@
       </el-row>
     </div>
 
-    <Compare :theme="theme"/>
+    <div class="content">
+      <div
+        id="compare"
+        class="scroll-head"
+      />
+      <Compare :theme="theme" />
+    </div>
 
     <div class="content alternate-bg">
       <div
@@ -269,7 +275,7 @@
           </a>
           &nbsp;
           <a
-            id="download-link"
+            class="download-link"
             href="VictorMonoAll.zip"
           >
             <el-button
@@ -345,8 +351,8 @@
         >
           <p class="">
             1) <a
-              v-scroll-to="'#download'"
-              href="javascript:void(0)"
+              class="download-link"
+              href="VictorMonoAll.zip"
             >Download</a> the font<br>
             2) Unpack the ZIP<br>
             3) <a
@@ -542,7 +548,7 @@ export default {
     Compare: lazyLoadComponent({
       componentFactory: () => import('@/components/Compare'),
       background: localStorage.getItem('theme') === 'dark' ? '#515151' : '#f5f5f5',
-      height: '37vw',
+      height: '45vw',
       loading: Loader
     }),
     Faq,
