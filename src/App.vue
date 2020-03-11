@@ -494,6 +494,9 @@
             Thank you to:
           </div>
           <div class="centre supporter">
+            Matthew Anderson
+          </div>
+          <div class="centre supporter">
             Parker Ault
           </div>
           <div class="centre supporter">
