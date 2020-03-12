@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="negative-margins">
     <el-row>
       <el-col>
         <h1 class="centre">

@@ -77,9 +77,9 @@
       <el-row
         type="flex"
         justify="center"
+        class="negative-margins"
       >
         <el-col
-          :xs="22"
           :sm="18"
         >
           <CodeView
@@ -117,33 +117,34 @@
         <el-col
           :xs="22"
           :sm="18"
+          :lg="14"
         >
           <div class="ligature-samples">
             <h1 class="no-margin centre crossfade visible">
               &lt;/ &lt;/&gt; /&gt; ~- -~ ~@
-              &lt;~ &lt;~&gt; &lt;~~ ~&gt; ~~ ~~&gt;<br>
-              &gt;= &lt;= &lt;!-- ## ### #### |- -| |-&gt; |= |=&gt;<br>
+              &lt;~ &lt;~&gt; &lt;~~ ~&gt; ~~ ~~&gt;
+              &gt;= &lt;= &lt;!-- ## ### #### |- -| |-&gt; |= |=&gt;
               &gt;- &lt;- &lt;-- --&gt; -&gt; -&lt;
-              &gt;-&gt; &gt;&gt;- &lt;&lt;- &lt;-&gt; -&gt;&gt; -&lt;&lt; &lt;-&lt;<br>
+              &gt;-&gt; &gt;&gt;- &lt;&lt;- &lt;-&gt; -&gt;&gt; -&lt;&lt; &lt;-&lt;
               ==&gt; =&gt; =/= !== != &lt;==
-              &gt;&gt;= =&gt;&gt; &gt;=&gt; &lt;=&gt; &lt;=&lt; &lt;&lt;= =&lt;&lt;<br>
+              &gt;&gt;= =&gt;&gt; &gt;=&gt; &lt;=&gt; &lt;=&lt; &lt;&lt;= =&lt;&lt;
               .- .= =:= =!= == === :: := :&gt; :&lt; &gt;: ;;
-              &lt;| &lt;|&gt; |&gt; &lt;&gt;<br>
+              &lt;| &lt;|&gt; |&gt; &lt;&gt;
               &lt;$ &lt;$&gt; $&gt; &lt;+ &lt;+&gt; +&gt;
-              ?= /= /== /\ \/ __ && ++ +++<br>
+              ?= /= /== /\ \/ __ && ++ +++
             </h1>
             <h1 class="no-margin centre crossfade hidden no-ligatures">
               &lt;/ &lt;/&gt; /&gt; ~- -~ ~@
-              &lt;~ &lt;~&gt; &lt;~~ ~&gt; ~~ ~~&gt;<br>
-              &gt;= &lt;= &lt;!-- ## ### #### |- -| |-&gt; |= |=&gt;<br>
+              &lt;~ &lt;~&gt; &lt;~~ ~&gt; ~~ ~~&gt;
+              &gt;= &lt;= &lt;!-- ## ### #### |- -| |-&gt; |= |=&gt;
               &gt;- &lt;- &lt;-- --&gt; -&gt; -&lt;
-              &gt;-&gt; &gt;&gt;- &lt;&lt;- &lt;-&gt; -&gt;&gt; -&lt;&lt; &lt;-&lt;<br>
+              &gt;-&gt; &gt;&gt;- &lt;&lt;- &lt;-&gt; -&gt;&gt; -&lt;&lt; &lt;-&lt;
               ==&gt; =&gt; =/= !== != &lt;==
-              &gt;&gt;= =&gt;&gt; &gt;=&gt; &lt;=&gt; &lt;=&lt; &lt;&lt;= =&lt;&lt;<br>
+              &gt;&gt;= =&gt;&gt; &gt;=&gt; &lt;=&gt; &lt;=&lt; &lt;&lt;= =&lt;&lt;
               .- .= =:= =!= == === :: := :&gt; :&lt; &gt;: ;;
-              &lt;| &lt;|&gt; |&gt; &lt;&gt;<br>
+              &lt;| &lt;|&gt; |&gt; &lt;&gt;
               &lt;$ &lt;$&gt; $&gt; &lt;+ &lt;+&gt; +&gt;
-              ?= /= /== /\ \/ __ && ++ +++<br>
+              ?= /= /== /\ \/ __ && ++ +++
             </h1>
           </div>
         </el-col>

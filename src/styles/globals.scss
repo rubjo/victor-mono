@@ -55,6 +55,10 @@ body {
   margin: 0;
 }
 
+.negative-margins {
+  margin: 0 -10px;
+}
+
 p {
   padding-bottom: 20px;
   font-size: calc(0.9rem + 0.4vw);
@@ -243,7 +247,7 @@ h2 {
 .content {
   padding: 10px 10px 40px 10px;
   h1 {
-    padding-top: 40px;
+    padding-top: 20px;
   }
 }
 

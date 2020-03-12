@@ -4,28 +4,6 @@
       class="window"
       :class="{ 'light': theme !== 'dark' }"
     >
-      <div class="controls">
-        <el-tooltip
-          class="item"
-          effect="dark"
-          content="Not an actual window :P"
-          placement="top-start"
-        >
-          <span>
-            <div class="close" />
-            <div class="min" />
-            <div class="max" />
-          </span>
-        </el-tooltip>
-        <a
-          class="theme-toggle"
-          href="javascript:void(0)"
-          @click="toggleTheme"
-        >
-          <i class="el-icon-refresh" />
-          Toggle theme
-        </a>
-      </div>
       <codemirror
         ref="myCm"
         class="code"
@@ -119,10 +97,6 @@ export default {
     },
     onCmCodeChange (newCode) {
       this.code = newCode
-    },
-    toggleTheme () {
-      // Probably the laziest thing ever
-      this.$root.$children[0].$refs.navbar.toggleTheme()
     }
   }
 }
@@ -135,12 +109,7 @@ export default {
 .window {
   position: relative;
   z-index: 0;
-  height: 75vh;
-  margin-bottom: 20px;
-  border: 1px solid #303030;
-  border-radius: 5px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  transition: border 1s;
+  height: 80vh;
   .controls {
     height: 34px;
     background: #303030;
