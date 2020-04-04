@@ -6,7 +6,7 @@
 </template>
 
 <script> /* eslint-disable */
-  import MainView from './components/MainView.vue'
+  import MainView from 'Somewhere.vue'
 
   export default {
     components: { MainView },

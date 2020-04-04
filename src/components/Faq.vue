@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="content alternate-bg">
     <div
       id="faq"
       class="scroll-head"
@@ -109,10 +109,6 @@ export default {
     font-size: calc(1.1rem + 0.4vw);
     .faq-wrapper {
       max-width: none;
-      p {
-        font-size: 85%;
-        line-height: 170%;
-      }
       .faq__nav-item {
         font-weight: inherit;
         color: inherit;
@@ -140,7 +136,7 @@ export default {
           .accordion__toggle-button[data-v-36e025b4] {
             &::before,
             &::after {
-              background: var(--color-text-accented);
+              background: var(--color-text-primary);
             }
           }
         }
@@ -149,7 +145,7 @@ export default {
           margin-left: 5vw;
           &::before,
           &::after {
-            background: var(--color-text-accented);
+            background: var(--color-text-primary);
           }
         }
       }

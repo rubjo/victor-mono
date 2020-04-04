@@ -1,9 +1,13 @@
 <template>
   <transition name="el-zoom-in-top">
     <div
-      v-show="show"
       class="navbar"
+      :class="{ 'visible': show }"
     >
+      <canvas
+        ref="gradients"
+        class="navbar-gradients"
+      />
       <a
         v-scroll-to="'#app'"
         :class="{ 'collapsed': !showGoToTop }"
@@ -109,33 +113,48 @@
 
 <script>
 import anime from 'animejs'
+import initGradient from '@/utils/init-gradients.js'
 
 export default {
   name: 'NavBar',
   props: {
-    show: Boolean,
-    showGoToTop: Boolean
+    showGoToTop: Boolean,
+    show: Boolean
   },
   data () {
     return {
+      granim: null,
       theme: localStorage.getItem('theme') || 'dark',
       backgroundColour: '#595959',
       textColour: '#eee'
     }
   },
+  watch: {
+    show () {
+      this.spin()
+    },
+    theme (newVal, oldVal) {
+      this.granim.changeState(newVal)
+    }
+  },
   mounted () {
+    this.spin()
     this.setAppearance()
-    anime({
-      targets: '.themeIcon svg',
-      rotate: [-45, 315],
-      scale: [0.75, 1.25, 1, 1],
-      strokeColor: ['#f0f', '#000'],
-      delay: 1500,
-      duration: 2000,
-      easing: 'easeInOutSine'
-    })
+    this.granim = initGradient('.navbar-gradients', this.theme)
+    this.granim.changeState(this.theme)
   },
   methods: {
+    spin () {
+      anime({
+        targets: '.themeIcon svg',
+        rotate: [-45, 315],
+        scale: [0.75, 1.25, 1, 1],
+        strokeColor: ['#f0f', '#000'],
+        delay: 1500,
+        duration: 2000,
+        easing: 'easeInOutSine'
+      })
+    },
     toggleTheme () {
       this.$refs.themeIcon.style.transform = 'scale(0)'
 
@@ -175,8 +194,8 @@ export default {
     setAppearance () {
       if (this.theme === 'dark') {
         this.$emit('darkTheme')
-        this.backgroundColour = '#595959'
-        this.alternateBackgroundColour = '#505050'
+        this.backgroundColour = '#2a2a2a'
+        this.alternateBackgroundColour = '#333'
         this.textColour = '#eee'
       } else {
         this.$emit('lightTheme')
@@ -205,6 +224,10 @@ export default {
     width: 100%;
     font-size: calc(18px + 0.8vw);
     text-align: center;
+    opacity: 0;
+    &.visible {
+      opacity: 1;
+    }
     a {
       flex: 1;
       min-width: 10px;
@@ -238,10 +261,28 @@ export default {
     }
   }
 
+  @media all and (max-width: 768px) {
+    .navbar {
+      top: auto;
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+
   .octocat {
     height: calc(20px + 0.75vw);
     margin-top: 5px;
     filter: invert(0%);
     transition: -webkit-filter 1s;
+  }
+
+  .navbar-gradients {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: screen;
   }
 </style>

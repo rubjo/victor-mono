@@ -20,7 +20,8 @@
         :sm="18"
       >
         <p class="small centre">
-          If making this font has been a learning experiment, the same can be said for trying out a number of frameworks/packages to make this web site. Big thanks to the following:
+          A number of frameworks/packages have been used to make this web site.
+          Big thanks to the following:
           <br><br><br>
           <em>Lovely gradients</em>
           <br>

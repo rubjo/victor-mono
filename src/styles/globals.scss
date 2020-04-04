@@ -20,13 +20,13 @@
 }
 
 :root {
-  --background-color-base: #595959;
-  --background-color-alternate: #505050;
-  --color-text-primary: #fff;
+  --background-color-base: #2a2a2a;
+  --background-color-alternate: #333;
+  --color-text-primary: #eee;
   --color-text-accented: #0bf;
 }
 
-$background-dark: #595959;
+$background-dark: #222;
 $background-light: #fff;
 
 html,
@@ -61,8 +61,8 @@ body {
 
 p {
   padding-bottom: 20px;
-  font-size: calc(0.9rem + 0.4vw);
-  line-height: calc(1.8rem + 0.6vw);
+  font-size: calc(1.02rem + 0.4vw);
+  line-height: calc(2.04rem + 0.6vw);
   &.columns {
     column-count: 2;
     column-width: 18em;
@@ -74,8 +74,8 @@ p {
     }
   }
   &.large {
-    font-size: calc(0.9rem + 0.7vw);
-    line-height: calc(1.8rem + 0.9vw);
+    font-size: calc(0.9rem + 0.8vw);
+    line-height: calc(1.6rem + 2vw);
   }
   &.small {
     font-size: calc(0.8rem + 0.2vw);
@@ -145,6 +145,9 @@ p {
   .octocat {
     filter: invert(100%);
     transition: -webkit-filter 1s;
+  }
+  .code-segment {
+    background: #f2f2f2;
   }
 }
 
@@ -223,7 +226,7 @@ h1 {
 .crossfade {
   grid-row: 1;
   grid-column: 1;
-  transition: opacity 0.5s;
+  transition: opacity 1s;
 }
 
 .hidden {
@@ -246,6 +249,9 @@ h2 {
 
 .content {
   padding: 10px 10px 40px 10px;
+  &.initial {
+    padding-top: 20px;
+  }
   h1 {
     padding-top: 20px;
   }
@@ -285,6 +291,11 @@ em.alt {
   min-height: 300px;
   max-height: 400px;
   margin: 0 0 5px 25px;
+}
+
+.code-segment {
+  background: #304148;
+  transition: background 1s;
 }
 
 code {

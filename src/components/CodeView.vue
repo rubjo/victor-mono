@@ -2,7 +2,6 @@
   <div>
     <div
       class="window"
-      :class="{ 'light': theme !== 'dark' }"
     >
       <codemirror
         ref="myCm"
@@ -110,46 +109,11 @@ export default {
   position: relative;
   z-index: 0;
   height: 80vh;
-  .controls {
-    height: 34px;
-    background: #303030;
-    transition: background 1s;
-    div {
-      float: left;
-      width: 14px;
-      height: 14px;
-      margin: 10px 0 0 10px;
-      background: #999;
-      border-radius: 50%;
-    }
-    .close {
-      background: #ff544e;
-    }
-    .min {
-      background: #feb429;
-    }
-    .max {
-      background: #26c138;
-    }
-    .theme-toggle {
-      float: right;
-      margin-right: 10px;
-      font-size: 0.8em;
-      line-height: 2.7em;
-      text-decoration: none;
-    }
-  }
-  &.light {
-    border-color: #ccc;
-    .controls {
-      background: #eee;
-    }
-  }
 }
 
 .code {
   height: calc(100% - 34px);
-  font-size: calc(14px + 0.45vw);
+  font-size: calc(16px + 0.45vw);
   line-height: 1.5em;
 }
 </style>

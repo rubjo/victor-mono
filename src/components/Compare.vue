@@ -109,10 +109,6 @@ export default {
   },
   methods: {
     pickRandom () {
-      // this.otherFont = this
-      //   .fonts[Math.floor(Math.random() * this.fonts.length)]
-      //   .toLowerCase().split(' ').join('-')
-
       const index = Math.floor(Math.random() * this.fonts.length)
       this.$refs.otherFontSelect.selectedIndex = index
       this.$refs.otherFontSelect.dispatchEvent(new Event('change'))
@@ -211,7 +207,7 @@ export default {
     }
   }
   .container {
-    max-width: 850px;
+    max-width: 1100px;
     margin: 0 auto;
   }
   .twentytwenty-container {
@@ -224,6 +220,9 @@ export default {
     }
     .twentytwenty-handle {
       z-index: auto;
+    }
+    &:hover > .twentytwenty-overlay {
+      opacity: 0!important;
     }
   }
 

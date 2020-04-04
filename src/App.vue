@@ -11,10 +11,9 @@
     />
     <Header
       ref="header"
-      :show-text="showHeaderText"
       :theme="theme"
     />
-    <div class="content">
+    <div class="initial content">
       <el-row
         type="flex"
         justify="center"
@@ -44,19 +43,18 @@
                 class="styles-image light"
               >
             </a>
-            Victor Mono is a free programming font with optional
-            <em>semi-connected cursive italics</em>,
-            symbol ligatures (!=, ->>, =>, ===, &lt;=, &gt;=, ++)
-            and Latin, Cyrillic and Greek characters.
+            Victor Mono is an open-source monospaced font with optional
+            <em>semi-connected cursive italics</em> and programming
+            symbol ligatures.
             <br><br>
             The typeface is clean, crisp and narrow, with a large x-height and clear punctuation,
-            making it legible and ideal for code. It comes in seven weights,
-            and is available in Roman, <em>Italic</em> and <em class="alt">Oblique</em>.
+            making it legible and ideal for code. It comes in seven weights and
+            Roman, <em>Italic</em> and <em class="alt">Oblique</em> styles.
           </p>
         </el-col>
       </el-row>
     </div>
-    <div class="content alternate-bg">
+    <div class="content code-segment">
       <div
         id="try"
         class="scroll-head"
@@ -90,7 +88,7 @@
     </div>
     <div
       ref="ligatures"
-      class="content"
+      class="content alternate-bg"
     >
       <div
         id="ligatures"
@@ -117,7 +115,6 @@
         <el-col
           :xs="22"
           :sm="18"
-          :lg="14"
         >
           <div class="ligature-samples">
             <h1 class="no-margin centre crossfade visible">
@@ -183,25 +180,20 @@
             for things like comments and reserved keywords.
             <br><br>
             In the past, I always ended up looking for something else after
-            using a font for a while, because something didn't look right to me:
-            <ul>
-              <li>No cursive italics</li>
-              <li>Regular/Roman style was not to my taste</li>
-              <li>No programming symbol ligatures</li>
-              <li>Too heavy and inelegant</li>
-              <li>Too light and straining to read</li>
-              <li>Too wide/spaced and wasted space</li>
-              <li>Too narrow and hard to scan</li>
-              <li>Seemed unfinished in some way</li>
-              <li>Seemed childish or unprofessional</li>
-              <li>Seemed imbalanced or inconsistent</li>
-              <li>Combined two fonts too different in style</li>
-              <li>Very expensive</li>
-            </ul>
+            using a font for a while, because something didn't look right to me.
             So eventually, I started sketching and designing something myself.
-            The resulting typeface, although still a work in progress, feels right to me.
-            <br><br>
-            You might like it as well. That's brilliant! You might not. That's also fine: use a font
+            I wanted something that:
+            <ul>
+              <li>had friendly and distinct italics</li>
+              <li>a strict, geometric and readable regular style</li>
+              <li>had programming symbol ligatures</li>
+              <li>was slender and elegant</li>
+              <li>narrow enough to fit a lot of text</li>
+              <li>wide enough to be scannable</li>
+              <li>looked consistent and professional</li>
+            </ul>
+            Victor Mono is the result. You might like it as well.
+            That's brilliant! You might not. That's also fine: use a font
             that works for you. 😛
           </p>
         </el-col>
@@ -410,6 +402,7 @@
           <div class="centre">
             Thank you to everyone contributing! ❤️
           </div>
+          <p />
         </el-col>
         <el-col
           :xs="24"
@@ -435,6 +428,7 @@
           <div class="centre">
             Thank you to everyone contributing! ❤️
           </div>
+          <p />
         </el-col>
         <el-col
           :xs="24"
@@ -469,6 +463,7 @@
           <div class="centre supporter">
             Christoph Siedentop
           </div>
+          <p />
         </el-col>
         <el-col
           :xs="24"
@@ -506,6 +501,7 @@
           <div class="centre supporter">
             Sven Koschnicke
           </div>
+          <p />
         </el-col>
       </el-row>
     </div>
@@ -527,7 +523,6 @@ import NavBar from '@/components/NavBar'
 import Header from '@/components/Header'
 import lazyLoadComponent from '@/utils/lazy-load-component.js'
 import Loader from '@/components/Loader'
-import anime from 'animejs'
 import { confetti } from 'dom-confetti'
 import Faq from '@/components/Faq'
 import Credits from '@/components/Credits'
@@ -539,7 +534,7 @@ export default {
     Header,
     CodeView: lazyLoadComponent({
       componentFactory: () => import('@/components/CodeView'),
-      background: localStorage.getItem('theme') === 'dark' ? '#515151' : '#f5f5f5',
+      background: localStorage.getItem('theme') === 'dark' ? '#304148' : '#f2f2f2',
       height: 'calc(75vh + 20px)',
       loading: Loader
     }),
@@ -560,8 +555,7 @@ export default {
   },
   data () {
     return {
-      showHeaderText: false,
-      showNav: true,
+      showNav: false,
       showGoToTop: false,
       theme: localStorage.getItem('theme') || 'dark'
     }
@@ -574,8 +568,6 @@ export default {
   },
   mounted () {
     this.initScrollWatcher()
-    this.setHeaderHeight()
-    this.calculateHeaderText()
   },
   methods: {
     initScrollWatcher () {
@@ -590,56 +582,17 @@ export default {
       }
 
       ['scroll', 'resize'].forEach(event => {
-        window.addEventListener(event, throttle(this.setHeaderHeight, 250))
-        window.addEventListener(event, throttle(this.calculateHeaderText, 250))
+        window.addEventListener(event, throttle(this.scrollHandler, 100))
       })
     },
-    setHeaderHeight () {
-      const top = window.scrollY
+    scrollHandler () {
       const mainTitle = this.$refs.header.$el.querySelector('h1')
       const margin = parseInt(window.getComputedStyle(mainTitle).marginTop)
       const navBarHeight = mainTitle.offsetTop - margin
       const headerHeight = this.$refs.header.$el.offsetHeight
       const triggerHeight = headerHeight - navBarHeight
-      if (top !== triggerHeight) {
-        const offset = this.$refs.header.$el.getBoundingClientRect().y
-        if (offset !== triggerHeight) {
-          this.$refs.header.$el.style.top = triggerHeight * -1
-          anime({
-            targets: this.$refs.header.$el,
-            top: [offset, triggerHeight * -1],
-            duration: 100,
-            easing: 'easeInOutSine'
-          })
-        }
-        this.$refs.header.$el.style.webkitPosition = 'sticky'
-        this.$refs.header.$el.style.position = 'sticky'
-        this.$refs.header.$el.style.position = '-webkit-sticky'
-        document.querySelector('body').style.paddingTop = 0
-      } else {
-        document.querySelector('body').style.paddingTop = headerHeight + 'px'
-        this.$refs.header.$el.style.webkitPosition = 'absolute'
-        this.$refs.header.$el.style.position = 'absolute'
-        this.$refs.header.$el.style.top = 0
-      }
-    },
-    calculateHeaderText () {
-      const top = window.scrollY
-      const mainTitle = this.$refs.header.$el.querySelector('h1')
-      const margin = parseInt(window.getComputedStyle(mainTitle).marginTop)
-      const navBarHeight = mainTitle.offsetTop - margin
-      const headerHeight = this.$refs.header.$el.offsetHeight
-      const triggerHeight = headerHeight - navBarHeight
-      if (top > triggerHeight) {
-        this.showHeaderText = false
-        this.showGoToTop = true
-      } else {
-        this.showHeaderText = true
-        this.showGoToTop = false
-      }
-
-      const hideStart = mainTitle.getBoundingClientRect().top + margin
-      this.showNav = window.scrollY < hideStart || window.scrollY > triggerHeight
+      this.showNav = window.scrollY > triggerHeight
+      this.showGoToTop = window.scrollY > 0
     },
     celebrate (target) {
       confetti(target, {

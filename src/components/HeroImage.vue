@@ -53,6 +53,7 @@ export default {
       top: -112%;
       left: -9%;
       width: 115%;
+      min-width: 1000px;
     }
     &.glyphs {
       top: -3%;
