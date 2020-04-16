@@ -81,6 +81,7 @@ export default {
         'JetBrains Mono',
         'Meslo',
         'Monoid',
+        'MonoLisa',
         'Operator Mono',
         'Plex Mono',
         'Roboto Mono',
