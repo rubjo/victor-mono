@@ -213,6 +213,7 @@ export default {
   }
   .twentytwenty-container {
     z-index: 0;
+    height: 45vw;
     img {
       z-index: auto;
     }
@@ -223,7 +224,7 @@ export default {
       z-index: auto;
     }
     &:hover > .twentytwenty-overlay {
-      opacity: 0!important;
+      opacity: 0 !important;
     }
   }
 
