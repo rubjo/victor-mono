@@ -95,7 +95,6 @@
       <el-row
         type="flex"
         justify="center"
-        class="negative-margins"
       >
         <el-col
           :sm="18"
