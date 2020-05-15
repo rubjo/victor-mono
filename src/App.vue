@@ -86,6 +86,33 @@
         </el-col>
       </el-row>
     </div>
+
+    <div class="alternate-bg">
+      <HeroImage
+        image="keyboard"
+        suffix="jpg"
+      />
+      <el-row
+        type="flex"
+        justify="center"
+        class="negative-margins"
+      >
+        <el-col
+          :sm="18"
+        >
+          <div class="right caption">
+            Two-flavour designs currently being considered by
+            <a
+              href="http://wasdkeyboards.com"
+              target="_blank"
+            >
+              WASD Keyboards
+            </a>
+          </div>
+        </el-col>
+      </el-row>
+    </div>
+
     <div
       ref="ligatures"
       class="content alternate-bg"

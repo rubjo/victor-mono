@@ -17,7 +17,11 @@ export default {
     },
     theme: {
       type: String,
-      default: 'dark'
+      default: 'any'
+    },
+    suffix: {
+      type: String,
+      default: 'png'
     }
   },
   data () {
@@ -25,7 +29,7 @@ export default {
     }
   },
   computed: {
-    imagePath () { return require(`../assets/img/${this.image}-${this.theme}.png`) }
+    imagePath () { return require(`../assets/img/${this.image}-${this.theme}.${this.suffix}`) }
   },
   mounted () {
   },
@@ -42,8 +46,17 @@ export default {
   height: 37vw;
   overflow: hidden;
   opacity: 0.4;
+  &:hover {
+    opacity: 1;
+    transition: opacity 2s 1s;
+  }
   img {
     position: relative;
+    &.keyboard {
+      top: -35%;
+      left: 0%;
+      width: 100%;
+    }
     &.specimen {
       top: -25%;
       left: -50%;
