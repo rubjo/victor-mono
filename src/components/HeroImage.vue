@@ -45,14 +45,14 @@ export default {
   width: 100%;
   height: 37vw;
   overflow: hidden;
-  opacity: 0.6;
-  &:hover {
-    opacity: 1;
-    transition: opacity 2s 1s;
-  }
   img {
     position: relative;
     &.keyboard {
+      top: -35%;
+      left: 0%;
+      width: 100%;
+    }
+    &.merch {
       top: -35%;
       left: 0%;
       width: 100%;

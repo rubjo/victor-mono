@@ -87,31 +87,6 @@
       </el-row>
     </div>
 
-    <div class="alternate-bg">
-      <HeroImage
-        image="keyboard"
-        suffix="jpg"
-      />
-      <el-row
-        type="flex"
-        justify="center"
-      >
-        <el-col
-          :sm="18"
-        >
-          <div class="right caption">
-            Two-flavour designs currently being considered by
-            <a
-              href="http://wasdkeyboards.com"
-              target="_blank"
-            >
-              WASD Keyboards
-            </a>
-          </div>
-        </el-col>
-      </el-row>
-    </div>
-
     <div
       ref="ligatures"
       class="content alternate-bg"
@@ -234,6 +209,32 @@
       <Compare :theme="theme" />
     </div>
 
+    <div class="alternate-bg">
+      <HeroImage
+        image="keyboard"
+        :theme="theme"
+        suffix="jpg"
+      />
+      <el-row
+        type="flex"
+        justify="center"
+      >
+        <el-col
+          :sm="18"
+        >
+          <div class="right caption">
+            Two-flavour designs currently being considered by
+            <a
+              href="http://wasdkeyboards.com"
+              target="_blank"
+            >
+              WASD Keyboards
+            </a>
+          </div>
+        </el-col>
+      </el-row>
+    </div>
+
     <div class="content alternate-bg">
       <div
         id="download"
@@ -348,6 +349,33 @@
         </el-col>
       </el-row>
     </div>
+
+    <div>
+      <HeroImage
+        image="merch"
+        :theme="theme"
+        suffix="jpg"
+      />
+      <el-row
+        type="flex"
+        justify="center"
+      >
+        <el-col
+          :sm="18"
+        >
+          <div class="right caption">
+            Buy cool merch at
+            <a
+              href="https://shop.spreadshirt.com/victor-mono/"
+              target="_blank"
+            >
+              Victor Mono Merch Store
+            </a>
+          </div>
+        </el-col>
+      </el-row>
+    </div>
+
     <div
       id="how"
       class="scroll-head"
