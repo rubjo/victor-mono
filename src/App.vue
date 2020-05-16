@@ -351,11 +351,16 @@
     </div>
 
     <div>
-      <HeroImage
-        image="merch"
-        :theme="theme"
-        suffix="jpg"
-      />
+      <a
+        href="https://shop.spreadshirt.com/victor-mono/"
+        target="_blank"
+      >
+        <HeroImage
+          image="merch"
+          :theme="theme"
+          suffix="jpg"
+        />
+      </a>
       <el-row
         type="flex"
         justify="center"
