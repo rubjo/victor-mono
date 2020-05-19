@@ -256,7 +256,17 @@
           :sm="18"
         >
           <p>
-            If you try it out and like it, I would be very grateful for any donations.
+            If you try it out and like it, I would be very grateful for any donations
+            or purchases from the Victor Mono Merch Shop
+            (<a
+              href="https://shop.spreadshirt.com/victor-mono/"
+              target="_blank"
+            >North America</a>
+            /
+            <a
+              href="https://shop.spreadshirt.net/victor-mono/"
+              target="_blank"
+            >Europe</a>).
             It means I can cover some costs for software and time spent - and keep refining and extending the font.
           </p>
         </el-col>
