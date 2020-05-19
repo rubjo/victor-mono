@@ -369,13 +369,18 @@
           :sm="18"
         >
           <div class="right caption">
-            Buy cool merch at
+            Buy cool merch at Victor Mono Merch Store:
             <a
               href="https://shop.spreadshirt.com/victor-mono/"
               target="_blank"
             >
-              Victor Mono Merch Store
-            </a>
+              North America</a>
+            /
+            <a
+              href="https://shop.spreadshirt.net/victor-mono/"
+              target="_blank"
+            >
+              Europe</a>
           </div>
         </el-col>
       </el-row>
