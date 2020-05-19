@@ -45,6 +45,11 @@ export default {
   width: 100%;
   height: 37vw;
   overflow: hidden;
+  opacity: 0.7;
+  transition: opacity 1s 0.25s;
+  &:hover {
+    opacity: 1;
+  }
   img {
     position: relative;
     &.keyboard {
@@ -67,6 +72,7 @@ export default {
       left: -9%;
       width: 115%;
       min-width: 1000px;
+      opacity: 0.4;
     }
     &.glyphs {
       top: -3%;

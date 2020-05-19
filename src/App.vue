@@ -150,7 +150,7 @@
     </div>
 
     <HeroImage
-      image="glyphs"
+      image="powerline"
       :theme="theme"
     />
 
@@ -578,7 +578,7 @@
     />
     <Faq />
     <HeroImage
-      image="powerline"
+      image="glyphs"
       :theme="theme"
     />
     <Credits />
