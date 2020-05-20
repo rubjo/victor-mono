@@ -578,6 +578,9 @@
           <div class="centre supporter">
             Sven Koschnicke
           </div>
+          <div class="centre supporter">
+            Emily Price
+          </div>
           <p />
         </el-col>
       </el-row>
