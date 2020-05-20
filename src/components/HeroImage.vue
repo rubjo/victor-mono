@@ -43,7 +43,8 @@ export default {
 >
 .horizontal-large-image {
   width: 100%;
-  height: 37vw;
+  height: 50vw;
+  max-height: 350px;
   overflow: hidden;
   opacity: 0.7;
   transition: opacity 1s 0.25s;
@@ -52,32 +53,33 @@ export default {
   }
   img {
     position: relative;
-    &.keyboard {
-      top: -35%;
-      left: 0%;
-      width: 100%;
-    }
-    &.merch {
-      top: -35%;
-      left: 0%;
-      width: 100%;
-    }
-    &.specimen {
-      top: -25%;
-      left: -50%;
-      width: 200%;
-    }
     &.powerline {
-      top: -112%;
-      left: -9%;
-      width: 115%;
+      top: -15%;
+      left: -15%;
+      width: 125%;
       min-width: 1000px;
       opacity: 0.4;
     }
+    &.keyboard {
+      top: calc(-30vw + 125px);
+      left: -5%;
+      width: 110%;
+    }
+    &.merch {
+      top: -12vw;
+      left: 0%;
+      width: 100%;
+      min-width: 800px;
+    }
+    &.specimen {
+      top: -8%;
+      left: -50%;
+      width: 200%;
+    }
     &.glyphs {
       top: -3%;
-      left: 0;
-      width: 100%;
+      left: -15%;
+      width: 130%;
     }
   }
 }
