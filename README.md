@@ -28,3 +28,28 @@
 [<img src="https://github.com/rubjo/victor-mono/raw/master/public/specimens-cropped.png" align="right" alt="Specimens">](https://rubjo.github.io/victor-mono)
 ### &nbsp;
 [<img src="https://github.com/rubjo/victor-mono/raw/master/src/assets/img/glyphs-dark.png" align="right" alt="Design">](https://rubjo.github.io/victor-mono)
+
+### &nbsp;
+
+#### Font stylistics
+
+##### Available stylistics
+- ss01: https://github.com/rubjo/victor-mono/issues/78 ([#78](https://github.com/rubjo/victor-mono/issues/78))
+
+
+##### Configuration
+
+- Sublime:
+	```json
+	"font_options": ["ss01"]
+	```
+
+- VScode:
+	```json
+	"editor.fontLigatures": "'ss01'"
+	```
+
+- Kitty:
+	```
+	font_features VictorMono-Medium +ss01
+	```
