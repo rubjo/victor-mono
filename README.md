@@ -1,4 +1,4 @@
-[<img src="https://github.com/rubjo/victor-mono/raw/master/public/header.gif" width="100%" alt="Header">](https://rubjo.github.io/victor-mono)
+[<img src="https://github.com/rubjo/victor-mono/raw/master/public/header.png" width="100%" alt="Header">](https://rubjo.github.io/victor-mono)
 
 ![GitHub release](https://img.shields.io/github/release/rubjo/victor-mono.svg)
 ![GitHub Release Date](https://img.shields.io/github/release-date/rubjo/victor-mono.svg)
