@@ -121,8 +121,8 @@
             <h1 class="no-margin centre crossfade visible">
               &lt;/ &lt;/&gt; /&gt; ~- -~ ~@
               &lt;~ &lt;~&gt; &lt;~~ ~&gt; ~~ ~~&gt;
-              &gt;= &lt;= &lt;!-- ## ### #### |- -| |-&gt; |= |=&gt;
-              &gt;- &lt;- &lt;-- --&gt; -&gt; -&lt;
+              &gt;= &lt;= &lt;!-- ## ### #### |- -| |-&gt; &lt;-| &gt;-| |-&lt;
+              |= |=&gt; &gt;- &lt;- &lt;-- --&gt; -&gt; -&lt;
               &gt;-&gt; &gt;&gt;- &lt;&lt;- &lt;-&gt; -&gt;&gt; -&lt;&lt; &lt;-&lt;
               ==&gt; =&gt; =/= !== != &lt;==
               &gt;&gt;= =&gt;&gt; &gt;=&gt; &lt;=&gt; &lt;=&lt; &lt;&lt;= =&lt;&lt;
@@ -134,8 +134,8 @@
             <h1 class="no-margin centre crossfade hidden no-ligatures">
               &lt;/ &lt;/&gt; /&gt; ~- -~ ~@
               &lt;~ &lt;~&gt; &lt;~~ ~&gt; ~~ ~~&gt;
-              &gt;= &lt;= &lt;!-- ## ### #### |- -| |-&gt; |= |=&gt;
-              &gt;- &lt;- &lt;-- --&gt; -&gt; -&lt;
+              &gt;= &lt;= &lt;!-- ## ### #### |- -| |-&gt; &lt;-| &gt;-| |-&lt;
+              |= |=&gt; &gt;- &lt;- &lt;-- --&gt; -&gt; -&lt;
               &gt;-&gt; &gt;&gt;- &lt;&lt;- &lt;-&gt; -&gt;&gt; -&lt;&lt; &lt;-&lt;
               ==&gt; =&gt; =/= !== != &lt;==
               &gt;&gt;= =&gt;&gt; &gt;=&gt; &lt;=&gt; &lt;=&lt; &lt;&lt;= =&lt;&lt;

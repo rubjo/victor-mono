@@ -54,16 +54,16 @@ export default {
   img {
     position: relative;
     &.powerline {
-      top: -15%;
+      top: -20%;
       left: -15%;
       width: 125%;
       min-width: 1000px;
       opacity: 0.4;
     }
     &.keyboard {
-      top: calc(-30vw + 125px);
-      left: -5%;
-      width: 110%;
+      top: calc(-23vw + 80px);
+      left: 0;
+      width: 100%;
     }
     &.merch {
       top: -12vw;
