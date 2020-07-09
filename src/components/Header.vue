@@ -329,11 +329,12 @@ export default {
   top: 0;
   z-index: 1;
   width: 100%;
-  padding-top: calc(48px + 2vw);
+  padding-top: calc(10px + 2vw);
   text-align: center;
   h1 {
-    margin: calc(3vw + 5px) 0 0 0;
-    font-size: calc(80px + 6vw);
+    margin: calc(3vw + 15px) 0 0 0;
+    font-size: calc(40px + 7vw);
+    line-height: 1em;
     font-weight: normal;
   }
 
