@@ -535,6 +535,9 @@
             Colton Borg
           </div>
           <div class="centre supporter">
+            Lady Isak Grozny
+          </div>
+          <div class="centre supporter">
             Michael Schore
           </div>
           <div class="centre supporter">
