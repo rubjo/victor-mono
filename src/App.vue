@@ -193,6 +193,8 @@
               <li>wide enough to be scannable</li>
               <li>looked consistent and professional</li>
             </ul>
+            Other stuff (like having a million alternative glyphs or as many
+            ligatures as possible) wasn't (and isn't) important.
             Victor Mono is the result. You might like it as well.
             That's brilliant! You might not. That's also fine: use a font
             that works for you. 😛
