@@ -61,8 +61,8 @@ body {
 
 p {
   padding-bottom: 20px;
-  font-size: calc(1.02rem + 0.4vw);
-  line-height: calc(2.04rem + 0.6vw);
+  font-size: calc(0.9rem + 0.4vw);
+  line-height: calc(2rem + 0.6vw);
   &.columns {
     column-count: 2;
     column-width: 18em;
@@ -248,9 +248,9 @@ h2 {
 }
 
 .content {
-  padding: 60px 10px 100px 10px;
+  padding: 40px 10px 80px 10px;
   &.initial {
-    padding-top: 100px;
+    padding-top: 6vw;
   }
   h1 {
     padding-top: 20px;

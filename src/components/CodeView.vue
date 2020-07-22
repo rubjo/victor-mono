@@ -113,7 +113,7 @@ export default {
 
 .code {
   height: calc(100% - 34px);
-  font-size: calc(16px + 0.45vw);
+  font-size: calc(14px + 0.5vw);
   line-height: 1.5em;
 }
 </style>
