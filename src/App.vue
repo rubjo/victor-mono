@@ -540,6 +540,9 @@
             Lady Isak Grozny
           </div>
           <div class="centre supporter">
+            Stuart Morris
+          </div>
+          <div class="centre supporter">
             Michael Schore
           </div>
           <div class="centre supporter">
