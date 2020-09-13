@@ -499,7 +499,7 @@
             </div>
           </h2>
           <p class="small centre no-padding">
-            <em>$2/month or $10-25 in total</em>
+            <em>$2/month or $10-24.99 in total</em>
           </p>
           <div class="centre">
             Thank you to everyone contributing! ❤️
@@ -538,6 +538,9 @@
           </div>
           <div class="centre supporter">
             Lady Isak Grozny
+          </div>
+          <div class="centre supporter">
+            K. Bruce Jones
           </div>
           <div class="centre supporter">
             Stuart Morris
