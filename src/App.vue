@@ -595,6 +595,9 @@
           <div class="centre supporter">
             Emily Price
           </div>
+          <div class="centre supporter">
+            Justin Slepak
+          </div>
           <p />
         </el-col>
       </el-row>
