@@ -543,6 +543,9 @@
             K. Bruce Jones
           </div>
           <div class="centre supporter">
+            Lars Rönnbäck
+          </div>
+          <div class="centre supporter">
             Stuart Morris
           </div>
           <div class="centre supporter">
