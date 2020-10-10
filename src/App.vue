@@ -635,7 +635,7 @@ export default {
     CodeView: lazyLoadComponent({
       componentFactory: () => import('@/components/CodeView'),
       background: localStorage.getItem('theme') === 'dark' ? '#304148' : '#f2f2f2',
-      height: 'calc(75vh + 20px)',
+      height: '80vh',
       loading: Loader
     }),
     HeroImage: lazyLoadComponent({
