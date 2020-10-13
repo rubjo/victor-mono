@@ -45,15 +45,6 @@
         </p>
       </el-col>
     </el-row>
-    <svg>
-      <filter id="posterize">
-        <feComponentTransfer>
-          <feFuncR type="discrete" tableValues="0 0.33 0.66 0.99" />
-          <feFuncG type="discrete" tableValues="0 0.33 0.66 0.99" />
-          <feFuncB type="discrete" tableValues="0 0.33 0.66 0.99" />
-        </feComponentTransfer>
-      </filter>
-    </svg>
   </div>
 </template>
 <script>
