@@ -111,6 +111,10 @@ export default {
   height: 80vh;
 }
 
+::v-deep .CodeMirror {
+  background: transparent;
+}
+
 .code {
   height: calc(100% - 34px);
   font-size: calc(14px + 0.5vw);

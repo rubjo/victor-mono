@@ -45,6 +45,15 @@
         </p>
       </el-col>
     </el-row>
+    <svg>
+      <filter id="posterize">
+        <feComponentTransfer>
+          <feFuncR type="discrete" tableValues="0 0.33 0.66 0.99" />
+          <feFuncG type="discrete" tableValues="0 0.33 0.66 0.99" />
+          <feFuncB type="discrete" tableValues="0 0.33 0.66 0.99" />
+        </feComponentTransfer>
+      </filter>
+    </svg>
   </div>
 </template>
 <script>
@@ -194,6 +203,10 @@ export default {
     }
   }
 
+  .twentytwenty-container:hover > ::v-deep .twentytwenty-overlay {
+    opacity: 0;
+  }
+
   // IE 9 only
   @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
     .select {
@@ -213,7 +226,7 @@ export default {
   }
   .twentytwenty-container {
     z-index: 0;
-    height: 45vw;
+    height: 735px;
     img {
       z-index: auto;
     }

@@ -150,7 +150,8 @@ export default {
         }
       }
       .accordion__value {
-        padding: 0 25px 25px 50px;
+        padding: 0 25px 25px 75px;
+        line-height: calc(2rem + 1vw);
         color: inherit;
       }
     }

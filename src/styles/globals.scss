@@ -61,8 +61,8 @@ body {
 
 p {
   padding-bottom: 20px;
-  font-size: calc(0.9rem + 0.4vw);
-  line-height: calc(2rem + 0.6vw);
+  font-size: calc(1rem + 0.5vw);
+  line-height: calc(2rem + 1vw);
   &.columns {
     column-count: 2;
     column-width: 18em;
@@ -72,10 +72,6 @@ p {
       column-width: 8em;
       column-gap: 25px;
     }
-  }
-  &.large {
-    font-size: calc(0.9rem + 0.8vw);
-    line-height: calc(1.6rem + 2vw);
   }
   &.small {
     font-size: calc(0.8rem + 0.2vw);
@@ -207,7 +203,7 @@ p {
 }
 
 .no-padding {
-  padding: 0!important;
+  padding: 0 !important;
 }
 
 .scroll-head {
@@ -289,8 +285,8 @@ em.alt {
   float: right;
   height: 20vw;
   min-height: 300px;
-  max-height: 400px;
-  margin: 0 0 5px 25px;
+  max-height: 325px;
+  margin: 0 0 25px 5vw;
 }
 
 .code-segment {

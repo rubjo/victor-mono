@@ -2,6 +2,7 @@ export default function lazyLoadComponent ({
   componentFactory,
   background,
   height,
+  maxHeight,
   loading,
   loadingData
 }) {
@@ -15,8 +16,10 @@ export default function lazyLoadComponent ({
     }),
     loading: {
       mounted () {
-        this.$el.style.background = background || '#595959'
+        console.log(background)
+        this.$el.style.backgroundColor = background || '#595959'
         this.$el.style.height = height || 0
+        this.$el.style.maxHeight = maxHeight || 'auto'
         // We immediately load the component if
         // `IntersectionObserver` is not supported.
         if (!('IntersectionObserver' in window)) {

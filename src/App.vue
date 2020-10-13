@@ -22,7 +22,7 @@
           :xs="22"
           :sm="18"
         >
-          <p class="large">
+          <p>
             <a
               v-if="theme === 'dark'"
               :href="stylesDark"
@@ -634,20 +634,22 @@ export default {
     Header,
     CodeView: lazyLoadComponent({
       componentFactory: () => import('@/components/CodeView'),
-      background: localStorage.getItem('theme') === 'dark' ? '#304148' : '#f2f2f2',
-      height: '70vh',
+      background: localStorage.getItem('theme') === 'light' ? '#f2f2f2' : '#304148',
+      height: '80vh',
       loading: Loader
     }),
     HeroImage: lazyLoadComponent({
       componentFactory: () => import('@/components/HeroImage'),
-      background: localStorage.getItem('theme') === 'dark' ? '#515151' : '#f5f5f5',
-      height: '37vw',
+      background: localStorage.getItem('theme') === 'light' ? '#f5f5f5' : '#515151',
+      height: '50vw',
+      maxHeight: '350px',
       loading: Loader
     }),
     Compare: lazyLoadComponent({
       componentFactory: () => import('@/components/Compare'),
-      background: localStorage.getItem('theme') === 'dark' ? '#515151' : '#f5f5f5',
-      height: '45vw',
+      background: localStorage.getItem('theme') === 'light' ? '#f5f5f5' : '#515151',
+      height: '927px',
+      maxHeight: 'calc(100vw + 48px)',
       loading: Loader
     }),
     Faq,
