@@ -543,10 +543,10 @@
             K. Bruce Jones
           </div>
           <div class="centre supporter">
-            Lars Rönnbäck
+            Stuart Morris
           </div>
           <div class="centre supporter">
-            Stuart Morris
+            Lars Rönnbäck
           </div>
           <div class="centre supporter">
             Michael Schore
