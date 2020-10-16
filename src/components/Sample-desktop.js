@@ -7,7 +7,7 @@ async function getUser() {
       user = await loadJson(`https://my.api.com/users/${name}`)
       break // No error, exit loop and proceed
     } catch (err) {
-      if (err.response.status === 404) {
+      if (err.response && err.response.status === 404) {
         // Loop will continue after the alert
         alert(`User "${name} not found, please reenter.`)
       } else {
