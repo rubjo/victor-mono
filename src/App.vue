@@ -543,6 +543,9 @@
             K. Bruce Jones
           </div>
           <div class="centre supporter">
+            Josh Kraker
+          </div>
+          <div class="centre supporter">
             Stuart Morris
           </div>
           <div class="centre supporter">
