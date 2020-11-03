@@ -1,4 +1,4 @@
-s<template>
+<template>
   <div class="header">
     <div
       ref="videoBg"
@@ -31,12 +31,18 @@ s<template>
       class="text"
     >
       <h1 ref="mainTitle">
-        Victor Mono
+        Vote.
       </h1>
       <h2>
-        The <em class="property" />
+        <!-- The <em class="property" />
         <br class="hidden-sm-and-up">
-        programming font
+        programming font -->
+        <a
+          href="https://en.wikiquote.org/wiki/Donald_Trump"
+          target="_blank"
+        >
+          <em class="quotes" />
+        </a>
       </h2>
       <el-row
         type="flex"
@@ -187,7 +193,8 @@ export default {
   mounted () {
     this.granim = initGradient('.header-gradients', this.theme)
     this.granim.changeState(this.theme)
-    this.initTyped()
+    // this.initTyped()
+    this.initQuotes()
   },
   methods: {
     initTyped () {
@@ -314,6 +321,44 @@ export default {
       }
 
       return new Typed('.property', options)
+    },
+    initQuotes () {
+      const options = {
+        strings: [
+          '"Mexico is paying for the wall"',
+          '"We’re gonna crush the virus very quickly"',
+          '"We’re rounding the turn, our numbers are incredible"',
+          '"I think we’re leading everywhere"',
+          '"Totally fake news"',
+          '"It\'ll start getting cooler. You just watch."',
+          '"I don\'t think science knows, actually."',
+          '"The only way they\'re gonna win is by a rigged election."',
+          '"New Zealand, by the way, had a big outbreak."',
+          '"Leave Democrat cities. Let them rot."',
+          '"Probably nastier even than Pocahontas"',
+          '"I read a lot. I comprehend extraordinarily well."',
+          '"You can take the number of cases and look we\'re last, meaning we\'re first."',
+          '"It’s fading away, it’s going to fade away."',
+          '"And is there a way we can do something like that, by injection inside or almost a cleaning?"',
+          '"We’ve tested more than every other country in the world even put together"',
+          '"I don\'t take responsibility at all"',
+          '"I think my rhetoric is a very – it brings people together."',
+          '"I am the chosen one."',
+          '"Grab \'em by the p***y. You can do anything."',
+          '"He\'s not a war hero"',
+          '"I think that I would be a great uniter"',
+          '"I love working. I\'m not a vacation guy. Right? Like Obama, he plays golf in Hawaii"'
+        ],
+        startDelay: 500,
+        typeSpeed: 5,
+        backSpeed: 1,
+        smartBackspace: true,
+        backDelay: 4000,
+        loop: true,
+        shuffle: true
+      }
+
+      return new Typed('.quotes', options)
     }
   }
 }
@@ -334,14 +379,18 @@ export default {
   h1 {
     margin: calc(3vw + 15px) 0 0 0;
     font-size: calc(40px + 7vw);
-    line-height: 1em;
     font-weight: normal;
+    line-height: 1em;
   }
 
   h2 {
-    margin: 2vw 0 3vw 0;
-    font-size: calc(18px + 1.5vw);
+    margin: 3vw 0 2vw 0;
+    // font-size: calc(18px + 1.5vw);
+    font-size: calc(18px + 0.9vw);
     font-weight: normal;
+    a {
+      text-decoration: none;
+    }
   }
 
   .actions {
