@@ -543,6 +543,9 @@
             K. Bruce Jones
           </div>
           <div class="centre supporter">
+            Josh Kraker
+          </div>
+          <div class="centre supporter">
             Stuart Morris
           </div>
           <div class="centre supporter">
@@ -591,6 +594,9 @@
           </div>
           <div class="centre supporter">
             Sven Koschnicke
+          </div>
+          <div class="centre supporter">
+            Elizabeth Marston
           </div>
           <div class="centre supporter">
             Matthew O'Gorman
