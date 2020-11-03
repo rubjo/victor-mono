@@ -1,5 +1,5 @@
 {
-.appVersion = "1340";
+.appVersion = "1349";
 classes = (
 {
 automatic = 1;
@@ -18,7 +18,7 @@ name = "Use Typo Metrics";
 value = 1;
 }
 );
-date = "2020-06-29 06:47:32 +0000";
+date = "2020-11-03 08:46:23 +0000";
 designer = "Rune Bjørnerås";
 designerURL = "rubjo.github.io/victor-mono";
 familyName = "Victor Mono";
@@ -72040,6 +72040,84 @@ unicode = 2642;
 },
 {
 color = 4;
+glyphname = heavyMultiplicationX;
+lastChange = "2020-11-03 08:45:31 +0000";
+layers = (
+{
+background = {
+paths = (
+{
+closed = 1;
+nodes = (
+"93 575 LINE",
+"125 607 LINE",
+"507 226 LINE",
+"475 193 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"93 225 LINE",
+"475 607 LINE",
+"507 575 LINE",
+"126 193 LINE"
+);
+}
+);
+};
+layerId = "7C079D0C-96CD-4BD8-8800-0621C7635A78";
+paths = (
+{
+closed = 1;
+nodes = (
+"82 585 LINE",
+"183 667 LINE",
+"557 216 LINE",
+"456 133 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"3 215 LINE",
+"573 667 LINE",
+"636 585 LINE",
+"67 133 LINE"
+);
+}
+);
+width = 600;
+},
+{
+layerId = "291433DC-531A-45CC-B814-57D397372F12";
+paths = (
+{
+closed = 1;
+nodes = (
+"59 559 LINE",
+"214 684 LINE",
+"580 241 LINE",
+"425 116 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"-8 241 LINE",
+"552 684 LINE",
+"647 559 LINE",
+"87 116 LINE"
+);
+}
+);
+width = 600;
+}
+);
+unicode = 2716;
+},
+{
+color = 4;
 glyphname = at;
 lastChange = "2020-03-28 17:50:26 +0000";
 layers = (
@@ -82246,5 +82324,5 @@ HV = "50";
 };
 };
 versionMajor = 1;
-versionMinor = 410;
+versionMinor = 420;
 }
