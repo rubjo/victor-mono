@@ -425,11 +425,11 @@
             >Download</a> the font<br>
             2) Unpack the ZIP<br>
             3) <a
-              href="https://www.google.com/search?q=how+to+install+fonts"
+              href="https://duckduckgo.com/?q=how+to+install+fonts"
               target="_blank"
             >Install</a> the font (all styles or the ones you want)<br>
             4) <a
-              href="https://www.google.com/search?q=how+to+change+font+settings+in+VS+Code"
+              href="https://duckduckgo.com/?q=how+to+change+font+settings+in+VS+Code+in+ide"
               target="_blank"
             >Change the font settings in your code editor / IDE of choice</a> to "Victor
             Mono"<br>
