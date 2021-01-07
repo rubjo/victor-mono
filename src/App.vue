@@ -341,7 +341,7 @@
             </em>
             <br>
             <code>brew tap homebrew/cask-fonts</code><br>
-            <code>brew cask install font-victor-mono</code>
+            <code>brew install --cask font-victor-mono</code>
           </p>
         </el-col>
         <el-col
