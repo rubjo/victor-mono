@@ -543,6 +543,9 @@
             Lady Isak Grozny
           </div>
           <div class="centre supporter">
+            Igor Harden
+          </div>
+          <div class="centre supporter">
             K. Bruce Jones
           </div>
           <div class="centre supporter">
@@ -550,6 +553,12 @@
           </div>
           <div class="centre supporter">
             Stuart Morris
+          </div>
+          <div class="centre supporter">
+            Poudingue
+          </div>
+          <div class="centre supporter">
+            RKC
           </div>
           <div class="centre supporter">
             Lars Rönnbäck
