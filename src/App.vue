@@ -620,6 +620,9 @@
             Emily Price
           </div>
           <div class="centre supporter">
+            Alex Simons
+          </div>
+          <div class="centre supporter">
             Justin Slepak
           </div>
           <p />
