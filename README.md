@@ -21,7 +21,7 @@
 
 #### If you like it and want to say thanks, [donations](https://www.paypal.me/runbjo) are welcome. ❤️
 
-[<img src="https://github.com/rubjo/victor-mono/raw/master/public/code-sample.png" align="right" width="100%" alt="Code sample">](https://rubjo.github.io/victor-mono)
+[<img src="https://github.com/rubjo/victor-mono/raw/master/public/screenshot.png" align="right" width="100%" alt="Code sample">](https://rubjo.github.io/victor-mono)
 ### &nbsp;
 [<img src="https://github.com/rubjo/victor-mono/raw/master/public/powerline-cropped.png" align="right" alt="Powerline">](https://rubjo.github.io/victor-mono)
 ### &nbsp;
