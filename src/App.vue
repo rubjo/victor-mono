@@ -570,6 +570,9 @@
             Christoph Siedentop
           </div>
           <div class="centre supporter">
+            Spiritualminded
+          </div>
+          <div class="centre supporter">
             thief#0001
           </div>
           <p />
