@@ -34,7 +34,7 @@
 #### Font stylistics
 
 ##### Available stylistics
-- ss01: https://github.com/rubjo/victor-mono/issues/78 ([#78](https://github.com/rubjo/victor-mono/issues/78))
+- ss01: Slashed zero ([#78](https://github.com/rubjo/victor-mono/issues/78))
 
 
 ##### Configuration
