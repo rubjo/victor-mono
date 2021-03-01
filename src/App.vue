@@ -47,9 +47,10 @@
             <em>semi-connected cursive italics</em> and programming
             symbol ligatures.
             <br><br>
-            The typeface is clean, crisp and narrow, with a large x-height and clear punctuation,
-            making it legible and ideal for code. It comes in seven weights and
-            Roman, <em>Italic</em> and <em class="alt">Oblique</em> styles.
+            The typeface is slender, crisp and narrow, with a large x-height
+            and clear punctuation, making it legible and ideal for code.
+            It comes in seven weights and Roman, <em>Italic</em> and
+            <em class="alt">Oblique</em> styles.
           </p>
         </el-col>
       </el-row>
@@ -175,10 +176,10 @@
           :sm="18"
         >
           <p class="columns">
-            When it comes to programming fonts, I prefer something thin, crisp
-            and relatively condensed for the code proper,
+            When it comes to programming fonts, I prefer something thin and
+            relatively condensed for the code proper,
             complemented with a more <em>informal, flowing and human style</em>
-            for things like comments and reserved keywords.
+            for standouts like comments and certain keywords.
             <br><br>
             In the past, I always ended up looking for something else after
             using a font for a while, because something didn't look right to me.
@@ -186,7 +187,7 @@
             I wanted something that:
             <ul>
               <li>had friendly and distinct italics</li>
-              <li>a strict, geometric and readable regular style</li>
+              <li>had a strict, geometric and readable regular style</li>
               <li>had programming symbol ligatures</li>
               <li>was slender and elegant</li>
               <li>narrow enough to fit a lot of text</li>
@@ -225,7 +226,7 @@
           :sm="18"
         >
           <div class="right caption">
-            Two-flavour designs currently being considered by
+            Two-flavour designs submitted to
             <a
               href="http://wasdkeyboards.com"
               target="_blank"
@@ -258,18 +259,9 @@
           :sm="18"
         >
           <p>
-            If you try it out and like it, I would be very grateful for any donations
-            or purchases from the Victor Mono Merch Shop
-            (<a
-              href="https://shop.spreadshirt.com/victor-mono/"
-              target="_blank"
-            >North America</a>
-            /
-            <a
-              href="https://shop.spreadshirt.net/victor-mono/"
-              target="_blank"
-            >Europe</a>).
-            It means I can cover some costs for software and time spent - and keep refining and extending the font.
+            If you try it out and like it, I would be very grateful for any
+            donations. It means I can cover some costs for software and time
+            spent - and keep refining and extending the font.
           </p>
         </el-col>
       </el-row>

@@ -82,7 +82,7 @@ export default {
           category: 'Other'
         }, {
           title: 'Why are you giving it away?',
-          value: 'I originally planned on selling it for some (smaller or much larger) sum, like others do. But I eventually decided against it: I couldn’t be bothered to set up hosting, payment, EULAs etc, nor do I have time for the level of support I feel should accompany a commercial product. This typeface isn’t meant to be the perfect font for anyone - I just made the one perfect for me. If you’re unemployed or struggle to make ends meet, download the font with a clear conscience. If you work in a corporate setting or are relatively well off, consider <a href="https://paypal.me/runbjo" class="donate" target="_blank">supporting</a> the hours spent designing this font. If you want to and are able to donate anything: thank you!',
+          value: 'I originally planned on selling it for some (smaller or much larger) sum, like others do. But I eventually decided against it: I couldn’t be bothered to set up hosting, payment, EULAs etc, nor do I have time for the level of support I feel should accompany a commercial product. This typeface isn’t meant to be the perfect font for everyone - I just made the one perfect for me. If you’re unemployed or struggle to make ends meet, download the font with a clear conscience. If you work in a corporate setting or are relatively well off, consider <a href="https://paypal.me/runbjo" class="donate" target="_blank">supporting</a> the hours spent designing this font. If you want to and are able to donate anything: thank you!',
           category: 'Other'
         }, {
           title: 'Did you know that the [insert typeface property here] violates some 500-year old font design convention?',
@@ -94,7 +94,7 @@ export default {
           category: 'Design & features'
         }, {
           title: 'A programming font with cursive italics and ligatures is the worst idea in the world. This is absolutely horrible. BTW, I am really angry.',
-          value: 'Not really a question, but anyway: People actually like different things. And it\'s OK. It\'s OK if someone else prefers a different font for code than you do. We don\'t have to use the same one. ❤️',
+          value: 'Not really a question, but anyway: It\'s OK if someone else prefers a different font for code than you do. We don\'t have to use the same one. ❤️',
           category: 'Design & features'
         }
       ]
