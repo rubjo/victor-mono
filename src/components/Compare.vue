@@ -37,9 +37,9 @@
           <em>Test and compare free programming fonts on
             <a
               target="_blank"
-              href="https://app.programmingfonts.org#victor-mono"
+              href="https://www.programmingfonts.org/#victor-mono"
             >
-              app.programmingfonts.org</a>
+              programmingfonts.org</a>
           </em>
           ⭐️
         </p>
