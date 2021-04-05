@@ -541,6 +541,9 @@
             K. Bruce Jones
           </div>
           <div class="centre supporter">
+            kmwallio
+          </div>
+          <div class="centre supporter">
             Josh Kraker
           </div>
           <div class="centre supporter">
@@ -557,6 +560,9 @@
           </div>
           <div class="centre supporter">
             Michael Schore
+          </div>
+          <div class="centre supporter">
+            Robert Ruf
           </div>
           <div class="centre supporter">
             Christoph Siedentop
