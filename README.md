@@ -1,11 +1,10 @@
-## Victor Mono: a programming font with semi-connected cursive italics and symbol ligatures.
-
 ![GitHub release](https://img.shields.io/github/release/rubjo/victor-mono.svg)
 ![GitHub Release Date](https://img.shields.io/github/release-date/rubjo/victor-mono.svg)
 ![Travis (.org)](https://img.shields.io/travis/rubjo/victor-mono.svg?logo=travis)
 ![GitHub](https://img.shields.io/github/license/rubjo/victor-mono.svg)
 ![GitHub stars](https://img.shields.io/github/stars/rubjo/victor-mono.svg?style=social)
 
+![Intro image](https://github.com/rubjo/victor-mono/raw/master/public/twitter.png)
 ![carbon (3)](https://user-images.githubusercontent.com/42270947/117447088-53e03300-af3d-11eb-84e2-df1713e77019.png)
 
 ### More information and download: [rubjo.github.io/victor-mono](https://rubjo.github.io/victor-mono). If you like it and want to say thanks, [donations](https://www.paypal.me/runbjo) are welcome. ❤️
