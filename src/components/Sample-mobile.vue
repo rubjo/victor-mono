@@ -17,35 +17,6 @@ const arr = [5, 6, 13, 0, 1, 18, 23]
 const sum = arr.reduce((a, b) => a + b)
 const even = arr.filter(v => v % 2 === 0)
 const double = arr.map(v => v * 2)
-
-// More concise promise chains
-func().then(a => {
-  return new Promise(
-    (resolve, reject) => {
-      if (a !== 1) resolve()
-      else reject(
-        new Error('This aint right')
-      )
-    }
-  )
-}).then(b => {
-  // ...
-}).catch(err => {
-  handle(err)
-})
-
-// Parameterless arrow functions
-// that are visually easier to parse
-setTimeout(() => {
-  console.log('I happen sooner')
-  setTimeout(() => {
-    // deeper code
-    console.log('I happen later')
-  }, 1)
-}, 1)
-      }
-    }
-  }
 </script>
 
 <style lang="scss" scoped>
