@@ -177,13 +177,13 @@
         >
           <p class="columns">
             When it comes to programming fonts, I prefer something thin and
-            relatively condensed for the code proper,
-            complemented with a more <em>informal, flowing and human style</em>
+            relatively condensed,
+            but with a more <em>informal, flowing and human style</em>
             for standouts like comments and certain keywords.
             <br><br>
             In the past, I always ended up looking for something else after
             using a font for a while, because something didn't look right to me.
-            So eventually, I started sketching and designing something myself.
+            So I started sketching and designing something myself.
             I wanted something that:
             <ul>
               <li>had friendly and distinct italics</li>
@@ -428,7 +428,14 @@
             5) <em>Optional</em> &middot; <a
               href="https://www.google.com/search?q=how+to+change+theme+in+VS+Code"
               target="_blank"
-            >Set the code theme</a> to one you like<br>
+            >Set the code theme</a> to one you like
+            (try
+            <a
+              href="https://marketplace.visualstudio.com/items?itemName=rubjo.ultimate-dark-neo"
+              target="_blank"
+            >this one</a>,
+            for example)
+            <br>
             6) <em>Optional</em> &middot; <a
               href="https://www.google.com/search?q=how+to+modify+themes+in+VS+Code"
               target="_blank"
@@ -541,6 +548,9 @@
             K. Bruce Jones
           </div>
           <div class="centre supporter">
+            kmwallio
+          </div>
+          <div class="centre supporter">
             Josh Kraker
           </div>
           <div class="centre supporter">
@@ -557,6 +567,9 @@
           </div>
           <div class="centre supporter">
             Michael Schore
+          </div>
+          <div class="centre supporter">
+            Robert Ruf
           </div>
           <div class="centre supporter">
             Christoph Siedentop

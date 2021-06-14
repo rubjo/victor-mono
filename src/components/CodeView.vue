@@ -16,12 +16,16 @@
         v-if="theme === 'dark'"
         class="right caption"
       >
-        Based on
+        Ultimate Dark Neo code theme for
         <a
           target="_blank"
-          href="https://github.com/voronianski/oceanic-next-color-scheme"
-        >Oceanic Next</a>
-        colour scheme by Dmitri Voronianski
+          href="https://marketplace.visualstudio.com/items?itemName=rubjo.ultimate-dark-neo"
+        >VS Code</a>
+        or
+        <a
+          target="_blank"
+          href="https://packagecontrol.io/packages/Ultimate%20Dark%20Neo"
+        >Sublime Text</a>
       </div>
       <div
         v-else
@@ -108,7 +112,6 @@ export default {
 .window {
   position: relative;
   z-index: 0;
-  height: 80vh;
 }
 
 ::v-deep .CodeMirror {
