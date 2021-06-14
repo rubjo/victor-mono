@@ -523,6 +523,9 @@
             Thank you to:
           </div>
           <div class="centre supporter">
+            Diogo Almeida
+          </div>
+          <div class="centre supporter">
             Emerson Beltrán
           </div>
           <div class="centre supporter">
@@ -530,9 +533,6 @@
           </div>
           <div class="centre supporter">
             Julien Durillon
-          </div>
-          <div class="centre supporter">
-            Lady Isak Grozny
           </div>
           <div class="centre supporter">
             Igor Harden
@@ -566,6 +566,9 @@
           </div>
           <div class="centre supporter">
             thief#0001
+          </div>
+          <div class="centre supporter">
+            Ashley Kaine Towns
           </div>
           <p />
         </el-col>
@@ -601,6 +604,9 @@
           </div>
           <div class="centre supporter">
             April Collier
+          </div>
+          <div class="centre supporter">
+            Lady Isak Grozny
           </div>
           <div class="centre supporter">
             Sven Koschnicke
