@@ -622,6 +622,9 @@
             Matthew A Drover
           </div>
           <div class="centre supporter">
+            Élise Duverdier
+          </div>
+          <div class="centre supporter">
             Lady Isak Grozny
           </div>
           <div class="centre supporter">
