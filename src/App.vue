@@ -226,7 +226,7 @@
           :sm="18"
         >
           <div class="right caption">
-            Two-flavour designs submitted to
+            Designs submitted to
             <a
               href="http://wasdkeyboards.com"
               target="_blank"
@@ -540,6 +540,9 @@
           </div>
           <div class="centre supporter">
             Lady Isak Grozny
+          </div>
+          <div class="centre supporter">
+            Michael Huggett
           </div>
           <div class="centre supporter">
             Igor Harden
