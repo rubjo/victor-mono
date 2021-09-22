@@ -175,6 +175,10 @@ export default {
         transform: scale(1.1);
       }
 
+      option {
+        background: var(--background-color-base);
+      }
+
       // Disable default styling on ff
       -moz-appearance: none;
 
