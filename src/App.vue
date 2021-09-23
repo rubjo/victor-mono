@@ -539,6 +539,9 @@
             Colton Borg
           </div>
           <div class="centre supporter">
+            Dion Bridger
+          </div>
+          <div class="centre supporter">
             Julien Durillon
           </div>
           <div class="centre supporter">
