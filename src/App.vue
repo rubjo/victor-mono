@@ -566,9 +566,6 @@
             Stuart Morris
           </div>
           <div class="centre supporter">
-            Poudingue
-          </div>
-          <div class="centre supporter">
             RKC
           </div>
           <div class="centre supporter">
@@ -644,6 +641,9 @@
           </div>
           <div class="centre supporter">
             Matthew O'Gorman
+          </div>
+          <div class="centre supporter">
+            Poudingue
           </div>
           <div class="centre supporter">
             Emily Price
