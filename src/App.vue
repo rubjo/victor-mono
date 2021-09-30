@@ -533,6 +533,9 @@
             Diogo Almeida
           </div>
           <div class="centre supporter">
+            Dieter Auracher
+          </div>
+          <div class="centre supporter">
             Emerson Beltrán
           </div>
           <div class="centre supporter">
