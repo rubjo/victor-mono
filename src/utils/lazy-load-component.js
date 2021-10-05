@@ -16,7 +16,6 @@ export default function lazyLoadComponent ({
     }),
     loading: {
       mounted () {
-        console.log(background)
         this.$el.style.backgroundColor = background || '#595959'
         this.$el.style.height = height || 0
         this.$el.style.maxHeight = maxHeight || 'auto'
