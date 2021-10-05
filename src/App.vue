@@ -545,6 +545,14 @@
             Dion Bridger
           </div>
           <div class="centre supporter">
+            <a
+              href="https://github.com/datarootsio"
+              target="_blank"
+            >
+              datarootsio
+            </a>
+          </div>
+          <div class="centre supporter">
             Julien Durillon
           </div>
           <div class="centre supporter">
