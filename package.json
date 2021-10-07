@@ -49,6 +49,7 @@
     "vue-faq-accordion": "^1.6.2",
     "vue-scrollTo": "^2.4.1",
     "vue-social-sharing": "^2.4.6",
+    "vue-tweet-embed": "^2.4.0",
     "vue-twentytwenty": "^0.6.2"
   },
   "devDependencies": {

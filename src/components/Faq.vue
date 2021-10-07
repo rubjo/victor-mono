@@ -1,5 +1,5 @@
 <template>
-  <div class="content alternate-bg">
+  <div class="content">
     <div
       id="faq"
       class="scroll-head"

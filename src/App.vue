@@ -667,7 +667,7 @@
       </el-row>
     </div>
 
-    <Testimonials />
+    <Testimonials :theme="theme" />
 
     <HeroImage
       image="specimen"
@@ -717,7 +717,12 @@ export default {
       maxHeight: 'calc(100vw + 48px)',
       loading: Loader
     }),
-    Testimonials,
+    Testimonials: lazyLoadComponent({
+      componentFactory: () => import('@/components/Testimonials'),
+      background: localStorage.getItem('theme') === 'light' ? '#f5f5f5' : '#515151',
+      height: '50px',
+      loading: Loader
+    }),
     Faq,
     Credits
   },
