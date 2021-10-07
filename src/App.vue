@@ -666,6 +666,9 @@
         </el-col>
       </el-row>
     </div>
+
+    <Testimonials />
+
     <HeroImage
       image="specimen"
       :theme="theme"
@@ -685,6 +688,7 @@ import Header from '@/components/Header'
 import lazyLoadComponent from '@/utils/lazy-load-component.js'
 import Loader from '@/components/Loader'
 import { confetti } from 'dom-confetti'
+import Testimonials from '@/components/Testimonials'
 import Faq from '@/components/Faq'
 import Credits from '@/components/Credits'
 
@@ -696,7 +700,7 @@ export default {
     CodeView: lazyLoadComponent({
       componentFactory: () => import('@/components/CodeView'),
       background: localStorage.getItem('theme') === 'light' ? '#f2f2f2' : '#304148',
-      height: '80vh',
+      height: '20vw',
       loading: Loader
     }),
     HeroImage: lazyLoadComponent({
@@ -713,6 +717,7 @@ export default {
       maxHeight: 'calc(100vw + 48px)',
       loading: Loader
     }),
+    Testimonials,
     Faq,
     Credits
   },
