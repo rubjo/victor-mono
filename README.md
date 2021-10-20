@@ -29,7 +29,11 @@
 ### Font stylistics
 
 #### Available stylistics
-- ss01: Slashed zero ([#78](https://github.com/rubjo/victor-mono/issues/78))
+- ss01: Single-storey a
+- ss02: Slashed zero, variant 1
+- ss03: Slashed zero, variant 2
+- ss04: Slashed zero, variant 3
+- ss05: Slashed zero, variant 4
 
 #### Configuration
 
