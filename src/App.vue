@@ -688,6 +688,8 @@ import Header from '@/components/Header'
 import lazyLoadComponent from '@/utils/lazy-load-component.js'
 import Loader from '@/components/Loader'
 import { confetti } from 'dom-confetti'
+// Dunno why this is necessary
+// eslint-disable-next-line
 import Testimonials from '@/components/Testimonials'
 import Faq from '@/components/Faq'
 import Credits from '@/components/Credits'
