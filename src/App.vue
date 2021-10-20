@@ -308,7 +308,7 @@
               type="info"
             >
               Download<br>
-              <em>~5MB ZIP</em>
+              <em>~8MB ZIP</em>
             </el-button>
           </a>
         </el-col>
