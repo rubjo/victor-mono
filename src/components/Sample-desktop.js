@@ -1,5 +1,5 @@
 // Ask for a user name until API returns a valid user
-async function getUser() {
+async function getUser () {
   let user
   while (true) {
     let name = prompt('Enter a user name', 'rubjo')
@@ -8,15 +8,11 @@ async function getUser() {
       break // No error, exit loop and proceed
     } catch (err) {
       if (err.response && err.response.status === 404) {
-        // Loop will continue after the alert
-        alert(`User "${name} not found, please reenter.`)
+        alert(`User "${name}" not found, please reenter.`)
       } else {
-        // Unknown error, rethrow it
-        throw err
+        throw err // Unknown error, rethrow it
       }
     }
   }
-
-  alert(`Full name: ${user.name}.`)
   return user
 }

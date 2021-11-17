@@ -47,9 +47,10 @@
             <em>semi-connected cursive italics</em> and programming
             symbol ligatures.
             <br><br>
-            The typeface is clean, crisp and narrow, with a large x-height and clear punctuation,
-            making it legible and ideal for code. It comes in seven weights and
-            Roman, <em>Italic</em> and <em class="alt">Oblique</em> styles.
+            The typeface is slender, crisp and narrow, with a large x-height
+            and clear punctuation, making it legible and ideal for code.
+            It comes in seven weights and Roman, <em>Italic</em> and
+            <em class="alt">Oblique</em> styles.
           </p>
         </el-col>
       </el-row>
@@ -175,18 +176,18 @@
           :sm="18"
         >
           <p class="columns">
-            When it comes to programming fonts, I prefer something thin, crisp
-            and relatively condensed for the code proper,
-            complemented with a more <em>informal, flowing and human style</em>
-            for things like comments and reserved keywords.
+            When it comes to programming fonts, I prefer something thin and
+            relatively condensed,
+            but with a more <em>informal, flowing and human style</em>
+            for standouts like comments and certain keywords.
             <br><br>
             In the past, I always ended up looking for something else after
             using a font for a while, because something didn't look right to me.
-            So eventually, I started sketching and designing something myself.
+            So I started sketching and designing something myself.
             I wanted something that:
             <ul>
               <li>had friendly and distinct italics</li>
-              <li>a strict, geometric and readable regular style</li>
+              <li>had a strict, geometric and readable regular style</li>
               <li>had programming symbol ligatures</li>
               <li>was slender and elegant</li>
               <li>narrow enough to fit a lot of text</li>
@@ -225,7 +226,7 @@
           :sm="18"
         >
           <div class="right caption">
-            Two-flavour designs currently being considered by
+            Designs submitted to
             <a
               href="http://wasdkeyboards.com"
               target="_blank"
@@ -258,18 +259,9 @@
           :sm="18"
         >
           <p>
-            If you try it out and like it, I would be very grateful for any donations
-            or purchases from the Victor Mono Merch Shop
-            (<a
-              href="https://shop.spreadshirt.com/victor-mono/"
-              target="_blank"
-            >North America</a>
-            /
-            <a
-              href="https://shop.spreadshirt.net/victor-mono/"
-              target="_blank"
-            >Europe</a>).
-            It means I can cover some costs for software and time spent - and keep refining and extending the font.
+            If you try it out and like it, I would be very grateful for any
+            donations. It means I can cover some costs for software and time
+            spent - and keep refining and extending the font.
           </p>
         </el-col>
       </el-row>
@@ -316,7 +308,7 @@
               type="info"
             >
               Download<br>
-              <em>~5MB ZIP</em>
+              <em>~8MB ZIP</em>
             </el-button>
           </a>
         </el-col>
@@ -341,7 +333,7 @@
             </em>
             <br>
             <code>brew tap homebrew/cask-fonts</code><br>
-            <code>brew cask install font-victor-mono</code>
+            <code>brew install --cask font-victor-mono</code>
           </p>
         </el-col>
         <el-col
@@ -436,7 +428,14 @@
             5) <em>Optional</em> &middot; <a
               href="https://www.google.com/search?q=how+to+change+theme+in+VS+Code"
               target="_blank"
-            >Set the code theme</a> to one you like<br>
+            >Set the code theme</a> to one you like
+            (try
+            <a
+              href="https://marketplace.visualstudio.com/items?itemName=rubjo.ultimate-dark-neo"
+              target="_blank"
+            >this one</a>,
+            for example)
+            <br>
             6) <em>Optional</em> &middot; <a
               href="https://www.google.com/search?q=how+to+modify+themes+in+VS+Code"
               target="_blank"
@@ -531,16 +530,42 @@
             Thank you to:
           </div>
           <div class="centre supporter">
+            Diogo Almeida
+          </div>
+          <div class="centre supporter">
+            Dieter Auracher
+          </div>
+          <div class="centre supporter">
             Emerson Beltrán
           </div>
           <div class="centre supporter">
             Colton Borg
           </div>
           <div class="centre supporter">
-            Lady Isak Grozny
+            Dion Bridger
+          </div>
+          <div class="centre supporter">
+            <a
+              href="https://github.com/datarootsio"
+              target="_blank"
+            >
+              datarootsio
+            </a>
+          </div>
+          <div class="centre supporter">
+            Julien Durillon
+          </div>
+          <div class="centre supporter">
+            Michael Huggett
+          </div>
+          <div class="centre supporter">
+            Igor Harden
           </div>
           <div class="centre supporter">
             K. Bruce Jones
+          </div>
+          <div class="centre supporter">
+            kmwallio
           </div>
           <div class="centre supporter">
             Josh Kraker
@@ -549,13 +574,28 @@
             Stuart Morris
           </div>
           <div class="centre supporter">
+            RKC
+          </div>
+          <div class="centre supporter">
             Lars Rönnbäck
           </div>
           <div class="centre supporter">
             Michael Schore
           </div>
           <div class="centre supporter">
+            Robert Ruf
+          </div>
+          <div class="centre supporter">
             Christoph Siedentop
+          </div>
+          <div class="centre supporter">
+            Spiritualminded
+          </div>
+          <div class="centre supporter">
+            thief#0001
+          </div>
+          <div class="centre supporter">
+            Ashley Kaine Towns
           </div>
           <p />
         </el-col>
@@ -593,6 +633,15 @@
             April Collier
           </div>
           <div class="centre supporter">
+            Matthew A Drover
+          </div>
+          <div class="centre supporter">
+            Élise Duverdier
+          </div>
+          <div class="centre supporter">
+            Lady Isak Grozny
+          </div>
+          <div class="centre supporter">
             Sven Koschnicke
           </div>
           <div class="centre supporter">
@@ -602,7 +651,13 @@
             Matthew O'Gorman
           </div>
           <div class="centre supporter">
+            Poudingue
+          </div>
+          <div class="centre supporter">
             Emily Price
+          </div>
+          <div class="centre supporter">
+            Alex Simons
           </div>
           <div class="centre supporter">
             Justin Slepak
@@ -611,6 +666,9 @@
         </el-col>
       </el-row>
     </div>
+
+    <Testimonials :theme="theme" />
+
     <HeroImage
       image="specimen"
       :theme="theme"
@@ -630,6 +688,9 @@ import Header from '@/components/Header'
 import lazyLoadComponent from '@/utils/lazy-load-component.js'
 import Loader from '@/components/Loader'
 import { confetti } from 'dom-confetti'
+// Dunno why this is necessary
+// eslint-disable-next-line
+import Testimonials from '@/components/Testimonials'
 import Faq from '@/components/Faq'
 import Credits from '@/components/Credits'
 
@@ -641,7 +702,7 @@ export default {
     CodeView: lazyLoadComponent({
       componentFactory: () => import('@/components/CodeView'),
       background: localStorage.getItem('theme') === 'light' ? '#f2f2f2' : '#304148',
-      height: '80vh',
+      height: '20vw',
       loading: Loader
     }),
     HeroImage: lazyLoadComponent({
@@ -656,6 +717,12 @@ export default {
       background: localStorage.getItem('theme') === 'light' ? '#f5f5f5' : '#515151',
       height: '927px',
       maxHeight: 'calc(100vw + 48px)',
+      loading: Loader
+    }),
+    Testimonials: lazyLoadComponent({
+      componentFactory: () => import('@/components/Testimonials'),
+      background: localStorage.getItem('theme') === 'light' ? '#f5f5f5' : '#515151',
+      height: '50px',
       loading: Loader
     }),
     Faq,

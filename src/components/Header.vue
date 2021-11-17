@@ -194,7 +194,7 @@ export default {
       const options = {
         strings: [
           '"#%§§##/&*!',
-          '(im)peachy',
+          'peachy',
           '<span style="text-decoration: line-through;">modest</span>',
           '==>',
           '>=<=-><-=>><<=',

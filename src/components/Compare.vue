@@ -37,9 +37,9 @@
           <em>Test and compare free programming fonts on
             <a
               target="_blank"
-              href="https://app.programmingfonts.org#victor-mono"
+              href="https://www.programmingfonts.org/#victor-mono"
             >
-              app.programmingfonts.org</a>
+              programmingfonts.org</a>
           </em>
           ⭐️
         </p>
@@ -173,6 +173,10 @@ export default {
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         transition: all 1s;
         transform: scale(1.1);
+      }
+
+      option {
+        background: var(--background-color-base);
       }
 
       // Disable default styling on ff

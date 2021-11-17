@@ -3,9 +3,13 @@ module.exports = {
   env: {
     node: true
   },
-  'extends': [
+  extends: [
     'plugin:vue/recommended',
     '@vue/standard'
+  ],
+  "ignorePatterns": [
+    'src/components/Sample-desktop.js',
+    'src/components/Sample-mobile.vue'
   ],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',

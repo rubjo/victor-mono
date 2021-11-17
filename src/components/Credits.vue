@@ -198,6 +198,21 @@
           >
             Markus Oberlehner</a>
           <br><br>
+          <em>Embed tweets in Vue apps</em>
+          <br>
+          <a
+            target="_blank"
+            href="https://github.com/tonickkozlov/vue-tweet-embed"
+          >
+            vue-tweet-embed</a>
+          by
+          <a
+            target="_blank"
+            href="https://github.com/tonickkozlov"
+          >
+            Anton Kozlov
+          </a>
+          <br><br>
           <em>The nice JS framework</em>
           <br>
           <a

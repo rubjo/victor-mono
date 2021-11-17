@@ -46,9 +46,11 @@ export default {
   height: 50vw;
   max-height: 350px;
   overflow: hidden;
-  opacity: 0.7;
-  transition: opacity 1s 0.25s;
+  filter: grayscale(1);
+  opacity: 0.5;
+  transition: all 1s 0.1s;
   &:hover {
+    filter: grayscale(0);
     opacity: 1;
   }
   img {

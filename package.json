@@ -1,6 +1,6 @@
 {
   "name": "victormono",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "description": "Victor Mono: a free programming font with semi-connected cursive italics and symbol ligatures",
   "files": [
     "dist/"
@@ -39,9 +39,9 @@
   },
   "dependencies": {
     "animejs": "^3.2.1",
-    "core-js": "^2.6.5",
+    "core-js": "^2.6.12",
     "dom-confetti": "^0.1.2",
-    "element-ui": "^2.13.2",
+    "element-ui": "^2.14.1",
     "granim": "^2.0.0",
     "typed.js": "^2.0.11",
     "vue": "^2.6.12",
@@ -49,6 +49,7 @@
     "vue-faq-accordion": "^1.6.2",
     "vue-scrollTo": "^2.4.1",
     "vue-social-sharing": "^2.4.6",
+    "vue-tweet-embed": "^2.4.0",
     "vue-twentytwenty": "^0.6.2"
   },
   "devDependencies": {
@@ -58,14 +59,17 @@
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-component": "^1.1.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
+    "eslint": "^7.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-vue": "^7.20.0",
     "node-sass": "^4.14.1",
     "raw-loader": "^2.0.0",
-    "sass": "^1.27.0",
+    "sass": "^1.32.0",
     "sass-loader": "^7.3.1",
     "stylelint": "^10.0.1",
-    "stylelint-config-recess-order": "^2.1.0",
+    "stylelint-config-recess-order": "^2.3.0",
     "stylelint-config-standard": "^18.3.0",
     "vue-cli-plugin-element": "^1.0.1",
     "vue-template-compiler": "^2.6.12"

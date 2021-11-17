@@ -15,8 +15,7 @@ export default function lazyLoadComponent ({
       resolveComponent = resolve
     }),
     loading: {
-      mounted () {
-        console.log(background)
+      async mounted () {
         this.$el.style.backgroundColor = background || '#595959'
         this.$el.style.height = height || 0
         this.$el.style.maxHeight = maxHeight || 'auto'
@@ -26,7 +25,7 @@ export default function lazyLoadComponent ({
           componentFactory().then(resolveComponent)
           return
         }
-
+        await new Promise((resolve) => { setTimeout(() => { resolve() }, 1) })
         const observer = new IntersectionObserver((entries) => {
           // Use `intersectionRatio` because of Edge 15's
           // lack of support for `isIntersecting`.

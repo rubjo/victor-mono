@@ -61,7 +61,7 @@ body {
 
 p {
   padding-bottom: 20px;
-  font-size: calc(1rem + 0.5vw);
+  font-size: calc(0.9rem + 0.5vw);
   line-height: calc(2rem + 1vw);
   &.columns {
     column-count: 2;
@@ -170,7 +170,7 @@ p {
 
 .caption {
   margin: 5px 10px;
-  font-size: 0.75em;
+  font-size: 0.8em;
   font-style: italic;
   color: #aaa;
   a {
@@ -253,6 +253,12 @@ h2 {
   }
 }
 
+.supporter {
+  a {
+    text-decoration: none;
+  }
+}
+
 .gold {
   .supporter {
     text-shadow:
@@ -283,9 +289,7 @@ em.alt {
 
 .styles-image {
   float: right;
-  height: 20vw;
-  min-height: 300px;
-  max-height: 325px;
+  height: 300px;
   margin: 0 0 25px 5vw;
 }
 
