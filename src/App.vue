@@ -636,6 +636,9 @@
             Matthew A Drover
           </div>
           <div class="centre supporter">
+            Anthony DiFrancesco
+          </div>
+          <div class="centre supporter">
             Élise Duverdier
           </div>
           <div class="centre supporter">
