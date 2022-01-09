@@ -126,7 +126,7 @@
               |= |=&gt; &gt;- &lt;- &lt;-- --&gt; -&gt; -&lt;
               &gt;-&gt; &gt;&gt;- &lt;&lt;- &lt;-&gt; -&gt;&gt; -&lt;&lt; &lt;-&lt;
               ==&gt; =&gt; =/= !== != &lt;==
-              &gt;&gt;= =&gt;&gt; &gt;=&gt; &lt;=&gt; &lt;=&lt; &lt;&lt;= =&lt;&lt;
+              &gt;&gt;= =&gt;&gt; &gt;=&gt; &lt;=&gt; &lt;=&lt; =&lt;= =&gt;= &lt;&lt;= =&lt;&lt;
               .- .= =:= =!= == === :: := :&gt; :&lt; &gt;: ;;
               &lt;| &lt;|&gt; |&gt; &lt;&gt;
               &lt;$ &lt;$&gt; $&gt; &lt;+ &lt;+&gt; +&gt;
@@ -139,7 +139,7 @@
               |= |=&gt; &gt;- &lt;- &lt;-- --&gt; -&gt; -&lt;
               &gt;-&gt; &gt;&gt;- &lt;&lt;- &lt;-&gt; -&gt;&gt; -&lt;&lt; &lt;-&lt;
               ==&gt; =&gt; =/= !== != &lt;==
-              &gt;&gt;= =&gt;&gt; &gt;=&gt; &lt;=&gt; &lt;=&lt; &lt;&lt;= =&lt;&lt;
+              &gt;&gt;= =&gt;&gt; &gt;=&gt; &lt;=&gt; &lt;=&lt; =&lt;= =&gt;= &lt;&lt;= =&lt;&lt;
               .- .= =:= =!= == === :: := :&gt; :&lt; &gt;: ;;
               &lt;| &lt;|&gt; |&gt; &lt;&gt;
               &lt;$ &lt;$&gt; $&gt; &lt;+ &lt;+&gt; +&gt;
