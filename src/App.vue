@@ -660,6 +660,9 @@
             Emily Price
           </div>
           <div class="centre supporter">
+            Nicolas Rougier
+          </div>
+          <div class="centre supporter">
             Alex Simons
           </div>
           <div class="centre supporter">
@@ -702,12 +705,7 @@ export default {
   components: {
     NavBar,
     Header,
-    CodeView: lazyLoadComponent({
-      componentFactory: () => import('@/components/CodeView'),
-      background: localStorage.getItem('theme') === 'light' ? '#f2f2f2' : '#304148',
-      height: '20vw',
-      loading: Loader
-    }),
+    CodeView: import('@/components/CodeView'),
     HeroImage: lazyLoadComponent({
       componentFactory: () => import('@/components/HeroImage'),
       background: localStorage.getItem('theme') === 'light' ? '#f5f5f5' : '#515151',
