@@ -12,13 +12,22 @@
 
 ***
 
+## How to use
 
-### For use in apps, web pages or other projects:
+### In code editors:
+1. [Download](https://rubjo.github.io/victor-mono/VictorMonoAll.zip) the font
+2. Unpack the ZIP
+3. [Install](https://www.google.com/search?q=how+to+install+fonts) the font (all styles or the ones you want)
+4. [Change the font settings in your code editor / IDE of choice](https://www.google.com/search?q=how+to+change+font+settings+in+VS+Code) to "Victor Mono"
+5. _Optional_ [Set the code theme](https://www.google.com/search?q=how+to+change+theme+in+VS+Code) to one you like (try [this one](https://marketplace.visualstudio.com/items?itemName=rubjo.ultimate-dark-neo), for example)
+6. _Optional_ [Modify the theme](https://www.google.com/search?q=how+to+modify+themes+in+VS+Code) colours and its application of normal/italic/bold styles
+
+### In apps, web pages or other projects:
 1. `npm i victormono` (installs Regular, Italic, Bold and Bold Italic styles)
-2. `import 'victormono'` (in a typical modern setup, eg. webpack)
+2. `import 'victormono'` (in a typical modern JS setup, eg. Webpack/Vite)
 3. Style classes with `font-family: 'Victor Mono'`, `font-weight` and `font-style`
 
-#### Alternative CDN hosting,  best for online editors like [CodePen](https://codepen.io/tomByrer/pen/MWWagVp):
+#### Alternative CDN hosting, best for online editors like [CodePen](https://codepen.io/tomByrer/pen/MWWagVp):
 1. `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css">` in `<head>` or top of `<body>`
 2. Style classes with `font-family: 'Victor Mono', monospace`
 
