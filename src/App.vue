@@ -586,6 +586,9 @@
             Robert Ruf
           </div>
           <div class="centre supporter">
+            Benno Schmidt
+          </div>
+          <div class="centre supporter">
             Christoph Siedentop
           </div>
           <div class="centre supporter">
@@ -705,7 +708,7 @@ export default {
   components: {
     NavBar,
     Header,
-    CodeView: import('@/components/CodeView'),
+    CodeView: () => import('@/components/CodeView'),
     HeroImage: lazyLoadComponent({
       componentFactory: () => import('@/components/HeroImage'),
       background: localStorage.getItem('theme') === 'light' ? '#f5f5f5' : '#515151',
