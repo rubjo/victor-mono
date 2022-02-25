@@ -193,6 +193,7 @@ export default {
     initTyped () {
       const options = {
         strings: [
+          'peace-loving',
           '"#%§§##/&*!',
           'peachy',
           '<span style="text-decoration: line-through;">modest</span>',
