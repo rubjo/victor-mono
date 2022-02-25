@@ -4,6 +4,12 @@ export default function initGradients (element, theme) {
   const darkGradients = [
     [
       { color: '#005BBB', pos: 0 },
+      { color: '#005BBB', pos: 0.25 },
+      { color: '#FFD500', pos: 0.75 },
+      { color: '#FFD500', pos: 1 }
+    ],
+    [
+      { color: '#005BBB', pos: 0 },
       { color: '#005BBB', pos: 0.49999 },
       { color: '#FFD500', pos: 0.5 },
       { color: '#FFD500', pos: 1 }
@@ -18,6 +24,12 @@ export default function initGradients (element, theme) {
   ]
 
   const lightGradients = [
+    [
+      { color: '#005BBB', pos: 0 },
+      { color: '#005BBB', pos: 0.25 },
+      { color: '#FFD500', pos: 0.75 },
+      { color: '#FFD500', pos: 1 }
+    ],
     [
       { color: '#005BBB', pos: 0 },
       { color: '#005BBB', pos: 0.49999 },
