@@ -258,20 +258,18 @@
           :xs="22"
           :sm="18"
         >
-          <strikethrough>
+          <del>
             If you try it out and like it, I would be very grateful for any
             donations. It means I can cover some costs for software and time
             spent - and keep refining and extending the font.
-          </strikethrough>
+          </del>
           <p>
             Instead of donating to me, please consider
             <a
               target="_blank"
               href="https://www.npr.org/2022/02/25/1082992947/ukraine-support-help?t=1645882798309"
             >
-              ways of supporting the Ukrainian population or the Russian opposition
-            </a>
-            after that smirking, old dictator clinging to power in a declining ex-great
+            ways of supporting the Ukrainian population or the Russian opposition</a> after that smirking, old dictator clinging to power in a declining ex-great
             power decided to use lies, propaganda and internal repression to
             make one people start attacking their brothers, sisters and children.
           </p>
