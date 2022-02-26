@@ -258,11 +258,11 @@
           :xs="22"
           :sm="18"
         >
-          <del>
+          <p><del>
             If you try it out and like it, I would be very grateful for any
             donations. It means I can cover some costs for software and time
             spent - and keep refining and extending the font.
-          </del>
+          </del></p>
           <p>
             Instead of donating to me, please consider
             <a
