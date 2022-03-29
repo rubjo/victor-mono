@@ -12,31 +12,33 @@
         @focus="onCmFocus"
         @input="onCmCodeChange"
       />
-      <div
-        v-if="theme === 'dark'"
-        class="right caption"
-      >
-        Ultimate Dark Neo code theme for
+      <div class="right caption">
+        <span v-if="theme === 'dark'">
+          Ultimate Dark Neo code theme for
+          <a
+            target="_blank"
+            href="https://marketplace.visualstudio.com/items?itemName=rubjo.ultimate-dark-neo"
+          >VS Code</a>
+          or
+          <a
+            target="_blank"
+            href="https://packagecontrol.io/packages/Ultimate%20Dark%20Neo"
+          >Sublime Text</a>.
+        </span>
+        <span v-else>
+          Based on
+          <a
+            target="_blank"
+            href="https://github.com/chriskempson/base16"
+          >Base 16 Light</a>
+          colour scheme by Chris Kempson.
+        </span>
+        Also check out
         <a
           target="_blank"
-          href="https://marketplace.visualstudio.com/items?itemName=rubjo.ultimate-dark-neo"
-        >VS Code</a>
-        or
-        <a
-          target="_blank"
-          href="https://packagecontrol.io/packages/Ultimate%20Dark%20Neo"
-        >Sublime Text</a>
-      </div>
-      <div
-        v-else
-        class="right caption"
-      >
-        Based on
-        <a
-          target="_blank"
-          href="https://github.com/chriskempson/base16"
-        >Base 16 Light</a>
-        colour scheme by Chris Kempson
+          :href="'https://themer.dev/victor-mono?activeColorSet=' + theme"
+        >
+          themer.dev/victor-mono</a>!
       </div>
     </div>
   </div>

@@ -19,7 +19,8 @@
 2. Unpack the ZIP
 3. [Install](https://www.google.com/search?q=how+to+install+fonts) the font (all styles or the ones you want)
 4. [Change the font settings in your code editor / IDE of choice](https://www.google.com/search?q=how+to+change+font+settings+in+VS+Code) to "Victor Mono"
-5. _Optional_ [Set the code theme](https://www.google.com/search?q=how+to+change+theme+in+VS+Code) to one you like (try [this one](https://marketplace.visualstudio.com/items?itemName=rubjo.ultimate-dark-neo), for example)
+5. _Optional_ [Set the code theme](https://www.google.com/search?q=how+to+change+theme+in+VS+Code) to one you like.
+Check out [https://themer.dev/victor-mono](https://themer.dev/victor-mono), where you can download the official theme for your favourite terminals, editors and apps.
 6. _Optional_ [Modify the theme](https://www.google.com/search?q=how+to+modify+themes+in+VS+Code) colours and its application of normal/italic/bold styles
 
 ### In apps, web pages or other projects:

@@ -3,6 +3,12 @@ import Granim from 'granim'
 export default function initGradients (element, theme) {
   const darkGradients = [
     [
+      { color: '#222222', pos: 0 },
+      { color: '#222222', pos: 0.49999 },
+      { color: '#222222', pos: 0.5 },
+      { color: '#222222', pos: 1 }
+    ],
+    [
       { color: '#005BBB', pos: 0 },
       { color: '#005BBB', pos: 0.49999 },
       { color: '#FFD500', pos: 0.5 },
@@ -18,6 +24,12 @@ export default function initGradients (element, theme) {
   ]
 
   const lightGradients = [
+    [
+      { color: '#AAAAAA', pos: 0 },
+      { color: '#AAAAAA', pos: 0.49999 },
+      { color: '#AAAAAA', pos: 0.5 },
+      { color: '#AAAAAA', pos: 1 }
+    ],
     [
       { color: '#005BBB', pos: 0 },
       { color: '#005BBB', pos: 0.49999 },

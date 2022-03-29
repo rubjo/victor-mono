@@ -258,20 +258,25 @@
           :xs="22"
           :sm="18"
         >
-          <p><del>
-            If you try it out and like it, I would be very grateful for any
-            donations. It means I can cover some costs for software and time
-            spent - and keep refining and extending the font.
-          </del></p>
+          <p>
+            <del>
+              If you try it out and like it, I would be very grateful for any
+              donations. It means I can cover some costs for software and time
+              spent - and keep refining and extending the font.
+            </del>
+          </p>
           <p>
             Instead of donating to me, please consider
             <a
               target="_blank"
-              href="https://www.npr.org/2022/02/25/1082992947/ukraine-support-help?t=1645882798309"
+              href="https://help.unicef.org/ukraine-emergency"
             >
-            ways of supporting the Ukrainian population or the Russian opposition</a> after that smirking, old dictator clinging to power in a declining ex-great
-            power decided to use lies, propaganda and internal repression to
-            make one people start attacking their brothers, sisters and children.
+              ways of supporting the Ukrainian population or the Russian
+              opposition</a>
+            after that smirking, old dictator of a declining
+            ex-great power decided to use lies, propaganda and internal
+            repression to make one people start attacking their brothers,
+            sisters and children.
           </p>
         </el-col>
       </el-row>
@@ -438,13 +443,13 @@
             5) <em>Optional</em> &middot; <a
               href="https://www.google.com/search?q=how+to+change+theme+in+VS+Code"
               target="_blank"
-            >Set the code theme</a> to one you like
-            (try
+            >Set the code theme</a> to one you like. Check out
             <a
-              href="https://marketplace.visualstudio.com/items?itemName=rubjo.ultimate-dark-neo"
+              :href="'https://themer.dev/victor-mono?activeColorSet=' + theme"
               target="_blank"
-            >this one</a>,
-            for example)
+            >https://themer.dev/victor-mono</a>,
+            where you can download the official theme for your favourite
+            terminals, editors and apps.
             <br>
             6) <em>Optional</em> &middot; <a
               href="https://www.google.com/search?q=how+to+modify+themes+in+VS+Code"
@@ -540,9 +545,6 @@
             Thank you to:
           </div>
           <div class="centre supporter">
-            Diogo Almeida
-          </div>
-          <div class="centre supporter">
             Dieter Auracher
           </div>
           <div class="centre supporter">
@@ -575,9 +577,6 @@
             K. Bruce Jones
           </div>
           <div class="centre supporter">
-            kmwallio
-          </div>
-          <div class="centre supporter">
             Josh Kraker
           </div>
           <div class="centre supporter">
@@ -600,9 +599,6 @@
           </div>
           <div class="centre supporter">
             Christoph Siedentop
-          </div>
-          <div class="centre supporter">
-            Spiritualminded
           </div>
           <div class="centre supporter">
             thief#0001
@@ -637,6 +633,9 @@
             Thank you to:
           </div>
           <div class="centre supporter">
+            Diogo Almeida
+          </div>
+          <div class="centre supporter">
             Matthew Anderson
           </div>
           <div class="centre supporter">
@@ -656,6 +655,9 @@
           </div>
           <div class="centre supporter">
             Lady Isak Grozny
+          </div>
+          <div class="centre supporter">
+            kmwallio
           </div>
           <div class="centre supporter">
             Sven Koschnicke
@@ -680,6 +682,9 @@
           </div>
           <div class="centre supporter">
             Justin Slepak
+          </div>
+          <div class="centre supporter">
+            Spiritualminded
           </div>
           <p />
         </el-col>
