@@ -269,7 +269,7 @@
             Instead of donating to me, please consider
             <a
               target="_blank"
-              href="https://help.unicef.org/ukraine-emergency"
+              href="https://stand-with-ukraine.pp.ua/"
             >
               ways of supporting the Ukrainian population or the Russian
               opposition</a>
