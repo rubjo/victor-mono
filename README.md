@@ -47,6 +47,7 @@ Check out [https://themer.dev/victor-mono](https://themer.dev/victor-mono), wher
 - ss04: Slashed zero, variant 3
 - ss05: Slashed zero, variant 4
 - ss06: Slashed seven
+- ss07: Straighter 6 and 9
 
 #### Configuration
 
