@@ -583,19 +583,22 @@
             Stuart Morris
           </div>
           <div class="centre supporter">
+            Jonathan Riboux
+          </div>
+          <div class="centre supporter">
             RKC
           </div>
           <div class="centre supporter">
             Lars Rönnbäck
           </div>
           <div class="centre supporter">
-            Michael Schore
-          </div>
-          <div class="centre supporter">
             Robert Ruf
           </div>
           <div class="centre supporter">
             Benno Schmidt
+          </div>
+          <div class="centre supporter">
+            Michael Schore
           </div>
           <div class="centre supporter">
             Christoph Siedentop
