@@ -657,6 +657,9 @@
             Élise Duverdier
           </div>
           <div class="centre supporter">
+            Michael Fairman
+          </div>
+          <div class="centre supporter">
             Lady Isak Grozny
           </div>
           <div class="centre supporter">
