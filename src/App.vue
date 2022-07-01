@@ -259,24 +259,9 @@
           :sm="18"
         >
           <p>
-            <del>
-              If you try it out and like it, I would be very grateful for any
-              donations. It means I can cover some costs for software and time
-              spent - and keep refining and extending the font.
-            </del>
-          </p>
-          <p>
-            Instead of donating to me, please consider
-            <a
-              target="_blank"
-              href="https://stand-with-ukraine.pp.ua/"
-            >
-              ways of supporting the Ukrainian population or the Russian
-              opposition</a>
-            after that smirking, old dictator of a declining
-            ex-great power decided to use lies, propaganda and internal
-            repression to make one people start attacking their brothers,
-            sisters and children.
+            If you try it out and like it, I would be very grateful for any
+            donations. It means I can cover some costs for software and time
+            spent - and keep refining and extending the font.
           </p>
         </el-col>
       </el-row>
