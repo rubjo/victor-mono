@@ -47,8 +47,8 @@ export default function initGradients (element, theme) {
 
   return new Granim({
     element,
-    // direction: 'diagonal',
-    direction: 'top-bottom',
+    direction: 'diagonal',
+    // direction: 'top-bottom',
     states: {
       'default-state': {
         gradients: theme === 'dark' ? darkGradients : lightGradients,
