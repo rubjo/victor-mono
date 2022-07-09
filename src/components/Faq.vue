@@ -66,7 +66,7 @@ export default {
           category: 'Design & features'
         }, {
           title: 'Can I use the font for anything?',
-          value: 'Yes. If you\'d like to say thanks, you can <a href="https://paypal.me/runbjo" class="donate" target="_blank">donate</a>. I\'d also appreciate it if you referred others to this web site rather than serving the font files from elsewhere.',
+          value: 'Yes. The font is <a href="https://github.com/rubjo/victor-mono/blob/master/LICENSE">released under the SIL Open Font License</a>. If you\'d like to say thanks, you can <a href="https://paypal.me/runbjo" class="donate" target="_blank">donate</a>. I\'d also appreciate it if you referred others to this web site rather than serving the font files from elsewhere.',
           category: 'Usage'
         }, {
           title: 'I found a bug. Where do I report it?',
