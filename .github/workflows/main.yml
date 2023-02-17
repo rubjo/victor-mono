@@ -23,7 +23,6 @@ jobs:
 
       - name: Build 🏗️
         run: |
-          yarn clean
           yarn build
       - name: Deploy to GH Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
