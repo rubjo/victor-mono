@@ -456,8 +456,6 @@
         <el-col
           :xs="24"
           :sm="12"
-          :md="6"
-          class="margin-bottom"
         >
           <p class="centre no-padding no-margin-bottom">
             <img
@@ -482,8 +480,6 @@
         <el-col
           :xs="24"
           :sm="12"
-          :md="6"
-          class="margin-bottom"
         >
           <p class="centre no-padding no-margin-bottom">
             <img
@@ -507,9 +503,7 @@
         </el-col>
         <el-col
           :xs="24"
-          :sm="12"
-          :md="6"
-          class="gold bottom-margin"
+          class="gold"
         >
           <p class="centre no-padding no-margin-bottom">
             <img
@@ -529,81 +523,96 @@
           <div class="centre">
             Thank you to:
           </div>
-          <div class="centre supporter">
-            Dieter Auracher
-          </div>
-          <div class="centre supporter">
-            Emerson Beltrán
-          </div>
-          <div class="centre supporter">
-            Colton Borg
-          </div>
-          <div class="centre supporter">
-            Dion Bridger
-          </div>
-          <div class="centre supporter">
-            <a
-              href="https://github.com/datarootsio"
-              target="_blank"
-            >
-              datarootsio
-            </a>
-          </div>
-          <div class="centre supporter">
-            Julien Durillon
-          </div>
-          <div class="centre supporter">
-            Michael Huggett
-          </div>
-          <div class="centre supporter">
-            Rustam Gilyazov
-          </div>
-          <div class="centre supporter">
-            Igor Harden
-          </div>
-          <div class="centre supporter">
-            K. Bruce Jones
-          </div>
-          <div class="centre supporter">
-            Josh Kraker
-          </div>
-          <div class="centre supporter">
-            Stuart Morris
-          </div>
-          <div class="centre supporter">
-            Jonathan Riboux
-          </div>
-          <div class="centre supporter">
-            RKC
-          </div>
-          <div class="centre supporter">
-            Lars Rönnbäck
-          </div>
-          <div class="centre supporter">
-            Robert Ruf
-          </div>
-          <div class="centre supporter">
-            Benno Schmidt
-          </div>
-          <div class="centre supporter">
-            Michael Schore
-          </div>
-          <div class="centre supporter">
-            Christoph Siedentop
-          </div>
-          <div class="centre supporter">
-            thief#0001
-          </div>
-          <div class="centre supporter">
-            Ashley Kaine Towns
+          <div class="centre">
+            <span class="supporter">
+              Dieter Auracher
+            </span>
+            <span class="supporter">
+              Colton Borg
+            </span>
+            <span class="supporter">
+              Dion Bridger
+            </span>
+            <span class="supporter">
+              <a
+                href="https://github.com/datarootsio"
+                target="_blank"
+              >
+                datarootsio
+              </a>
+            </span>
+            <span class="supporter">
+              Thierry Delafontaine
+            </span>
+            <span class="supporter">
+              Julien Durillon
+            </span>
+            <span class="supporter">
+              Élise Duverdier
+            </span>
+            <span class="supporter">
+              foo256
+            </span>
+            <span class="supporter">
+              ea2809
+            </span>
+            <span class="supporter">
+              Michael Huggett
+            </span>
+            <span class="supporter">
+              Rustam Gilyazov
+            </span>
+            <span class="supporter">
+              Igor Harden
+            </span>
+            <span class="supporter">
+              J3RN
+            </span>
+            <span class="supporter">
+              K. Bruce Jones
+            </span>
+            <span class="supporter">
+              KD
+            </span>
+            <span class="supporter">
+              Josh Kraker
+            </span>
+            <span class="supporter">
+              Stuart Morris
+            </span>
+            <span class="supporter">
+              Jonathan Riboux
+            </span>
+            <span class="supporter">
+              RKC
+            </span>
+            <span class="supporter">
+              Lars Rönnbäck
+            </span>
+            <span class="supporter">
+              Robert Ruf
+            </span>
+            <span class="supporter">
+              Benno Schmidt
+            </span>
+            <span class="supporter">
+              Michael Schore
+            </span>
+            <span class="supporter">
+              Christoph Siedentop
+            </span>
+            <span class="supporter">
+              thief#0001
+            </span>
+            <span class="supporter">
+              Ashley Kaine Towns
+            </span>
           </div>
           <p />
         </el-col>
         <el-col
           :xs="24"
-          :sm="12"
-          :md="6"
-          class="rainbow bottom-margin"
+          class="rainbow"
         >
           <p class="centre no-padding no-margin-bottom">
             <img
@@ -623,65 +632,76 @@
           <div class="centre">
             Thank you to:
           </div>
-          <div class="centre supporter">
-            Diogo Almeida
-          </div>
-          <div class="centre supporter">
-            Matthew Anderson
-          </div>
-          <div class="centre supporter">
-            Parker Ault
-          </div>
-          <div class="centre supporter">
-            April Collier
-          </div>
-          <div class="centre supporter">
-            Matthew A Drover
-          </div>
-          <div class="centre supporter">
-            Anthony DiFrancesco
-          </div>
-          <div class="centre supporter">
-            Élise Duverdier
-          </div>
-          <div class="centre supporter">
-            Michael Fairman
-          </div>
-          <div class="centre supporter">
-            Lady Isak Grozny
-          </div>
-          <div class="centre supporter">
-            Venkatesh Jatla
-          </div>
-          <div class="centre supporter">
-            kmwallio
-          </div>
-          <div class="centre supporter">
-            Sven Koschnicke
-          </div>
-          <div class="centre supporter">
-            Elizabeth Marston
-          </div>
-          <div class="centre supporter">
-            Matthew O'Gorman
-          </div>
-          <div class="centre supporter">
-            Poudingue
-          </div>
-          <div class="centre supporter">
-            Emily Price
-          </div>
-          <div class="centre supporter">
-            Nicolas Rougier
-          </div>
-          <div class="centre supporter">
-            Alex Simons
-          </div>
-          <div class="centre supporter">
-            Justin Slepak
-          </div>
-          <div class="centre supporter">
-            Spiritualminded
+          <div class="centre">
+            <span class="supporter">
+              Diogo Almeida
+            </span>
+            <span class="supporter">
+              Matthew Anderson
+            </span>
+            <span class="supporter">
+              Parker Ault
+            </span>
+            <span class="supporter">
+              Emerson Beltrán
+            </span>
+            <span class="supporter">
+              Andrew Bowman
+            </span>
+            <span class="supporter">
+              April Collier
+            </span>
+            <span class="supporter">
+              Matthew A Drover
+            </span>
+            <span class="supporter">
+              Anthony DiFrancesco
+            </span>
+            <span class="supporter">
+              Michael Fairman
+            </span>
+            <span class="supporter">
+              Lady Isak Grozny
+            </span>
+            <span class="supporter">
+              Venkatesh Jatla
+            </span>
+            <span class="supporter">
+              kmwallio
+            </span>
+            <span class="supporter">
+              Sven Koschnicke
+            </span>
+            <span class="supporter">
+              Elizabeth Marston
+            </span>
+            <span class="supporter">
+              Justin Neff
+            </span>
+            <span class="supporter">
+              Matthew O'Gorman
+            </span>
+            <span class="supporter">
+              Poudingue
+            </span>
+            <span class="supporter">
+              Emily Price
+            </span>
+            <span class="supporter">
+              Nicolas Rougier
+            </span>
+            <span class="supporter">
+              Alex Simons
+            </span>
+            <span class="supporter">
+              Justin Slepak
+            </span>
+            <span class="supporter">
+              Spiritualminded
+            </span>
+            <span class="supporter">
+              Samara Wood
+            </span>
           </div>
           <p />
         </el-col>

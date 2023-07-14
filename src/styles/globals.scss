@@ -254,6 +254,8 @@ h2 {
 }
 
 .supporter {
+  display: inline-block;
+  margin: 0.75rem 1rem;
   a {
     text-decoration: none;
   }
@@ -271,15 +273,32 @@ h2 {
 .rainbow {
   .supporter {
     color: #fff;
-    text-shadow:
-      0 0 5px #000,
-      -3px -2px 8px #ff0,
-      0 2px 8px #f90,
-      -3px -3px 8px #0f0,
-      3px -3px 8px #0fc,
-      5px 3px 8px #f0f,
-      4px 0 8px #9ef,
-      -2px 2px 8px #f00;
+    animation: glow 3s infinite alternate;
+  }
+
+  @keyframes glow {
+    0% {
+      text-shadow:
+        0 0 5px #c00,
+        3px 2px 8px #7ec,
+        0 -2px 8px #c0c,
+        3px 3px 8px #0c9,
+        -3px 3px 8px #0c0,
+        -5px -3px 8px #c70,
+        -4px 0 8px #cc0,
+        2px -2px 8px #000;
+    }
+    to {
+      text-shadow:
+        0 0 5px #000,
+        -3px -2px 8px #cc0,
+        0 2px 8px #c70,
+        -3px -3px 8px #0c0,
+        3px -3px 8px #0c9,
+        5px 3px 8px #c0c,
+        4px 0 8px #7ec,
+        -2px 2px 8px #c00;
+    }
   }
 }
 
