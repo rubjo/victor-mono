@@ -531,6 +531,9 @@
               Colton Borg
             </span>
             <span class="supporter">
+              Bruce Bigby
+            </span>
+            <span class="supporter">
               Dion Bridger
             </span>
             <span class="supporter">
@@ -606,6 +609,12 @@
             </span>
             <span class="supporter">
               Ashley Kaine Towns
+            </span>
+            <span class="supporter">
+              Clifton Wood
+            </span>
+            <span class="supporter">
+              zed
             </span>
           </div>
           <p />
