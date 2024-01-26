@@ -48,6 +48,7 @@ Check out [https://themer.dev/victor-mono](https://themer.dev/victor-mono), wher
 - ss05: Slashed zero, variant 4
 - ss06: Slashed seven
 - ss07: Straighter 6 and 9
+- ss08: More fishlike turbofish (previous default ::< ligature)
 
 #### Configuration
 
