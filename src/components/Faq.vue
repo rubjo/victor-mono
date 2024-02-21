@@ -58,15 +58,15 @@ export default {
           category: 'Design & features'
         }, {
           title: 'Will you add some stylistic variations, like a slashed zero, sharper brackets etc.?',
-          value: '<a href="https://paypal.me/runbjo" target="_blank">I might</a>.',
+          value: '<a href="https://www.paypal.com/donate?hosted_button_id=T8Q8AHYNNXELW" target="_blank">I might</a>.',
           category: 'Design & features'
         }, {
           title: 'Will you make a custom style generator, where one can pick the preferred stylistic alternatives and download the corresponding font files?',
-          value: 'Probably not. It depends on the reception and <a href="https://paypal.me/runbjo" class="donate" target="_blank">donations</a>, as this is something I do in my spare time.',
+          value: 'Probably not. It depends on the reception and <a href="https://www.paypal.com/donate?hosted_button_id=T8Q8AHYNNXELW" class="donate" target="_blank">donations</a>, as this is something I do in my spare time.',
           category: 'Design & features'
         }, {
           title: 'Can I use the font for anything?',
-          value: 'Yes. The font is <a href="https://github.com/rubjo/victor-mono/blob/master/LICENSE">released under the SIL Open Font License</a>. If you\'d like to say thanks, you can <a href="https://paypal.me/runbjo" class="donate" target="_blank">donate</a>. I\'d also appreciate it if you referred others to this web site rather than serving the font files from elsewhere.',
+          value: 'Yes. The font is <a href="https://github.com/rubjo/victor-mono/blob/master/LICENSE">released under the SIL Open Font License</a>. If you\'d like to say thanks, you can <a href="https://www.paypal.com/donate?hosted_button_id=T8Q8AHYNNXELW" class="donate" target="_blank">donate</a>. I\'d also appreciate it if you referred others to this web site rather than serving the font files from elsewhere.',
           category: 'Usage'
         }, {
           title: 'I found a bug. Where do I report it?',
@@ -82,7 +82,7 @@ export default {
           category: 'Other'
         }, {
           title: 'Why are you giving it away?',
-          value: 'I originally planned on selling it for some (smaller or much larger) sum, like others do. But I eventually decided against it: I couldn’t be bothered to set up hosting, payment, EULAs etc, nor do I have time for the level of support I feel should accompany a commercial product. This typeface isn’t meant to be the perfect font for everyone - I just made the one perfect for me. If you’re unemployed or struggle to make ends meet, download the font with a clear conscience. If you work in a corporate setting or are relatively well off, consider <a href="https://paypal.me/runbjo" class="donate" target="_blank">supporting</a> the hours spent designing this font. If you want to and are able to donate anything: thank you!',
+          value: 'I originally planned on selling it for some (smaller or much larger) sum, like others do. But I eventually decided against it: I couldn’t be bothered to set up hosting, payment, EULAs etc, nor do I have time for the level of support I feel should accompany a commercial product. This typeface isn’t meant to be the perfect font for everyone - I just made the one perfect for me. If you’re unemployed or struggle to make ends meet, download the font with a clear conscience. If you work in a corporate setting or are relatively well off, consider <a href="https://www.paypal.com/donate?hosted_button_id=T8Q8AHYNNXELW" class="donate" target="_blank">supporting</a> the hours spent designing this font. If you want to and are able to donate anything: thank you!',
           category: 'Other'
         }, {
           title: 'Did you know that the [insert typeface property here] violates some 500-year old font design convention?',
@@ -90,7 +90,7 @@ export default {
           category: 'Design & features'
         }, {
           title: 'The font is missing an obscure ligature symbol used for indicating an infinite loop in the language Goskell when writing in ancient Ghiscari. Would you be willing to add it?',
-          value: 'Not very likely, but <a href="https://paypal.me/runbjo" target="_blank">I might</a>.',
+          value: 'Not very likely, but <a href="https://www.paypal.com/donate?hosted_button_id=T8Q8AHYNNXELW" target="_blank">I might</a>.',
           category: 'Design & features'
         }, {
           title: 'A programming font with cursive italics and ligatures is the worst idea in the world. This is absolutely horrible. BTW, I am really angry.',

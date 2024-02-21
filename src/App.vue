@@ -855,7 +855,7 @@ export default {
       window.removeEventListener('focus', this.celebrate)
     },
     paypal (e) {
-      window.open('https://paypal.me/runbjo')
+      window.open('https://www.paypal.com/donate?hosted_button_id=T8Q8AHYNNXELW')
       setTimeout(() => {
         window.addEventListener('focus', this.celebrate(e.target))
       }, 1000)

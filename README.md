@@ -10,7 +10,7 @@
 ![Intro image](https://github.com/rubjo/victor-mono/raw/master/public/twitter.png)
 ![carbon (3)](https://user-images.githubusercontent.com/42270947/117447088-53e03300-af3d-11eb-84e2-df1713e77019.png)
 
-### More information and download: [rubjo.github.io/victor-mono](https://rubjo.github.io/victor-mono). If you like it and want to say thanks, [donations](https://www.paypal.me/runbjo) are welcome. ❤️
+### More information and download: [rubjo.github.io/victor-mono](https://rubjo.github.io/victor-mono). If you like it and want to say thanks, [donations](https://www.paypal.com/donate?hosted_button_id=T8Q8AHYNNXELW) are welcome. ❤️
 
 ***
 
