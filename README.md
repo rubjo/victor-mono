@@ -1,6 +1,5 @@
 ![GitHub release](https://img.shields.io/github/release/rubjo/victor-mono.svg)
 ![GitHub Release Date](https://img.shields.io/github/release-date/rubjo/victor-mono.svg)
-![Travis (.org)](https://img.shields.io/travis/rubjo/victor-mono.svg?logo=travis)
 ![GitHub](https://img.shields.io/github/license/rubjo/victor-mono.svg)
 ![GitHub stars](https://img.shields.io/github/stars/rubjo/victor-mono.svg?style=social)
 
@@ -41,16 +40,24 @@ Check out [https://themer.dev/victor-mono](https://themer.dev/victor-mono), wher
 ### Font stylistics
 
 #### Available stylistics
-- ss01: Single-storey a
-- ss02: Slashed zero, variant 1
-- ss03: Slashed zero, variant 2
-- ss04: Slashed zero, variant 3
-- ss05: Slashed zero, variant 4
-- ss06: Slashed seven
-- ss07: Straighter 6 and 9
-- ss08: More fishlike turbofish (previous default ::< ligature)
 
-#### Configuration
+| Stylistic set  | Example |
+| :------------: | ------------- |
+| <h3>ss01</h3> Single-storey a  | ![ss01](https://github.com/user-attachments/assets/191b14ac-4ba3-4657-9f99-ee48c5088caf)  |
+| <h3>ss02</h3> Slashed zero, variant 1  | ![ss02](https://github.com/user-attachments/assets/398de89a-3e48-4f32-802c-6dd6e97d58e9)  |
+| <h3>ss03</h3> Slashed zero, variant 2  | ![ss03](https://github.com/user-attachments/assets/ce161d95-3ac0-4be9-a303-ba4cf50c0c99) |
+| <h3>ss04</h3> Slashed zero, variant 3  | ![ss04](https://github.com/user-attachments/assets/9f201d03-77b9-4ae7-8ce4-2cb276f4b148) |
+| <h3>ss05</h3> Slashed zero, variant 4  | ![ss05](https://github.com/user-attachments/assets/a200e608-1acc-4e3e-9da1-a67085580027) |
+| <h3>ss06</h3> Slashed seven  | ![ss06](https://github.com/user-attachments/assets/b556a67d-f224-456c-8aca-70d02ea0f6f7) |
+| <h3>ss07</h3> Straighter 6 and 9  | ![ss07](https://github.com/user-attachments/assets/a9dde2ab-d9bf-41ad-bab0-4fc71f93b2ce) |
+| <h3>ss08</h3> More fishlike turbofish (previous default ::< ligature) | ![ss08](https://github.com/user-attachments/assets/19135e2b-1f5e-4d48-b0e0-e780434bfee2) | 
+
+#### How to use
+
+- CSS:
+  	```css
+	font-feature-settings: "ss01";
+   	```
 
 - Sublime:
 	```json
