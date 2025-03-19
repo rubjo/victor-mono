@@ -326,13 +326,12 @@
             <em>With
               <a
                 target="_blank"
-                href="https://github.com/Homebrew/homebrew-cask-fonts"
+                href="https://brew.sh/"
               >
-                homebrew-cask-fonts</a>,
+                Homebrew</a>,
               just run
             </em>
             <br>
-            <code>brew tap homebrew/cask-fonts</code><br>
             <code>brew install --cask font-victor-mono</code>
           </p>
         </el-col>
