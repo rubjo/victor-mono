@@ -6,7 +6,6 @@
     "dist/"
   ],
   "main": "dist/index.css",
-  "bundleDependencies": false,
   "deprecated": false,
   "repository": {
     "type": "git",
@@ -64,9 +63,9 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-standard": "^5.0.0",
     "eslint-plugin-vue": "^7.20.0",
-    "node-sass": "^6.0.1",
+    "node-gyp": "10.0.1",
     "raw-loader": "^2.0.0",
-    "sass": "^1.32.0",
+    "sass": "^1.87.0",
     "sass-loader": "^7.3.1",
     "stylelint": "^10.0.1",
     "stylelint-config-recess-order": "^2.3.0",
