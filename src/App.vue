@@ -696,6 +696,9 @@
               Emily Price
             </span>
             <span class="supporter">
+              Maximilian Rehkopf
+            </span>
+            <span class="supporter">
               Nicolas Rougier
             </span>
             <span class="supporter">
