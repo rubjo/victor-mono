@@ -1,7 +1,7 @@
 # Created by MichaelCurrin
 # https://gist.github.com/MichaelCurrin/a698731096f78240f653faf9a9127cba
 
-name: Build and deploy 
+name: Build and deploy
 
 on:
   push:
@@ -22,11 +22,11 @@ jobs:
           persist-credentials: false
 
       - name: Install 🔧
-        run: yarn install
+        run: npm install
 
       - name: Build 🏗️
         run: |
-          yarn build
+          npm build
       - name: Deploy to GH Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
