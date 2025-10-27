@@ -150,10 +150,36 @@
       </el-row>
     </div>
 
-    <HeroImage
-      image="powerline"
-      :theme="theme"
-    />
+    <div class="alternate-bg">
+      <a
+        href="https://yuzukeycaps.com/creations/victor-mono-nightshade"
+        target="_blank"
+      >
+        <HeroImage
+          image="keyboard"
+          :theme="theme"
+          suffix="jpg"
+        />
+      </a>
+      <el-row
+        type="flex"
+        justify="center"
+      >
+        <el-col
+          :sm="18"
+        >
+          <div class="right caption">
+            Configure and buy the official
+            <a
+              href="https://yuzukeycaps.com/creations/victor-mono-nightshade"
+              target="_blank"
+            >
+              Victor Mono Nightshade Keyboard from the fabulous folks at YUZU Custom Keycaps
+            </a>
+          </div>
+        </el-col>
+      </el-row>
+    </div>
 
     <div class="content alternate-bg">
       <div
@@ -212,31 +238,10 @@
       <Compare :theme="theme" />
     </div>
 
-    <div class="alternate-bg">
-      <HeroImage
-        image="keyboard"
-        :theme="theme"
-        suffix="jpg"
-      />
-      <el-row
-        type="flex"
-        justify="center"
-      >
-        <el-col
-          :sm="18"
-        >
-          <div class="right caption">
-            Designs submitted to
-            <a
-              href="http://wasdkeyboards.com"
-              target="_blank"
-            >
-              WASD Keyboards
-            </a>
-          </div>
-        </el-col>
-      </el-row>
-    </div>
+    <HeroImage
+      image="powerline"
+      :theme="theme"
+    />
 
     <div class="content alternate-bg">
       <div
