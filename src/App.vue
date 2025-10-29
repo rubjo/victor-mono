@@ -220,11 +220,11 @@
               <li>wide enough to be scannable</li>
               <li>looked consistent and professional</li>
             </ul>
-            Other stuff (like having a million alternative glyphs or as many
-            ligatures as possible) wasn't (and isn't) important.
-            Victor Mono is the result. You might like it as well.
-            That's brilliant! You might not. That's also fine: use a font
-            that works for you. 😛
+            Other fancy stuff (like having a gazillion alternative glyphs or
+            every ligature known to humanity) wasn't really my thing. 🤷‍♂️
+            Victor Mono is what came out of this adventure. You might fall in love with it - 
+            that would be awesome! 😍 Or maybe it's not your cup of tea, and that's 
+            totally cool too - just find a font that makes you happy! 😊
           </p>
         </el-col>
       </el-row>
