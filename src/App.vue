@@ -718,6 +718,9 @@
             <span class="supporter">
               Samara Wood
             </span>
+            <span class="supporter">
+              Alexey Zapparov
+            </span>
           </div>
           <p />
         </el-col>
