@@ -152,7 +152,7 @@
 
     <div class="alternate-bg">
       <a
-        href="https://yuzukeycaps.com/creations/victor-mono-nightshade"
+        href="https://yuzukeycaps.com/creations/victor-mono-nightshade?aff=RUNEB"
         target="_blank"
       >
         <HeroImage
