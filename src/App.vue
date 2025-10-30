@@ -171,7 +171,7 @@
           <div class="right caption">
             Configure and buy the official
             <a
-              href="https://yuzukeycaps.com/creations/victor-mono-nightshade"
+              href="https://yuzukeycaps.com/creations/victor-mono-nightshade?aff=RUNEB"
               target="_blank"
             >
               Victor Mono Nightshade Keyboard from the fabulous folks at YUZU Custom Keycaps
