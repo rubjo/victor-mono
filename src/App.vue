@@ -588,6 +588,9 @@
               Stuart Morris
             </span>
             <span class="supporter">
+              James Nance
+            </span>
+            <span class="supporter">
               Jonathan Riboux
             </span>
             <span class="supporter">
