@@ -704,9 +704,6 @@
               Matthew O'Gorman
             </span>
             <span class="supporter">
-              Robyn Persons
-            </span>
-            <span class="supporter">
               Poudingue
             </span>
             <span class="supporter">
