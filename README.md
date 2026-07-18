@@ -50,7 +50,7 @@ Check out [https://themer.dev/victor-mono](https://themer.dev/victor-mono), wher
 | <h3>ss05</h3> Slashed zero, variant 4  | ![ss05](https://github.com/user-attachments/assets/a200e608-1acc-4e3e-9da1-a67085580027) |
 | <h3>ss06</h3> Slashed seven  | ![ss06](https://github.com/user-attachments/assets/b556a67d-f224-456c-8aca-70d02ea0f6f7) |
 | <h3>ss07</h3> Straighter 6 and 9  | ![ss07](https://github.com/user-attachments/assets/a9dde2ab-d9bf-41ad-bab0-4fc71f93b2ce) |
-| <h3>ss08</h3> More fishlike turbofish (previous default ::< ligature) | ![ss08](https://github.com/user-attachments/assets/19135e2b-1f5e-4d48-b0e0-e780434bfee2) | 
+| <h3>calt</h3> More fishlike turbofish (previous default ::< ligature) | ![calt](https://github.com/user-attachments/assets/19135e2b-1f5e-4d48-b0e0-e780434bfee2) | 
 
 #### How to use
 
