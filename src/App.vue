@@ -588,6 +588,9 @@
               Stuart Morris
             </span>
             <span class="supporter">
+              Na'im Muhammad
+            </span>
+            <span class="supporter">
               Patrick Nance
             </span>
             <span class="supporter">
